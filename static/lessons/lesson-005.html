@@ -3,409 +3,401 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 05 旅遊韓語會話馬上開口說(I.S)의 한국어 수업 2026.09.12</title>
+    <title>Lesson 05 旅遊韓語會話馬上開口說(I.S)의 한국어 수업 [2026.09.12]</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     
     <style>
         body {
             font-family: 'Inter', 'Noto Sans KR', sans-serif;
-            background-color: #f3f4f6;
-            color: #1f2937;
-            line-height: 1.6;
+            background-color: #f8fafc;
+            color: #1e293b;
         }
         
+        /* 針對 A4 列印與 PDF 匯出進行優化設定 */
         @media print {
             @page {
                 size: A4 portrait;
                 margin: 1.2cm;
             }
             body {
-                background-color: #ffffff;
+                background-color: white;
             }
             .no-print {
                 display: none !important;
             }
-            .print-break-inside-avoid {
+            .page-break-avoid {
                 page-break-inside: avoid;
             }
-            .shadow-sm, .shadow-md, .shadow-lg {
+            /* 列印時移除陰影以保持畫面乾淨 */
+            .print-no-shadow {
                 box-shadow: none !important;
-                border: 1px solid #e5e7eb;
+                border: 1px solid #e2e8f0;
             }
-            .container {
-                max-width: 100% !important;
-                padding: 0 !important;
-            }
-            main {
-                padding-top: 0 !important;
-                padding-bottom: 0 !important;
-            }
-        }
-
-        .table-container {
-            overflow-x: auto;
         }
     </style>
 </head>
-<body class="antialiased min-h-screen pb-12">
+<body class="antialiased pb-12">
 
-    <div class="no-print sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200 px-4 py-3 flex justify-between items-center shadow-sm">
-        <div class="text-sm font-semibold text-gray-500">韓文課堂筆記整理</div>
-        <button onclick="window.print()" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-full font-medium transition-colors flex items-center gap-2 shadow-sm">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
-            </svg>
-            一鍵列印 / 匯出 PDF
-        </button>
-    </div>
-
-    <main class="container mx-auto px-4 md:px-8 max-w-4xl pt-8">
-        
-        <header class="bg-indigo-800 text-white rounded-t-2xl p-6 md:p-8 shadow-md print-break-inside-avoid relative overflow-hidden">
-            <div class="absolute top-0 right-0 opacity-10">
-                <svg width="200" height="200" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 22h20L12 2zm0 3.8l6.4 14.2H5.6L12 5.8z"/></svg>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+        <!-- 頂部控制列與標題 -->
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 border-b-2 border-indigo-600 pb-4">
+            <div>
+                <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 leading-tight">
+                    Lesson 05 <br class="sm:hidden">旅遊韓語會話馬上開口說
+                </h1>
+                <p class="text-lg text-indigo-700 font-semibold mt-2">
+                    (I.S)의 한국어 수업 <span class="text-gray-500 font-normal ml-2">2026.09.12</span>
+                </p>
             </div>
-            <div class="relative z-10">
-                <div class="inline-block bg-indigo-200 text-indigo-900 text-sm font-bold px-3 py-1 rounded-full mb-4">
-                    Lesson 05
-                </div>
-                <h1 class="text-3xl md:text-4xl font-black mb-2 leading-tight">旅遊韓語會話馬上開口說</h1>
-                <h2 class="text-xl md:text-2xl font-medium text-indigo-100">(I.S)의 한국어 수업</h2>
-                <div class="mt-4 flex items-center text-indigo-200 text-sm font-medium">
-                    <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                    2026.09.12
-                </div>
-            </div>
-        </header>
+            <button onclick="window.print()" class="no-print mt-4 sm:mt-0 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition duration-300 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                </svg>
+                一鍵列印 / 匯出 PDF
+            </button>
+        </div>
 
-        <section class="bg-white border-x border-b border-gray-200 rounded-b-2xl p-6 mb-8 shadow-sm print-break-inside-avoid">
-            <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center gap-2">
-                <span class="bg-gray-100 p-1.5 rounded-md">📋</span> 課堂備忘錄 (클래스 메모)
-            </h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
-                    <div class="font-bold text-gray-700 mb-2 text-indigo-600">📌 進度 (진도)</div>
-                    <ul class="list-disc list-inside text-gray-600 space-y-1">
-                        <li><strong>本堂：</strong>Kpop 旅遊韓語 Day 1-3 (p.48 - p.49)</li>
-                        <li><strong>下堂：</strong>新首爾課本 1A 2-1~ / 旅遊課本</li>
-                    </ul>
+        <!-- 課程進度與作業區塊 -->
+        <div class="bg-white rounded-xl shadow-sm p-6 mb-8 border-l-4 border-yellow-400 print-no-shadow page-break-avoid">
+            <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                <span class="mr-2">📝</span> 課程進度與作業 (진도 및 과제)
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">
+                <div>
+                    <p><strong>本堂進度：</strong> kpop旅遊韓語 Day 1-3 (48-49頁)</p>
+                    <p class="mt-2"><strong>下堂進度：</strong> 一堂首爾大 / 一堂旅遊課本<br><span class="text-sm text-gray-500">(新首爾課本＋1A 2-1~)</span></p>
                 </div>
-                <div class="bg-amber-50 p-4 rounded-lg border border-amber-100">
-                    <div class="font-bold text-amber-800 mb-2">🎯 測驗與作業 (시험 및 숙제)</div>
-                    <ul class="list-disc list-inside text-amber-700 space-y-1">
-                        <li><strong>考試：</strong>旅遊韓語複習（課本重點句子）</li>
-                        <li><strong>考試：</strong>快問快答 1-1, 1-2 單字</li>
-                        <li><strong>作業：</strong>1-1 ~ 1-2 課本筆記複習</li>
+                <div class="bg-gray-50 p-3 rounded-md">
+                    <p class="font-semibold text-red-600 mb-1">🎯 考試與作業提醒：</p>
+                    <ul class="list-disc list-inside text-sm space-y-1">
+                        <li>[考試] 筆記課本重點句子 (旅遊韓語複習)</li>
+                        <li>[考試] 快問快答 1-1, 1-2 單字</li>
+                        <li>[作業] 1-1 ~ 1-2 課本筆記複習</li>
                     </ul>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="bg-white rounded-2xl p-6 md:p-8 mb-8 shadow-sm print-break-inside-avoid">
-            <h3 class="text-xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-indigo-100 flex items-center gap-2">
-                <span class="text-2xl">🎯</span> 學習目標 (학습 목표)
-            </h3>
-            <ul class="space-y-3 text-gray-700 font-medium">
-                <li class="flex items-start gap-3">
-                    <span class="text-emerald-500 font-bold">✓</span>
-                    <span>掌握點餐時的<strong>客製化要求</strong>（例如：不要番茄、不要起司）。</span>
+        <!-- 1. 單元學習目標 -->
+        <div class="bg-indigo-50 rounded-xl p-6 mb-8 print-no-shadow page-break-avoid">
+            <h2 class="text-2xl font-bold text-indigo-900 mb-4">1. 학습 목표 (單元學習目標)</h2>
+            <ul class="space-y-3 text-indigo-800 font-medium">
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-indigo-600 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    掌握餐廳點餐與客製化需求的實用句型（如：不要加番茄、不吃起司）。
                 </li>
-                <li class="flex items-start gap-3">
-                    <span class="text-emerald-500 font-bold">✓</span>
-                    <span>學習韓國餐廳實用的<strong>入座確認與人數詢問</strong>。</span>
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-indigo-600 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    學會韓國道地的餐廳進出寒暄語（店員與顧客的應答）。
                 </li>
-                <li class="flex items-start gap-3">
-                    <span class="text-emerald-500 font-bold">✓</span>
-                    <span>理解並正確運用核心發音與拼寫規則：<strong>사이시옷 (ㅅ)</strong> 以及 <strong>ㄹ 消失規則</strong>。</span>
-                </li>
-                <li class="flex items-start gap-3">
-                    <span class="text-emerald-500 font-bold">✓</span>
-                    <span>熟悉道地的餐廳結帳與<strong>離店道別寒暄語</strong>（祝生意興隆）。</span>
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-indigo-600 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    理解並應用「ㄹ 消失規則」以及名詞合成時的「사이시옷 (saisios) 規則」。
                 </li>
             </ul>
-        </section>
+        </div>
 
-        <section class="bg-white rounded-2xl p-6 md:p-8 mb-8 shadow-sm print-break-inside-avoid">
-            <h3 class="text-xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-100 flex items-center gap-2">
-                <span class="text-2xl">📖</span> 核心文法專題 (문법 정리)
+        <!-- 2. 核心文法專題 -->
+        <h2 class="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-gray-200 pb-2">2. 문법 정리 (核心文法專題)</h2>
+
+        <!-- 文法 A: 點餐客製化要求 -->
+        <div class="bg-white rounded-xl shadow-sm p-6 mb-6 print-no-shadow page-break-avoid">
+            <h3 class="text-xl font-bold text-teal-700 mb-3 flex items-center">
+                <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm mr-3">文法 A</span> 客製化點餐：把某物拿掉 / 不要加
             </h3>
+            <p class="text-gray-700 mb-4">在點漢堡（수제 햄버거）或其他餐點時，如果挑食或對某些食材過敏，可以使用以下兩種相似但語氣稍有不同的說法：</p>
             
-            <div class="mb-8 bg-blue-50/50 rounded-xl p-5 border border-blue-100">
-                <h4 class="text-lg font-bold text-blue-800 mb-3 flex items-center gap-2">
-                    <span class="bg-blue-200 text-blue-800 px-2 py-0.5 rounded text-sm">重點 1</span> 
-                    ㄹ 消失規則 (ㄹ 변형 규칙)
-                </h4>
-                <p class="text-gray-700 mb-4 leading-relaxed">
-                    當動詞或形容詞的語幹以 <strong>「ㄹ」</strong> 結尾時，若遇到後方連接以 <strong>「ㅅ、ㄴ、ㅂ」</strong> 開頭的文法，語幹的「ㄹ」必須省略。我們稱之為<strong>「ㄹ 消失規則」</strong>。
-                </p>
-                
-                <div class="bg-white rounded-lg p-4 border border-blue-200 shadow-sm mb-4">
-                    <div class="font-bold text-gray-800 mb-2">📌 公式推導：팔다 (賣) + -(으)세요 (請...)</div>
-                    <ul class="space-y-2 text-sm md:text-base text-gray-700">
-                        <li>1. 去掉原形字尾 다 ➔ 語幹為 <span class="font-bold text-blue-600">팔</span></li>
-                        <li>2. 語幹有收音(ㄹ)，本應加 -으세요，但因為遇到 <span class="font-bold text-red-500">ㅅ</span>，觸發 <strong>ㄹ 消失規則</strong>。</li>
-                        <li>3. 語幹的 ㄹ 消失 ➔ 變成 <span class="font-bold text-blue-600">파</span></li>
-                        <li>4. 因為 ㄹ 消失後視同無收音，直接接上 -세요。</li>
-                        <li class="pt-2 mt-2 border-t border-dashed border-gray-300 font-bold text-lg text-indigo-700">
-                            ✨ 結果：파 + 세요 ➔ 파세요. (請賣)
-                        </li>
-                    </ul>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="border border-teal-200 rounded-lg p-4 bg-teal-50">
+                    <div class="font-bold text-lg text-teal-900 mb-2">名詞 + 빼고 주세요.</div>
+                    <p class="text-sm text-gray-700 mb-2">字面意思：「排除 OOO 後，請給我」。表達直接的需求。</p>
+                    <div class="bg-white p-3 rounded shadow-sm font-semibold text-lg">
+                        <span class="text-red-500">토마토(를)</span> 빼고 주세요.
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">（請不要加番茄 / 扣除番茄後給我。）</p>
                 </div>
                 
-                <div class="flex items-start gap-3 bg-blue-100 text-blue-900 p-3 rounded-lg text-sm font-medium">
-                    <span>💡</span>
-                    <span><strong>情境應用：</strong> 離開餐廳時對老闆說「<span class="text-blue-700 font-bold">많이 파세요.</span>」，字面意思是「請多賣一點」，實際是韓國人極常用的寒暄語：<strong>「祝您生意興隆！」</strong>。</span>
+                <div class="border border-teal-200 rounded-lg p-4 bg-teal-50">
+                    <div class="font-bold text-lg text-teal-900 mb-2">名詞 + 빼 주세요.</div>
+                    <p class="text-sm text-gray-700 mb-2">字面意思：「請幫我把 OOO 拿掉」。使用了表示「幫忙做...」的 <code class="bg-white px-1 rounded">-아/어 주다</code>，語氣更為委婉請求。</p>
+                    <div class="bg-white p-3 rounded shadow-sm font-semibold text-lg">
+                        <span class="text-yellow-500">치즈를</span> 빼 주세요.
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">（麻煩幫我把起司拿掉。）</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 文法 B: ㄹ 消失規則 (嚴禁使用脫落) -->
+        <div class="bg-white rounded-xl shadow-sm p-6 mb-6 print-no-shadow page-break-avoid border-l-4 border-red-400">
+            <h3 class="text-xl font-bold text-red-700 mb-3 flex items-center">
+                <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm mr-3">文法 B</span> 動詞 / 形容詞：ㄹ 消失規則
+            </h3>
+            <p class="text-gray-700 mb-3">當動詞或形容詞的語幹最後一個字收音是 <strong>「ㄹ」</strong> 時，若遇到以 <strong><span class="text-red-600 font-bold">ㅅ, ㄴ, ㅂ</span></strong> (有時包含 ㅗ) 開頭的語尾，<strong>「ㄹ」必須消失</strong>，這稱為 <strong class="text-red-600 bg-red-50 px-1">ㄹ 消失規則</strong>。</p>
+            
+            <div class="bg-gray-50 p-4 rounded-lg mb-4 text-center border border-gray-200">
+                <span class="text-xl font-bold">ㄹ 結尾的語幹 + (ㅅ, ㄴ, ㅂ 開頭之語尾) ➔ ㄹ 消失</span>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full text-left text-sm whitespace-nowrap">
+                    <thead class="bg-red-50 border-b border-red-200 text-red-900">
+                        <tr>
+                            <th class="px-4 py-3 font-semibold">基本型</th>
+                            <th class="px-4 py-3 font-semibold">一般現在式 (-아요/어요)</th>
+                            <th class="px-4 py-3 font-semibold text-red-600">命令/請託 (-으세요) [遇到 ㅅ]</th>
+                            <th class="px-4 py-3 font-semibold">說明</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-4 py-3 font-bold text-lg">팔다 (賣)</td>
+                            <td class="px-4 py-3">팔아요 <span class="text-gray-500 text-xs">(*遇到ㅇ，ㄹ不消失)</span></td>
+                            <td class="px-4 py-3 font-bold text-red-600 text-lg bg-red-50">파세요</td>
+                            <td class="px-4 py-3">ㄹ 遇到 ㅅ，啟動 <strong>ㄹ 消失規則</strong>。不能說 <s>팔으세요</s>。</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 font-bold text-lg">오다 (來)</td>
+                            <td class="px-4 py-3">와요 <span class="text-gray-500 text-xs">(오+아)</span></td>
+                            <td class="px-4 py-3 font-bold text-blue-600 text-lg">오세요</td>
+                            <td class="px-4 py-3">無收音，直接加 -세요。不牽涉此規則。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-sm text-gray-500 mt-2">💡 實用對話應用：「많이 <strong>파세요</strong>.」(祝您生意興隆 / 請多賣一點)。</p>
+        </div>
+
+        <!-- 文法 C: 사이시옷 (saisios) 規則 -->
+        <div class="bg-white rounded-xl shadow-sm p-6 mb-8 print-no-shadow page-break-avoid">
+            <h3 class="text-xl font-bold text-blue-700 mb-3 flex items-center">
+                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm mr-3">文法 C</span> 名詞合成與 사이시옷 (中間 ㅅ) 規則
+            </h3>
+            <p class="text-gray-700 mb-4">當兩個名詞組合成一個新名詞時（通常表示「...的...」關聯），若前面名詞以母音結尾（無收音），且後面名詞以發音輕的子音（ㄱ, ㄷ, ㅂ, ㅅ, ㅈ）開頭，韓國人為了發音順暢，會在中間加上一個「ㅅ」作為橋樑，並讓後面的發音變為<strong>緊音（雙子音的感覺）</strong>。</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-100 text-center">
+                    <p class="text-gray-500 text-sm mb-1">만두 (水餃) + 국 (湯)</p>
+                    <p class="text-2xl font-bold text-gray-900 mb-1">만둣국</p>
+                    <p class="text-blue-600 font-semibold text-sm">實際發音: [만두꾿] / [만둣꾹]</p>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-100 text-center">
+                    <p class="text-gray-500 text-sm mb-1">고기 (肉) + 집 (店)</p>
+                    <p class="text-2xl font-bold text-gray-900 mb-1">고깃집</p>
+                    <p class="text-blue-600 font-semibold text-sm">實際發音: [고기찝] / [고깃찝]</p>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-100 text-center">
+                    <p class="text-gray-500 text-sm mb-1">바다 (海) + 가 (邊)</p>
+                    <p class="text-2xl font-bold text-gray-900 mb-1">바닷가</p>
+                    <p class="text-blue-600 font-semibold text-sm">實際發音: [바닫까]</p>
+                </div>
+            </div>
+            
+            <div class="mt-4 p-3 bg-gray-100 rounded text-sm text-gray-700 flex items-start">
+                <span class="text-xl mr-2">⚠️</span>
+                <div>
+                    <strong>為什麼「빵집 (麵包店)」沒有加 ㅅ？</strong><br>
+                    因為「빵」有收音(ㅇ)，且是外來語（源自葡萄牙語 pão），所以不套用 사이시옷 規則加上 ㅅ。但在實際口語發音時，後面的 집 依然會唸成緊音 <strong>[빵찝]</strong> 哦！
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. 情境對話與禮貌用語 -->
+        <h2 class="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-gray-200 pb-2 mt-8">3. 상황별 대화 및 정중 표현 (情境對話與禮貌用語)</h2>
+        
+        <div class="space-y-6 page-break-avoid">
+            <!-- 情境一：入店與點餐確認 -->
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden print-no-shadow border border-gray-200">
+                <div class="bg-gray-100 px-4 py-2 border-b border-gray-200 font-bold text-gray-800">
+                    📍 情境一：進入餐廳確認人數
+                </div>
+                <div class="p-4 space-y-3">
+                    <div class="flex">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-xl mr-3 flex-shrink-0">🧑‍🍳</div>
+                        <div>
+                            <p class="font-bold text-blue-800 mb-1">店員 (직원)</p>
+                            <p class="text-lg">어서 오세요. <span class="bg-yellow-100 px-1 font-semibold">몇 분이세요?</span></p>
+                            <p class="text-sm text-gray-500">歡迎光臨。請問幾位？ (분 是對人的尊稱量詞)</p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-xl mr-3 flex-shrink-0">👤</div>
+                        <div>
+                            <p class="font-bold text-green-800 mb-1">顧客 (손님)</p>
+                            <p class="text-lg"><span class="bg-yellow-100 px-1 font-semibold">두 명이요. / 두 명이에요.</span></p>
+                            <p class="text-sm text-gray-500">兩位。 (명 是普通的量詞。口語常用 -요 簡答)</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="mb-4 bg-purple-50/50 rounded-xl p-5 border border-purple-100 print-break-inside-avoid">
-                <h4 class="text-lg font-bold text-purple-800 mb-3 flex items-center gap-2">
-                    <span class="bg-purple-200 text-purple-800 px-2 py-0.5 rounded text-sm">重點 2</span> 
-                    名詞合成音變規則：사이시옷 ( ㅅ )
-                </h4>
-                <p class="text-gray-700 mb-4 leading-relaxed text-sm md:text-base">
-                    當兩個單字結合成一個新名詞時（純韓文+純韓文，或純韓文+漢字詞），如果前面的單字<strong>沒有收音（母音結尾）</strong>，為了標示後面單字的首個子音發音會變緊繃（發成濃音），會在前面單字底下墊上一個 <strong>「ㅅ」</strong>，這稱為 사이시옷 規則。
-                </p>
-                
-                <div class="table-container mb-4">
-                    <table class="w-full text-left border-collapse bg-white rounded-lg overflow-hidden shadow-sm border border-purple-200">
-                        <thead class="bg-purple-100 text-purple-900">
-                            <tr>
-                                <th class="p-3 border-b border-purple-200">單字 A</th>
-                                <th class="p-3 border-b border-purple-200">+</th>
-                                <th class="p-3 border-b border-purple-200">單字 B</th>
-                                <th class="p-3 border-b border-purple-200">合成結果</th>
-                                <th class="p-3 border-b border-purple-200">實際發音</th>
+            <!-- 情境二：客製化點餐 (以手工漢堡店為例) -->
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden print-no-shadow border border-gray-200">
+                <div class="bg-gray-100 px-4 py-2 border-b border-gray-200 font-bold text-gray-800">
+                    📍 情境二：客製化點餐（在梨泰院手工漢堡店 / 맘스터치）
+                </div>
+                <div class="p-4 space-y-3">
+                    <div class="flex">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-xl mr-3 flex-shrink-0">🧑‍🍳</div>
+                        <div>
+                            <p class="font-bold text-blue-800 mb-1">店員 (직원)</p>
+                            <p class="text-lg">주문하시겠어요? <span class="bg-yellow-100 px-1 font-semibold">몇 개 드릴까요?</span></p>
+                            <p class="text-sm text-gray-500">要點餐了嗎？請問要給您幾個？</p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-xl mr-3 flex-shrink-0">👤</div>
+                        <div>
+                            <p class="font-bold text-green-800 mb-1">顧客 (손님)</p>
+                            <p class="text-lg">이태원 수제 햄버거 두 개 주세요.</p>
+                            <p class="text-lg">저는 토마토를 안 먹어요. <span class="font-semibold text-red-600">토마토는 빼고 주세요.</span></p>
+                            <p class="text-lg">그리고 <span class="font-semibold text-red-600">치즈도 빼 주세요.</span></p>
+                            <p class="text-sm text-gray-500 mt-1">請給我兩個梨泰院手工漢堡。我不吃番茄，請不要加番茄。然後起司也請幫我拿掉。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 情境三：結帳離店的韓國道地寒暄 -->
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden print-no-shadow border border-gray-200">
+                <div class="bg-gray-100 px-4 py-2 border-b border-gray-200 font-bold text-gray-800">
+                    📍 情境三：結帳離店的暖心寒暄
+                </div>
+                <div class="p-4 space-y-3">
+                    <div class="flex">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-xl mr-3 flex-shrink-0">🧑‍🍳</div>
+                        <div>
+                            <p class="font-bold text-blue-800 mb-1">店員 (직원)</p>
+                            <p class="text-lg">감사합니다. <span class="bg-yellow-100 px-1 font-semibold">또 오세요.</span></p>
+                            <p class="text-sm text-gray-500">謝謝，請下次再來。(오다 ➔ 오세요)</p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-xl mr-3 flex-shrink-0">👤</div>
+                        <div>
+                            <p class="font-bold text-green-800 mb-1">顧客 (손님)</p>
+                            <p class="text-lg">네, <span class="bg-yellow-100 px-1 font-semibold">또 올게요.</span> 안녕히 계세요. <span class="bg-red-100 text-red-800 font-semibold px-1 rounded">많이 파세요.</span></p>
+                            <p class="text-sm text-gray-500 mt-1">好的，我會再來的。再見。<strong>祝您生意興隆 (請多賣一點)。</strong><br><span class="text-xs text-gray-400">*(많이 파세요 是韓國人在店家離開時極具人情味與禮貌的道地用法)*</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. 主題分類單字庫 -->
+        <h2 class="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-gray-200 pb-2 mt-10">4. 어휘 정리 (主題分類單字庫)</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 page-break-avoid">
+            
+            <!-- 表格：食物與餐點 -->
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden print-no-shadow">
+                <div class="bg-orange-100 px-4 py-3 border-b border-orange-200 font-bold text-orange-900 flex justify-between">
+                    <span>🍔 음식 & 메뉴 (食物與餐點)</span>
+                    <span class="text-sm font-normal text-orange-700 bg-orange-50 px-2 rounded-full">筆記單字</span>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full text-left text-sm whitespace-nowrap">
+                        <tbody class="divide-y divide-gray-100">
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3 font-bold text-lg">수제 햄버거</td>
+                                <td class="px-4 py-3 text-gray-700">手工漢堡</td>
                             </tr>
-                        </thead>
-                        <tbody class="text-gray-700 text-sm md:text-base">
-                            <tr class="border-b border-gray-100">
-                                <td class="p-3 font-medium text-gray-900">만두 (餃子)</td>
-                                <td class="p-3">+</td>
-                                <td class="p-3 font-medium text-gray-900">국 (湯)</td>
-                                <td class="p-3 font-bold text-purple-700">만둣국</td>
-                                <td class="p-3 text-gray-500">[만둗꾹 / 만두꾹]</td>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3 font-bold text-lg">토마토 / 치즈</td>
+                                <td class="px-4 py-3 text-gray-700">番茄 / 起司</td>
                             </tr>
-                            <tr class="border-b border-gray-100">
-                                <td class="p-3 font-medium text-gray-900">고기 (肉)</td>
-                                <td class="p-3">+</td>
-                                <td class="p-3 font-medium text-gray-900">집 (店/家)</td>
-                                <td class="p-3 font-bold text-purple-700">고깃집</td>
-                                <td class="p-3 text-gray-500">[고긷찝 / 고기찝]</td>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3 font-bold text-lg">닭도리탕</td>
+                                <td class="px-4 py-3 text-gray-700">辣炒雞湯 <span class="text-xs text-gray-400 block">(正字為 닭볶음탕，但口語極常用)</span></td>
                             </tr>
-                            <tr>
-                                <td class="p-3 font-medium text-gray-900">바다 (海)</td>
-                                <td class="p-3">+</td>
-                                <td class="p-3 font-medium text-gray-900">가 (邊)</td>
-                                <td class="p-3 font-bold text-purple-700">바닷가</td>
-                                <td class="p-3 text-gray-500">[바닫까]</td>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3 font-bold text-lg">뼈해장국</td>
+                                <td class="px-4 py-3 text-gray-700">脊骨解酒湯</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3 font-bold text-lg">감자탕</td>
+                                <td class="px-4 py-3 text-gray-700">馬鈴薯排骨湯</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3 font-bold text-lg">선지해장국</td>
+                                <td class="px-4 py-3 text-gray-700">牛血解酒湯 (선지 = 凝結的血)</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3 font-bold text-lg">소고기 = 쇠고기</td>
+                                <td class="px-4 py-3 text-gray-700">牛肉 (兩者皆可通用)</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+            </div>
 
-                <div class="flex items-start gap-3 bg-amber-50 text-amber-900 p-4 rounded-lg text-sm border border-amber-200">
-                    <span class="text-lg">⚠️</span>
-                    <div>
-                        <span class="font-bold">為什麼「빵집（麵包店）」沒有加 ㅅ？</span><br>
-                        因為 사이시옷 規則只適用於「純韓文」與「漢字詞」。而 <span class="font-bold text-red-600">빵 (麵包)</span> 其實是來自葡萄牙語 (pão) 的<strong>外來語</strong>！外來語合成詞不補 ㅅ，所以維持原樣寫成 빵집。
-                    </div>
+            <!-- 表格：場所、品牌與其他 -->
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden print-no-shadow">
+                <div class="bg-purple-100 px-4 py-3 border-b border-purple-200 font-bold text-purple-900 flex justify-between">
+                    <span>📍 장소, 브랜드 & 기타 (場所、品牌與其他)</span>
+                    <span class="text-sm font-normal text-purple-700 bg-purple-50 px-2 rounded-full">筆記單字</span>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full text-left text-sm whitespace-nowrap">
+                        <tbody class="divide-y divide-gray-100">
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3 font-bold text-lg">이태원</td>
+                                <td class="px-4 py-3 text-gray-700">梨泰院 (首爾地名)</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3 font-bold text-lg">노브랜드버거</td>
+                                <td class="px-4 py-3 text-gray-700">No Brand Burger <span class="text-xs text-gray-400 block">(韓國平價漢堡連鎖店)</span></td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3 font-bold text-lg">맘스터치</td>
+                                <td class="px-4 py-3 text-gray-700">Mom's Touch <span class="text-xs text-gray-400 block">(韓國知名炸雞漢堡品牌)</span></td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3 font-bold text-lg bg-gray-50 rounded">___류 (類)</td>
+                                <td class="px-4 py-3 text-gray-700">
+                                    表示食物種類的字尾。<br>
+                                    예: <strong>찌개류</strong> (鍋物類) / <strong>고기류</strong> (肉類)
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3 font-bold text-lg">몇 개 / 몇 분</td>
+                                <td class="px-4 py-3 text-gray-700">幾個 / 幾位 (분 敬語)</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="bg-white rounded-2xl p-6 md:p-8 mb-8 shadow-sm print-break-inside-avoid">
-            <h3 class="text-xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-100 flex items-center gap-2">
-                <span class="text-2xl">💬</span> 情境對話與禮貌用語 (상황별 대화)
+        <!-- 課外補充區 (獨立樣式區隔，不與筆記混淆) -->
+        <div class="mt-8 border-2 border-dashed border-gray-300 rounded-xl p-6 bg-gradient-to-r from-gray-50 to-gray-100 page-break-avoid">
+            <h3 class="text-lg font-bold text-gray-600 mb-3 flex items-center">
+                <span class="text-2xl mr-2">✨</span> 課外延伸補充 (추가 학습)
             </h3>
-
-            <div class="space-y-6">
-                <!-- Scene 1: Arrival & Ordering -->
-                <div class="border-l-4 border-indigo-400 pl-4">
-                    <h4 class="font-bold text-gray-800 mb-3 bg-gray-100 inline-block px-3 py-1 rounded-md text-sm">📍 場景：入座與點餐</h4>
-                    
-                    <div class="space-y-3">
-                        <div class="flex gap-4 items-start">
-                            <div class="font-bold text-indigo-600 min-w-[3rem]">店員</div>
-                            <div>
-                                <div class="text-lg font-bold text-gray-900">몇 분이세요?</div>
-                                <div class="text-gray-500 text-sm">請問有幾位？ (분 是對人的敬語量詞)</div>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 items-start">
-                            <div class="font-bold text-emerald-600 min-w-[3rem]">顧客</div>
-                            <div>
-                                <div class="text-lg font-bold text-gray-900">두 명이요. / 두 명이에요.</div>
-                                <div class="text-gray-500 text-sm">兩位。(요 體為口語常用簡答，이에요 也是禮貌表達)</div>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 items-start pt-2">
-                            <div class="font-bold text-indigo-600 min-w-[3rem]">店員</div>
-                            <div>
-                                <div class="text-lg font-bold text-gray-900">몇 개 드릴까요?</div>
-                                <div class="text-gray-500 text-sm">請問要給您幾個？</div>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 items-start bg-yellow-50 p-3 rounded-lg border border-yellow-100 mt-2">
-                            <div class="font-bold text-emerald-600 min-w-[3rem]">顧客</div>
-                            <div>
-                                <div class="text-lg font-bold text-gray-900">토마토(를) 빼고 주세요.</div>
-                                <div class="text-gray-700 text-sm font-medium mt-1">請不要加番茄給我。 (把番茄排除在外後給我)</div>
-                                <div class="text-gray-500 text-sm mt-1 border-t border-yellow-200 pt-1">
-                                    *變化句型：<span class="font-bold text-gray-700">치즈를 빼 주세요.</span> (請幫我把起司拿掉 / 去掉起司)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Scene 2: Leaving -->
-                <div class="border-l-4 border-emerald-400 pl-4 mt-6">
-                    <h4 class="font-bold text-gray-800 mb-3 bg-gray-100 inline-block px-3 py-1 rounded-md text-sm">📍 場景：結帳與離開</h4>
-                    
-                    <div class="space-y-3">
-                        <div class="flex gap-4 items-start">
-                            <div class="font-bold text-emerald-600 min-w-[3rem]">顧客</div>
-                            <div>
-                                <div class="text-lg font-bold text-gray-900">많이 파세요.</div>
-                                <div class="text-gray-500 text-sm">祝您生意興隆！ (字面：請多賣一點)</div>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 items-start">
-                            <div class="font-bold text-indigo-600 min-w-[3rem]">店員</div>
-                            <div>
-                                <div class="text-lg font-bold text-gray-900">또 오세요.</div>
-                                <div class="text-gray-500 text-sm">歡迎下次光臨。 (字面：請再來) <br><span class="text-xs text-gray-400">오다 (來) ➔ 와요 (現在式) ➔ 오세요 (請...)</span></div>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 items-start">
-                            <div class="font-bold text-emerald-600 min-w-[3rem]">顧客</div>
-                            <div>
-                                <div class="text-lg font-bold text-gray-900">또 올게요.</div>
-                                <div class="text-gray-500 text-sm">我會再來的。 (-ㄹ게요 表達個人的意願與約定)</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-white rounded-2xl p-6 md:p-8 shadow-sm print-break-inside-avoid">
-            <h3 class="text-xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-100 flex items-center gap-2">
-                <span class="text-2xl">📚</span> 主題分類單字庫 (어휘 정리)
-            </h3>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Group 1 -->
-                <div>
-                    <h4 class="font-bold text-indigo-700 border-b border-gray-100 pb-1 mb-3">🍔 速食與漢堡品牌</h4>
-                    <ul class="space-y-2">
-                        <li class="flex justify-between items-center py-1.5 border-b border-gray-50">
-                            <span class="font-bold text-gray-800 text-lg">수제 햄버거</span>
-                            <span class="text-gray-600 text-sm">手工漢堡</span>
-                        </li>
-                        <li class="flex justify-between items-center py-1.5 border-b border-gray-50">
-                            <span class="font-bold text-gray-800 text-lg">노브랜드버거</span>
-                            <span class="text-gray-600 text-sm">No Brand Burger (連鎖品牌)</span>
-                        </li>
-                        <li class="flex justify-between items-center py-1.5 border-b border-gray-50">
-                            <span class="font-bold text-gray-800 text-lg">맘스터치</span>
-                            <span class="text-gray-600 text-sm">Mom's Touch (連鎖品牌)</span>
-                        </li>
-                        <li class="flex justify-between items-center py-1.5 border-b border-gray-50">
-                            <span class="font-bold text-gray-800 text-lg">메뉴</span>
-                            <span class="text-gray-600 text-sm">菜單</span>
-                        </li>
+            <p class="text-sm text-gray-600 mb-4">以下內容為符合本次課程主題的額外補充，供同學課後延伸學習：</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-white p-3 rounded shadow-sm border border-gray-200">
+                    <p class="font-bold text-gray-800 mb-1">常見的客製化要求 (빼 주세요系列)</p>
+                    <ul class="text-sm text-gray-600 list-disc list-inside space-y-1">
+                        <li><strong>오이</strong> 빼 주세요. (請不要加小黃瓜)</li>
+                        <li><strong>양파</strong> 빼 주세요. (請不要加洋蔥)</li>
+                        <li><strong>고수</strong> 빼 주세요. (請不要加香菜)</li>
+                        <li><strong>얼음</strong> 빼 주세요. (請去冰)</li>
                     </ul>
                 </div>
-
-                <!-- Group 2 -->
-                <div>
-                    <h4 class="font-bold text-indigo-700 border-b border-gray-100 pb-1 mb-3">🍲 韓式料理與湯品</h4>
-                    <ul class="space-y-2">
-                        <li class="flex flex-col py-1.5 border-b border-gray-50">
-                            <div class="flex justify-between items-center">
-                                <span class="font-bold text-gray-800 text-lg">닭도리탕</span>
-                                <span class="text-gray-600 text-sm">辣炒雞塊湯</span>
-                            </div>
-                            <span class="text-xs text-gray-400 mt-1">*現今標準語更推崇使用 <strong>닭볶음탕</strong></span>
-                        </li>
-                        <li class="flex justify-between items-center py-1.5 border-b border-gray-50">
-                            <span class="font-bold text-gray-800 text-lg">뼈해장국</span>
-                            <span class="text-gray-600 text-sm">豬骨解酒湯</span>
-                        </li>
-                        <li class="flex justify-between items-center py-1.5 border-b border-gray-50">
-                            <span class="font-bold text-gray-800 text-lg">감자탕</span>
-                            <span class="text-gray-600 text-sm">馬鈴薯排骨湯</span>
-                        </li>
-                        <li class="flex justify-between items-center py-1.5 border-b border-gray-50">
-                            <span class="font-bold text-gray-800 text-lg">선지해장국</span>
-                            <span class="text-gray-600 text-sm">牛血(豬血)解酒湯</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Group 3 -->
-                <div>
-                    <h4 class="font-bold text-indigo-700 border-b border-gray-100 pb-1 mb-3">🏷️ 食材與種類</h4>
-                    <ul class="space-y-2">
-                        <li class="flex justify-between items-center py-1.5 border-b border-gray-50">
-                            <span class="font-bold text-gray-800 text-lg">토마토</span>
-                            <span class="text-gray-600 text-sm">番茄</span>
-                        </li>
-                        <li class="flex justify-between items-center py-1.5 border-b border-gray-50">
-                            <span class="font-bold text-gray-800 text-lg">치즈</span>
-                            <span class="text-gray-600 text-sm">起司</span>
-                        </li>
-                        <li class="flex justify-between items-center py-1.5 border-b border-gray-50">
-                            <span class="font-bold text-gray-800 text-lg">소고기 <span class="text-gray-400 text-sm font-normal">(=쇠고기)</span></span>
-                            <span class="text-gray-600 text-sm">牛肉</span>
-                        </li>
-                        <li class="flex justify-between items-center py-1.5 border-b border-gray-50">
-                            <span class="font-bold text-gray-800 text-lg">___류</span>
-                            <span class="text-gray-600 text-sm">...類 (如：찌개류 鍋類, 고기류 肉類)</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Group 4 -->
-                <div>
-                    <h4 class="font-bold text-indigo-700 border-b border-gray-100 pb-1 mb-3">🏠 音變代表名詞</h4>
-                    <ul class="space-y-2">
-                        <li class="flex flex-col py-1.5 border-b border-gray-50">
-                            <div class="flex justify-between items-center">
-                                <span class="font-bold text-gray-800 text-lg">만둣국</span>
-                                <span class="text-gray-600 text-sm">餃子湯</span>
-                            </div>
-                            <span class="text-xs text-gray-400 mt-1">發音：[만둗꾹/만두꾹]</span>
-                        </li>
-                        <li class="flex flex-col py-1.5 border-b border-gray-50">
-                            <div class="flex justify-between items-center">
-                                <span class="font-bold text-gray-800 text-lg">고깃집</span>
-                                <span class="text-gray-600 text-sm">烤肉店</span>
-                            </div>
-                            <span class="text-xs text-gray-400 mt-1">發音：[고긷찝/고기찝]</span>
-                        </li>
-                        <li class="flex flex-col py-1.5 border-b border-gray-50">
-                            <div class="flex justify-between items-center">
-                                <span class="font-bold text-gray-800 text-lg">바닷가</span>
-                                <span class="text-gray-600 text-sm">海邊</span>
-                            </div>
-                            <span class="text-xs text-gray-400 mt-1">發音：[바닫까]</span>
-                        </li>
-                        <li class="flex justify-between items-center py-1.5 border-b border-gray-50">
-                            <span class="font-bold text-gray-800 text-lg">빵집</span>
-                            <span class="text-gray-600 text-sm">麵包店 (無音變)</span>
-                        </li>
+                <div class="bg-white p-3 rounded shadow-sm border border-gray-200">
+                    <p class="font-bold text-gray-800 mb-1">其他常見的해장국 (解酒湯)</p>
+                    <ul class="text-sm text-gray-600 list-disc list-inside space-y-1">
+                        <li><strong>콩나물국밥</strong> (黃豆芽湯飯 - 清淡解酒首選)</li>
+                        <li><strong>황태해장국</strong> (黃太魚解酒湯)</li>
+                        <li><strong>순대국</strong> (血腸湯 - 同樣是常見的暖胃湯飯)</li>
                     </ul>
                 </div>
             </div>
-        </section>
-        
-    </main>
+        </div>
 
+    </div>
 </body>
 </html>
