@@ -1,0 +1,87 @@
+.audioBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background-color: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-primary);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  padding: 2px 7px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  vertical-align: middle;
+  line-height: 1.2;
+}
+
+.audioBtn:hover {
+  background-color: var(--ifm-color-primary);
+  color: #ffffff;
+  border-color: var(--ifm-color-primary);
+  transform: translateY(-1px);
+}
+
+.audioBtn:active {
+  transform: translateY(0);
+}
+
+.playing {
+  background-color: var(--ifm-color-primary) !important;
+  color: #ffffff !important;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+.speakerIcon {
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.wordWrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--ifm-color-emphasis-100);
+  padding: 4px 10px;
+  border-radius: 8px;
+  margin: 3px 4px;
+}
+
+.koreanText {
+  font-size: 1.05rem;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.romanization {
+  font-size: 0.82rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.meaning {
+  font-size: 0.88rem;
+  color: var(--ifm-color-primary-dark);
+  font-weight: 500;
+}
+
+.tableResponsive {
+  width: 100%;
+  overflow-x: auto;
+  margin: 1.2rem 0;
+}
+
+.vocabTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableKo {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--ifm-color-emphasis-900);
+}

@@ -1,8 +1,11 @@
-## 課堂筆記
+---
+title: Lesson 02 (2026.08.20)
+sidebar_label: Lesson 02 (2026.08.20)
+---
 
-<iframe
+import LessonViewer from '@site/src/components/LessonViewer';
+
+<LessonViewer
   src="/korean-notes/lessons/lesson-002.html"
-  width="120%"
-  height="1000"
-  style={{border: '1px solid #ddd'}}>
-</iframe>
+  title="Lesson 02"
+/>

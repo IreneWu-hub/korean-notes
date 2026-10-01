@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: '旅遊韓語會話馬上開口說(I.S)의 한국어 수업 ',
   tagline: 'Korean Class Notes',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -44,7 +44,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/irenewu-hub/korean-notes/tree/main/',
         },
         blog: {
           showReadingTime: false,
@@ -52,10 +52,8 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/irenewu-hub/korean-notes/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -68,6 +66,19 @@ const config: Config = {
     ],
   ],
 
+  themes: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        language: ['en', 'zh'],
+        indexBlog: false,
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      },
+    ],
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
@@ -77,7 +88,7 @@ const config: Config = {
     navbar: {
       title: '旅遊韓語會話馬上開口說(I.S)의 한국어 수업 ',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Korean Notes Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -87,52 +98,59 @@ const config: Config = {
           position: 'left',
           label: '韓文課程',
         },
+        {
+          type: 'docSidebar',
+          sidebarId: 'referenceSidebar',
+          position: 'left',
+          label: '文法與單字庫 📚',
+        },
+        {
+          to: '/docs/lessons/lesson-008',
+          label: '最新課堂 🚀',
+          position: 'left',
+        },
+        {
+          href: 'https://github.com/irenewu-hub/korean-notes',
+          label: 'GitHub',
+          position: 'right',
+        },
       ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: '課程與速查工具',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: '所有課程筆記',
+              to: '/docs/lessons/lesson-001',
+            },
+            {
+              label: '常用助詞速查 (은/는, 이/가...)',
+              to: '/docs/reference/particles',
+            },
+            {
+              label: '動詞時態變化 (-아요/어요)',
+              to: '/docs/reference/conjugation',
+            },
+            {
+              label: '旅遊日常單字庫 (點擊發音 🔊)',
+              to: '/docs/reference/vocabulary',
             },
           ],
         },
         {
-          title: 'Community',
+          title: '相關連結',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'GitHub Repository',
+              href: 'https://github.com/irenewu-hub/korean-notes',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Irene Wu. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
