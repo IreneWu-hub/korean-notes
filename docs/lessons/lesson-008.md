@@ -3,6 +3,8 @@ title: Lesson 08 (2026.10.01)
 sidebar_label: Lesson 08 (2026.10.01)
 ---
 
+- **📚 課堂進度範圍**：kpop旅遊韓語 Day 1-4 51.56
+
 import LessonViewer from '@site/src/components/LessonViewer';
 
 <LessonViewer

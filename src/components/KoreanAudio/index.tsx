@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, type ReactNode } from 'react';
 import styles from './styles.module.css';
 
 interface KoreanAudioProps {
@@ -6,7 +6,7 @@ interface KoreanAudioProps {
   label?: string;
 }
 
-export function KoreanAudio({ text, label }: KoreanAudioProps): JSX.Element {
+export function KoreanAudio({ text, label }: KoreanAudioProps): ReactNode {
   const [playing, setPlaying] = useState(false);
 
   const speak = (e: React.MouseEvent) => {
@@ -51,7 +51,7 @@ export function KoreanWord({
   ko: string;
   zh?: string;
   rom?: string;
-}): JSX.Element {
+}): ReactNode {
   return (
     <span className={styles.wordWrapper}>
       <strong className={styles.koreanText}>{ko}</strong>
@@ -69,7 +69,7 @@ export interface VocabItem {
   ex?: string;
 }
 
-export function VocabTable({ items }: { items: VocabItem[] }): JSX.Element {
+export function VocabTable({ items }: { items: VocabItem[] }): ReactNode {
   return (
     <div className={styles.tableResponsive}>
       <table className={styles.vocabTable}>

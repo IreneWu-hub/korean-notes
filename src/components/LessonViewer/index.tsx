@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, type ReactNode } from 'react';
 import styles from './styles.module.css';
 
 interface LessonViewerProps {
@@ -6,7 +6,7 @@ interface LessonViewerProps {
   title: string;
 }
 
-export default function LessonViewer({ src, title }: LessonViewerProps): JSX.Element {
+export default function LessonViewer({ src, title }: LessonViewerProps): ReactNode {
   const iframeRef = useRef<HTMLIFrameElement>(null);
 
   const handlePrint = () => {

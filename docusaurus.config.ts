@@ -1,13 +1,50 @@
+import fs from 'fs';
+import path from 'path';
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+function getLatestLessonPath(): string {
+  try {
+    const lessonsDir = path.resolve(__dirname, 'docs/lessons');
+    if (fs.existsSync(lessonsDir)) {
+      const files = fs.readdirSync(lessonsDir);
+      // 支援任何以 lesson 為開頭的 markdown 檔案 (不分大小寫、支援任意位數數字如 009 或 09)
+      const lessonFiles = files.filter(
+        (file) => /^lesson/i.test(file) && /\.mdx?$/i.test(file),
+      );
+      if (lessonFiles.length > 0) {
+        // 依照檔名中的數字數值進行自然數值排序 (例如 9 > 8, 10 > 9)
+        lessonFiles.sort((a, b) => {
+          const numA = parseInt(a.replace(/\D+/g, ''), 10) || 0;
+          const numB = parseInt(b.replace(/\D+/g, ''), 10) || 0;
+          if (numA !== numB) {
+            return numA - numB;
+          }
+          return a.localeCompare(b);
+        });
+        const latestFile = lessonFiles[lessonFiles.length - 1];
+        const lessonName = latestFile.replace(/\.mdx?$/i, '');
+        return `/docs/lessons/${lessonName}`;
+      }
+    }
+  } catch (e) {
+    console.error('Failed to resolve latest lesson path:', e);
+  }
+  return '/docs/lessons/lesson-009';
+}
+
+const latestLessonPath = getLatestLessonPath();
+
 const config: Config = {
   title: '旅遊韓語會話馬上開口說(I.S)의 한국어 수업 ',
   tagline: 'Korean Class Notes',
   favicon: 'img/favicon.svg',
+  customFields: {
+    latestLessonPath,
+  },
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -105,7 +142,7 @@ const config: Config = {
           label: '文法與單字庫 📚',
         },
         {
-          to: '/docs/lessons/lesson-008',
+          to: latestLessonPath,
           label: '最新課堂 🚀',
           position: 'left',
         },
