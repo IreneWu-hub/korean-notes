@@ -27,3 +27,15 @@
    - `static/lessons/lesson-{NUM}.html`（三位數編號，如 `lesson-009.html`）
    - `docs/lessons/lesson-{NUM}.md`（封裝 `<LessonViewer ... />`，並在頂部附帶 `:::info 📚 課堂進度範圍` 供記錄教材範圍）
 8. **詳細規範參考**：[.agents/skills/korean-lesson-generator/SKILL.md](file:///c:/Users/Irene/Documents/KoreanNotes/korean-notes/.agents/skills/korean-lesson-generator/SKILL.md)。
+
+## 文法與單字庫統整規範 (Reference Database Rules)
+1. **收錄路徑**：`docs/reference/`
+   - `index.mdx`：總覽首頁與進度追蹤看板（包含統整狀態、待更新範圍、分類導覽）
+   - `conjugation.mdx`：動詞、形容詞活用與時態句型
+   - `particles.mdx`：格助詞、副詞格助詞、輔助詞
+   - `vocabulary.mdx`：依生活與旅遊情境分類的高頻單字庫（搭配 `<VocabTable />` 支援點擊即時發音）
+2. **目前資料庫統整進度**：
+   - **已統整收錄課堂**：**Lesson 01 ~ Lesson 06**
+   - **待更新收錄課堂**：**Lesson 07 ~ Lesson 11**
+   - 每隔數堂課進行批次抽精華更新時，必須同步更新 `docs/reference/index.mdx` 與本段進度紀錄。
+
