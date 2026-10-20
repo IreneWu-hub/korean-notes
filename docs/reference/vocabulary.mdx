@@ -1,7 +1,7 @@
 ---
 title: 旅遊日常必備單字庫
 sidebar_label: 必備單字庫 (附發音)
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 import { VocabTable } from '@site/src/components/KoreanAudio';
@@ -12,7 +12,7 @@ import { VocabTable } from '@site/src/components/KoreanAudio';
 
 ---
 
-## 1. 必備禮貌問候與日常用語
+## 1. 必備禮貌問候與日常寒暄
 
 <VocabTable items={[
   { ko: '안녕하세요', zh: '你好 / 您好', rom: 'an-nyeong-ha-se-yo', ex: '안녕하세요! 반갑습니다.' },
@@ -21,35 +21,120 @@ import { VocabTable } from '@site/src/components/KoreanAudio';
   { ko: '죄송합니다', zh: '對不起 / 抱歉', rom: 'joe-song-ham-ni-da' },
   { ko: '잠시만요', zh: '借過一下 / 請稍等', rom: 'jam-si-man-yo', ex: '잠시만요, 지나갈게요.' },
   { ko: '괜찮아요', zh: '沒關係 / 好的', rom: 'gwaen-chan-a-yo' },
-  { ko: '네', zh: '是的 / 對', rom: 'ne' },
-  { ko: '아니요', zh: '不是 / 沒有', rom: 'a-ni-yo' }
+  { ko: '잘 다녀오세요', zh: '祝一路平安順心！慢走～', rom: 'jal da-nyeo-o-se-yo', ex: '여행 잘 다녀오세요!' },
+  { ko: '다녀왔습니다', zh: '我出門回來了！(進家門)', rom: 'da-nyeo-wat-seum-ni-da' },
+  { ko: '잘 놀았어요?', zh: '玩得開心嗎？玩得好嗎？', rom: 'jal no-rat-seo-yo?' },
+  { ko: '재미있었어요', zh: '很好玩 / 很有趣 (口語縮寫: 재밌었어요)', rom: 'jae-mi-it-seo-yo' }
 ]} />
 
 ---
 
-## 2. 餐廳點餐與購物常用
+## 2. 餐廳點餐與外帶結帳
 
 <VocabTable items={[
   { ko: '이거 주세요', zh: '請給我這個', rom: 'i-geo ju-se-yo', ex: '메뉴판 보고, 이거 주세요.' },
   { ko: '얼마예요?', zh: '多少錢？', rom: 'eol-ma-ye-yo?', ex: '이거 하나에 얼마예요?' },
   { ko: '계산해 주세요', zh: '請結帳 / 買單', rom: 'gye-san-hae ju-se-yo' },
   { ko: '카드 돼요?', zh: '可以刷卡嗎？', rom: 'ka-deu dwae-yo?' },
+  { ko: '현금 결제', zh: '現金結帳', rom: 'hyeon-geum gyeol-je' },
+  { ko: '여기서 먹고 갈게요', zh: '在這裡內用 (吃完再走)', rom: 'yeo-gi-seo meok-go gal-ge-yo' },
+  { ko: '포장해 주세요', zh: '請幫我外帶 / 打包', rom: 'po-jang-hae ju-se-yo' },
   { ko: '물 좀 주세요', zh: '請給我一些水', rom: 'mul jom ju-se-yo' },
-  { ko: '맛있어요', zh: '好吃', rom: 'mas-iss-eo-yo', ex: '정말 맛있어요!' },
   { ko: '덜 맵게 해주세요', zh: '請幫我做微辣 / 稍微不要那麼辣', rom: 'deol maep-ge hae-ju-se-yo' },
-  { ko: '포장해 주세요', zh: '請幫我外帶 / 打包', rom: 'po-jang-hae ju-se-yo' }
+  { ko: '맛있어요', zh: '好吃', rom: 'mas-iss-eo-yo', ex: '정말 맛있어요!' }
 ]} />
 
 ---
 
-## 3. 交通、問路與位置
+## 3. 地鐵乘車與交通問路 (Lesson 08, 10)
 
 <VocabTable items={[
-  { ko: '어디예요?', zh: '在哪裡？', rom: 'eo-di-ye-yo?', ex: '화장실이 어디예요?' },
   { ko: '지하철역', zh: '地鐵站', rom: 'ji-ha-cheol-yeok' },
-  { ko: '버스 정류장', zh: '公車站', rom: 'beo-seu jeong-ryu-jang' },
-  { ko: '여기서 세워 주세요', zh: '請在這裡讓我下車 (搭計程車)', rom: 'yeo-gi-seo se-wo ju-se-yo' },
-  { ko: '화장실', zh: '洗手間 / 廁所', rom: 'hwa-jang-sil' },
-  { ko: '편의점', zh: '便利商店', rom: 'pyeon-ui-jeom' },
-  { ko: '약국', zh: '藥局', rom: 'yak-guk' }
+  { ko: '호선', zh: '號線 (地鐵線路)', rom: 'ho-seon', ex: '2호선을 타야 돼요. (得搭乘2號線)' },
+  { ko: '환승역', zh: '轉乘站', rom: 'hwan-seung-yeok', ex: '이 역은 환승역이에요.' },
+  { ko: '출구', zh: '出口', rom: 'chul-gu', ex: '3번 출구로 나가세요. (請從3號出口出去)' },
+  { ko: '발권기', zh: '售票機 / 發券機', rom: 'bal-gwon-gi', ex: '발권기를 이용하세요.' },
+  { ko: '교통카드', zh: '交通卡 (如 T-money)', rom: 'gyo-tong-ka-deu' },
+  { ko: '충전하다', zh: '儲值 / 充電', rom: 'chung-jeon-ha-da', ex: '만원 충전해 주세요. (請幫我儲值一萬韓元)' },
+  { ko: '타다', zh: '搭乘 (交通工具)', rom: 'ta-da', ex: '뭘 타야 돼요? (應該搭什麼？)' },
+  { ko: '내리다', zh: '下車', rom: 'nae-ri-da', ex: '무슨 역에서 내려야 돼요? (該在哪站下車？)' },
+  { ko: '갈아타다', zh: '轉車 / 換乘', rom: 'gar-a-ta-da', ex: '시청역에서 갈아타세요.' },
+  { ko: '걸어가다', zh: '走路去', rom: 'geor-eo-ga-da', ex: '걸어서 5분 걸려요. (走路需花5分鐘)' }
+]} />
+
+---
+
+## 4. 核心空間方位詞全覽 (Lesson 11)
+
+<VocabTable items={[
+  { ko: '앞', zh: '前面 / 前方', rom: 'ap', ex: '건물 앞에 있어요. (在建築物前面)' },
+  { ko: '뒤', zh: '後面 / 後方', rom: 'dwi', ex: '은행 뒤에 있어요. (在銀行後面)' },
+  { ko: '위', zh: '上面 / 樓上', rom: 'wi', ex: '편의점 위에 있어요. (在便利商店樓上)' },
+  { ko: '아래 / 밑', zh: '下面 / 底部', rom: 'a-rae / mit', ex: '자동차 밑에 고양이가 있어요.' },
+  { ko: '옆', zh: '旁邊 / 側邊', rom: 'yeop', ex: '식당 옆에 카페가 있어요.' },
+  { ko: '안', zh: '裡面 / 內部', rom: 'an', ex: '가방 안에 지갑이 있어요.' },
+  { ko: '밖', zh: '外面 / 戶外', rom: 'bak', ex: '가게 밖에서 기다려요.' },
+  { ko: '사이', zh: '之間 / 間隔', rom: 'sa-i', ex: '모니터하고 프린터 사이에 있어요.' },
+  { ko: '왼쪽', zh: '左邊 / 左側', rom: 'oen-jjok', ex: '왼쪽으로 가세요. (請往左邊走)' },
+  { ko: '오른쪽', zh: '右邊 / 右側', rom: 'o-reun-jjok', ex: '오른쪽에 화장실이 있어요.' },
+  { ko: '구석', zh: '角落 / 隅角', rom: 'gu-seok', ex: '거실 구석에 있어요.' },
+  { ko: '가운데', zh: '中間 / 中央', rom: 'ga-un-de' }
+]} />
+
+---
+
+## 5. 服飾店購物、試穿與殺價 (Lesson 10)
+
+<VocabTable items={[
+  { ko: '옷', zh: '衣服', rom: 'ot', ex: '예쁜 옷이 많아요.' },
+  { ko: '사이즈', zh: '尺寸 / Size', rom: 'sa-i-jeu', ex: '큰 사이즈 있어요? (有大尺寸嗎？)' },
+  { ko: '탈의실 / 피팅룸', zh: '更衣室 / 試衣間', rom: 'tal-ui-sil / pi-ting-rum' },
+  { ko: '입어 보다', zh: '試穿看看', rom: 'ib-eo bo-da', ex: '한번 입어 봐도 돼요? (可以試穿嗎？)' },
+  { ko: '보여 주다', zh: '拿給我看 / 出示', rom: 'bo-yeo ju-da', ex: '저 옷 좀 보여 주세요. (請拿那件衣服給我看)' },
+  { ko: '어울리다', zh: '適合 / 相配', rom: 'eo-ul-li-da', ex: '정말 잘 어울려요! (非常適合您！)' },
+  { ko: '깎다', zh: '削價 / 折扣 / 殺價', rom: 'kkak-da', ex: '좀 깎아 주세요. (請算便宜一點)' },
+  { ko: '세일', zh: '打折 / 特價 (Sale)', rom: 'se-il', ex: '지금 세일 중이에요.' },
+  { ko: '다른 색', zh: '其他顏色', rom: 'da-reun saek', ex: '다른 색 있어요? (有別的顏色嗎？)' }
+]} />
+
+---
+
+## 6. 水果、甜點與飲品 (Lesson 09)
+
+<VocabTable items={[
+  { ko: '사과', zh: '蘋果', rom: 'sa-gwa', ex: '사과 한 개 주세요.' },
+  { ko: '딸기', zh: '草莓', rom: 'ttal-gi' },
+  { ko: '수박', zh: '西瓜', rom: 'su-bak' },
+  { ko: '바나나', zh: '香蕉', rom: 'ba-na-na', ex: '바나나 두 개 주세요.' },
+  { ko: '빵', zh: '麵包', rom: 'ppang' },
+  { ko: '샌드위치', zh: '三明治', rom: 'saen-deu-wi-chi' },
+  { ko: '케이크', zh: '蛋糕', rom: 'ke-i-keu' },
+  { ko: '음료수', zh: '飲料 (鼻音化發音: [음:뇨수])', rom: 'eum-nyo-su' },
+  { ko: '커피', zh: '咖啡', rom: 'keo-pi', ex: '아이스 아메리카노 한 잔이요.' },
+  { ko: '녹차', zh: '綠茶', rom: 'nok-cha' }
+]} />
+
+---
+
+## 7. 超商生活與服務對話 (Lesson 11)
+
+<VocabTable items={[
+  { ko: '편의점', zh: '便利商店 (發音: [펴니점])', rom: 'pyeon-ui-jeom', ex: '편의점이 어디에 있어요?' },
+  { ko: '봉투', zh: '塑膠提袋 / 紙袋', rom: 'bong-tu', ex: '봉투 필요하세요? (需要袋子嗎？)' },
+  { ko: '영수증', zh: '收據 / 發票', rom: 'yeong-su-jeung', ex: '영수증 버려 주세요. (收據請幫我丟掉)' },
+  { ko: '담아 주세요', zh: '請幫我裝進去', rom: 'dam-a ju-se-yo', ex: '봉투에 담아 주세요.' },
+  { ko: '버려 주세요', zh: '請幫我丟掉', rom: 'beo-ryeo ju-se-yo' },
+  { ko: '여기 있어요', zh: '在這裡 / 給您 (遞交物品時)', rom: 'yeo-gi iss-eo-yo' }
+]} />
+
+---
+
+## 8. 節慶、假期與休假辨析 (Lesson 07)
+
+<VocabTable items={[
+  { ko: '추석 / 한가위', zh: '中秋節 (한가위 為古名佳節語)', rom: 'chu-seok / han-ga-wi' },
+  { ko: '연휴', zh: '連假 (連續國定假日)', rom: 'yeon-hyu', ex: '즐거운 연휴 보내세요! (祝連假愉快！)' },
+  { ko: '휴가', zh: '休假 (上班族排休/特休)', rom: 'hyu-ga', ex: '여름 휴가를 가요.' },
+  { ko: '방학', zh: '放假 (專指學生的寒假/暑假)', rom: 'bang-hak', ex: '즐거운 방학 보내세요!' },
+  { ko: '쉬다', zh: '休息 (動詞)', rom: 'swi-da', ex: '집에서 푹 쉬어요. (在家裡好好休息)' }
 ]} />

@@ -85,3 +85,102 @@
   font-size: 1.05rem;
   color: var(--ifm-color-emphasis-900);
 }
+
+/* 數詞量詞縮短形視覺化卡片網格 */
+.transformGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin: 1.5rem 0;
+}
+
+.transformCard {
+  background: var(--ifm-card-background-color, var(--ifm-color-emphasis-100));
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.transformCard:hover {
+  border-color: var(--ifm-color-primary);
+  transform: translateY(-2px);
+}
+
+.transformHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.originPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--ifm-color-emphasis-200);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.arrowIndicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.78rem;
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  background: rgba(46, 133, 85, 0.1);
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.targetBox {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--ifm-color-primary-lightest);
+  border: 1.5px solid var(--ifm-color-primary);
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+
+.targetText {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary-darkest);
+}
+
+.examplesWrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--ifm-color-emphasis-300);
+}
+
+.exampleLabel {
+  font-size: 0.78rem;
+  color: var(--ifm-color-emphasis-600);
+  font-weight: 500;
+  margin-right: 2px;
+}
+
+.exampleBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--ifm-color-emphasis-200);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-900);
+}

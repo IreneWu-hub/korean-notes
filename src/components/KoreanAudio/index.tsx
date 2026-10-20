@@ -112,4 +112,85 @@ export function VocabTable({ items }: { items: VocabItem[] }): ReactNode {
   );
 }
 
+export interface TransformItem {
+  origin: string;
+  originKo: string;
+  transformed: string;
+  examples: string[];
+}
+
+const DEFAULT_TRANSFORMS: TransformItem[] = [
+  {
+    origin: '하나 (1)',
+    originKo: '하나',
+    transformed: '한',
+    examples: ['한 개', '한 잔', '한 명', '한 마리'],
+  },
+  {
+    origin: '둘 (2)',
+    originKo: '둘',
+    transformed: '두',
+    examples: ['두 개', '두 잔', '두 명', '두 마리'],
+  },
+  {
+    origin: '셋 (3)',
+    originKo: '셋',
+    transformed: '세',
+    examples: ['세 개', '세 잔', '세 명', '세 마리'],
+  },
+  {
+    origin: '넷 (4)',
+    originKo: '넷',
+    transformed: '네',
+    examples: ['네 개', '네 잔', '네 명', '네 병'],
+  },
+  {
+    origin: '스물 (20)',
+    originKo: '스물',
+    transformed: '스무',
+    examples: ['스무 살 (20歲)', '스무 개 (20個)'],
+  },
+];
+
+export function NumberTransformGrid({
+  items = DEFAULT_TRANSFORMS,
+}: {
+  items?: TransformItem[];
+}): ReactNode {
+  return (
+    <div className={styles.transformGrid}>
+      {items.map((item, idx) => (
+        <div key={idx} className={styles.transformCard}>
+          <div className={styles.transformHeader}>
+            <div className={styles.originPill}>
+              <span>{item.origin}</span>
+              <KoreanAudio text={item.originKo} />
+            </div>
+
+            <div className={styles.arrowIndicator}>
+              <span>接量詞</span>
+              <span>➔</span>
+            </div>
+
+            <div className={styles.targetBox}>
+              <span className={styles.targetText}>{item.transformed}</span>
+              <KoreanAudio text={item.transformed} />
+            </div>
+          </div>
+
+          <div className={styles.examplesWrap}>
+            <span className={styles.exampleLabel}>常用搭配:</span>
+            {item.examples.map((ex, eIdx) => (
+              <span key={eIdx} className={styles.exampleBadge}>
+                <span>{ex}</span>
+                <KoreanAudio text={ex.split(' ')[0] + ' ' + (ex.split(' ')[1] || '')} />
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export default KoreanAudio;
