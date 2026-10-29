@@ -16,6 +16,10 @@ kpop旅遊韓語 Day 1-4 58-
     - [ ]  숙제: 여행 일기 -> 발표
     - [ ]  新首爾大課本＋1A 3-2 120
 
+:::tip[複習作業]
+👉 **[Lesson 12 課後重點複習作業 🚀](../homework/lesson-012.md)**  
+:::
+
 import LessonViewer from '@site/src/components/LessonViewer';
 
 <LessonViewer
