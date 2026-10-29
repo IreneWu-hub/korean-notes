@@ -64,6 +64,8 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
 
+  clientModules: ['./src/clientModules/tracker.ts'],
+
   markdown: {
     mermaid: true,
   },
