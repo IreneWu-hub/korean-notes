@@ -37,6 +37,7 @@
    - `vocabulary.mdx`：依生活與旅遊情境分類的高頻單字庫（搭配 `<VocabTable />` 支援點擊即時發音）
 2. **目前資料庫統整進度**：
    - **已統整收錄課堂**：**Lesson 01 ~ Lesson 11**
-   - **待更新收錄課堂**：**暫無（累積數堂課後再進行下一批次統整）**
+   - **待更新收錄課堂**：**Lesson 12（累積數堂課後再進行下一批次統整）**
    - 每隔數堂課進行批次抽精華更新時，必須同步更新 `docs/reference/index.mdx` 與本段進度紀錄。
+3. **詳細規範參考**：[.agents/skills/korean-reference-updater/SKILL.md](file:///c:/Users/Irene/Documents/KoreanNotes/korean-notes/.agents/skills/korean-reference-updater/SKILL.md)。
 
