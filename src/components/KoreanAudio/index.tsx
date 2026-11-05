@@ -183,7 +183,7 @@ export function NumberTransformGrid({
             {item.examples.map((ex, eIdx) => (
               <span key={eIdx} className={styles.exampleBadge}>
                 <span>{ex}</span>
-                <KoreanAudio text={ex.split(' ')[0] + ' ' + (ex.split(' ')[1] || '')} />
+                <KoreanAudio text={ex.replace(/\s*\(.*?\)/g, '').trim()} />
               </span>
             ))}
           </div>

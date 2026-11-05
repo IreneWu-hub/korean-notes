@@ -26,7 +26,7 @@ description: >-
 
 2. **動態規劃最適章節分類（依內容彈性配置 2~5 個大單元）**：
    - **必備頁首**：
-     - **標題格式固定為**：`Lesson N 旅遊韓語會話馬上開口說`（例如：`Lesson 09 旅遊韓語會話馬上開口說`）。
+     - **標題格式固定為**：`Lesson #N 旅遊韓語會話馬上開口說`（例如：`Lesson #09 旅遊韓語會話馬上開口說`）。
      - **無列印按鈕**：從 `lesson-009` 起，HTML 內部拔除右上角的列印匯出按鈕。
      - **本堂學習重點**：標題為 `🎯 本堂學習重點`（**不加** `(Lesson Highlights)` 括號內容）。內部文字必須用 `<div class="flex-1 leading-relaxed text-sm sm:text-base">` 包覆，避免 flexbox 跑版。
    - **字體大小規範**：
@@ -137,8 +137,8 @@ description: >-
 同步建立對應 Markdown 檔案，頁面頂部以俐落的清單格式記錄進度範圍與作業/複習入口（**不加重複的 `:::tip` 橫幅卡片**，保持畫面乾淨）：
 ```markdown
 ---
-title: Lesson #{NUM} ({DATE})
-sidebar_label: Lesson #{NUM} ({DATE})
+title: Lesson {NUM} ({DATE})
+sidebar_label: Lesson {NUM} ({DATE})
 ---
 
 - **📚 課堂進度範圍**：
@@ -152,10 +152,10 @@ import LessonViewer from '@site/src/components/LessonViewer';
 
 <LessonViewer
   src="/korean-notes/lessons/lesson-{NUM}.html"
-  title="Lesson #{NUM}"
+  title="Lesson {NUM}"
 />
 ```
 
 > 💡 **自動最新課堂跳轉說明**：  
-> 網站頂部導航列「最新課堂 🚀」與首頁「開始閱讀課堂筆記 📖」均連接至動態重定向路由 `/latest`，系統會自動解析 `docs/lessons/` 中最新的一堂課並即時跳轉，生成新課堂時無需手動修改導航設定或首頁連結。
+> `docusaurus.config.ts` 會在構建時自動掃描 `docs/lessons/` 中編號最大的一堂課，並將路徑注入 `latestLessonPath`（供頂部導航列「最新課堂 🚀」、首頁「開始閱讀課堂筆記 📖」及 `/latest` 路由使用）。生成新課堂時無需手動修改導航設定或首頁連結。
 

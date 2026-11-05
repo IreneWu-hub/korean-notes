@@ -5,7 +5,7 @@
 
 ## 筆記生成規範 (Lesson Generation Rule)
 當用戶在此對話中輸入韓語課堂筆記、複習內容或單字文法時：
-1. **風格與版面範本**：參考 [lesson-008.html](file:///c:/Users/Irene/Documents/KoreanNotes/korean-notes/static/lessons/lesson-008.html) 的**視覺風格、元件質感與互動功能**（Tailwind CSS、Web Speech 發音按鈕、初學者拆解機制）。
+1. **風格與版面範本**：參考 [lesson-008.html](file:///c:/Users/Irene/Documents/_Project/korean-notes/static/lessons/lesson-008.html) 的**視覺風格、元件質感與互動功能**（Tailwind CSS、Web Speech 發音按鈕、初學者拆解機制）。
 2. **標題與頁首規範**：
    - 標題格式統一為：`Lesson #N 旅遊韓語會話馬上開口說`（如 `Lesson #09 旅遊韓語會話馬上開口說`）。
    - 從 `lesson-009` 起，HTML 內部**拔掉列印匯出按鈕**。
@@ -26,7 +26,7 @@
 7. **產出雙檔案**：
    - `static/lessons/lesson-{NUM}.html`（三位數編號，如 `lesson-009.html`）
    - `docs/lessons/lesson-{NUM}.md`（封裝 `<LessonViewer ... />`，並在頂部附帶俐落的「課堂進度範圍」清單，列出教材範圍、課後作業與雙人複習連結，不加重複的 `:::tip` 橫幅卡片）
-8. **詳細規範參考**：[.agents/skills/korean-lesson-generator/SKILL.md](file:///c:/Users/Irene/Documents/KoreanNotes/korean-notes/.agents/skills/korean-lesson-generator/SKILL.md)。
+8. **詳細規範參考**：[.agents/skills/korean-lesson-generator/SKILL.md](file:///c:/Users/Irene/Documents/_Project/korean-notes/.agents/skills/korean-lesson-generator/SKILL.md)。
 
 ## 課後作業生成規範 (Homework Generation Rules)
 當用戶要求針對特定課堂製作課後複習作業或測驗時：
@@ -47,7 +47,7 @@
 6. **側邊大綱欄 (TOC) 防重複規範**：
    - Docusaurus 會自動將頁面中的 `##` 與 `###` 標題抓取為右側文章大綱目錄（On-page TOC）。
    - 折疊答案區 (`<details>`) 內部**嚴禁使用 `##` 或 `###` 標題語法**，以防答案項目重複被收錄進側邊目錄中；折疊內部的小標題一律使用加粗文字（如 `**【解析 1】...**` 或 `**1. ...**`）。
-7. **詳細規範參考**：[.agents/skills/korean-homework-generator/SKILL.md](file:///c:/Users/Irene/Documents/KoreanNotes/korean-notes/.agents/skills/korean-homework-generator/SKILL.md)。
+7. **詳細規範參考**：[.agents/skills/korean-homework-generator/SKILL.md](file:///c:/Users/Irene/Documents/_Project/korean-notes/.agents/skills/korean-homework-generator/SKILL.md)。
 
 ## 雙人複習手冊生成規範 (Practice Playbook Generation Rules)
 當用戶要求針對特定課堂製作雙人互助複習手冊時：
@@ -67,7 +67,7 @@
    - **結算 (1 分鐘)**（音變糾錯與雙向連結）
 4. **用語風格**：
    - 簡潔有力、直球對決，拔除多餘贅詞說明。
-5. **詳細規範參考**：[.agents/skills/korean-practice-generator/SKILL.md](file:///c:/Users/Irene/Documents/KoreanNotes/korean-notes/.agents/skills/korean-practice-generator/SKILL.md)。
+5. **詳細規範參考**：[.agents/skills/korean-practice-generator/SKILL.md](file:///c:/Users/Irene/Documents/_Project/korean-notes/.agents/skills/korean-practice-generator/SKILL.md)。
 
 ## 文法與單字庫統整規範 (Reference Database Rules)
 1. **收錄路徑**：`docs/reference/`
@@ -80,5 +80,5 @@
    - **已統整收錄課堂**：**Lesson 01 ~ Lesson 13**
    - **待更新收錄課堂**：**暫無（累積數堂課後再進行下一批次統整）**
    - 每隔數堂課進行批次抽精華更新時，必須同步更新 `docs/reference/index.mdx` 與本段進度紀錄。
-3. **詳細規範參考**：[.agents/skills/korean-reference-updater/SKILL.md](file:///c:/Users/Irene/Documents/KoreanNotes/korean-notes/.agents/skills/korean-reference-updater/SKILL.md)。
+3. **詳細規範參考**：[.agents/skills/korean-reference-updater/SKILL.md](file:///c:/Users/Irene/Documents/_Project/korean-notes/.agents/skills/korean-reference-updater/SKILL.md)。
 

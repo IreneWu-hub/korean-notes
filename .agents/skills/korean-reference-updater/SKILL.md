@@ -79,7 +79,7 @@ flowchart TD
 必須同步更新以下兩處的進度紀錄：
 1. **`docs/reference/index.mdx`**：
    ```markdown
-   :::info 📌 資料庫統整進度追蹤看板 (Status Tracker)
+   :::info[📌 資料庫統整進度追蹤看板 (Status Tracker)]
    * **當前已統整收錄課堂**：**Lesson 01 ~ Lesson {NEW_NUM}** ✅
    * **收錄課程時間跨度**：{START_DATE} ~ {END_DATE}
    * **待補充更新課堂**：暫無（累積數堂課後再進行下一批次統整）

@@ -150,32 +150,32 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 
 ---
 
-🔙 **[返回 Lesson {NUM} 課堂筆記頁面](../lessons/lesson-{NUM}.md)**
+🔙 **[返回 Lesson {NUM} 課堂筆記頁面](../lessons/lesson-{NUM}.md)** ｜ 👥 **[前往 Lesson {NUM} 雙人複習手冊 (20分鐘)](../practice/lesson-{NUM}.md)**
 ```
 
 ### 步驟 3：在 Lesson 筆記中建立跳轉連結
-在 `docs/lessons/lesson-{NUM}.md` 中加入：
-1. 作業清單項目：
-   ```markdown
-   - [ ] **[📝 Lesson {NUM} 課後重點複習作業 (點此前往)](../homework/lesson-{NUM}.md)**
-   ```
-2. 頂部提示卡片（**必須用中括號**）：
-   ```markdown
-   :::tip[✍️ 本課專屬課後複習作業]
-   👉 **[點擊前往 Lesson {NUM} 課後重點複習作業 🚀](../homework/lesson-{NUM}.md)**  
-   {說明測驗亮點}（附折疊式參考解析）！
-   :::
-   ```
+在 `docs/lessons/lesson-{NUM}.md` 的「作業與複習」清單中加入（**不加重複的 `:::tip` 橫幅卡片**，保持畫面乾淨）：
+```markdown
+  - 作業與複習：
+    - [ ] **[📝 Lesson {NUM} 課後重點複習作業](../homework/lesson-{NUM}.md)**
+    - [ ] **[👥 Lesson {NUM} 雙人複習手冊 (20分鐘)](../practice/lesson-{NUM}.md)**
+```
 
 ### 步驟 4：在 Lesson HTML 中加入跳轉按鈕
-在 `static/lessons/lesson-{NUM}.html` 適當位置（如結尾作業區）加入：
+在 `static/lessons/lesson-{NUM}.html` 適當位置（如結尾作業或收穫總結區）加入：
 ```html
 <div class="mt-4 pt-3 border-t border-indigo-100 flex flex-col sm:flex-row items-center justify-between gap-3">
-    <span class="text-xs text-indigo-950 font-medium">✨ 想立即動筆自我測驗或檢核學習盲點嗎？</span>
-    <a href="/korean-notes/docs/homework/lesson-{NUM}" target="_parent" class="no-print inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-sm font-bold rounded-lg shadow-sm transition-all">
-        <span>📝 前往本課專屬複習作業</span>
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-    </a>
+    <span class="text-xs text-indigo-950 font-medium">✨ 課後自我測驗與雙人對話練習：</span>
+    <div class="flex items-center gap-2">
+        <a href="/korean-notes/docs/homework/lesson-{NUM}" target="_parent" class="no-print inline-flex items-center gap-2 px-3.5 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-sm font-bold rounded-lg shadow-sm transition-all">
+            <span>📝 課後複習作業</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+        <a href="/korean-notes/docs/practice/lesson-{NUM}" target="_parent" class="no-print inline-flex items-center gap-2 px-3.5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold rounded-lg shadow-sm transition-all">
+            <span>👥 雙人複習手冊 (20分鐘)</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+    </div>
 </div>
 ```
 
