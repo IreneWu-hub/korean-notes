@@ -25,8 +25,29 @@
    - 遇難句/長句適時提供「初學者拆解專區」（拆解單字、助詞與動詞原形變化）。
 7. **產出雙檔案**：
    - `static/lessons/lesson-{NUM}.html`（三位數編號，如 `lesson-009.html`）
-   - `docs/lessons/lesson-{NUM}.md`（封裝 `<LessonViewer ... />`，並在頂部附帶 `:::info 📚 課堂進度範圍` 供記錄教材範圍）
+   - `docs/lessons/lesson-{NUM}.md`（封裝 `<LessonViewer ... />`，並在頂部附帶 `:::info[📚 課堂進度範圍]` 供記錄教材範圍）
 8. **詳細規範參考**：[.agents/skills/korean-lesson-generator/SKILL.md](file:///c:/Users/Irene/Documents/KoreanNotes/korean-notes/.agents/skills/korean-lesson-generator/SKILL.md)。
+
+## 課後作業生成規範 (Homework Generation Rules)
+當用戶要求針對特定課堂製作課後複習作業或測驗時：
+1. **存放路徑與無側欄規範**：
+   - 存放於 `docs/homework/lesson-{NUM}.md`（如 `docs/homework/lesson-012.md`）。
+   - Frontmatter 必須包含 `displayed_sidebar: null`，確保頁面不放入側邊欄，保持左側課程筆記目錄純粹整潔。
+2. **雙向跳轉機制**：
+   - 在 `docs/lessons/lesson-{NUM}.md` 的作業清單與頂部提示卡片中提供直達連結。
+   - 在 `static/lessons/lesson-{NUM}.html` 底部作業區塊加入跳轉按鈕。
+   - 在 `docs/homework/lesson-{NUM}.md` 底部提供返回 Lesson 筆記連結。
+3. **Admonition 中括號語法規範**：
+   - 提示卡片標題**必須以中括號包覆**（如 `:::info[標題]`、`:::tip[標題]`、`:::note[標題]`），嚴禁寫成 `:::tip 標題`，避免 Docusaurus v3/v4 解析器視為普通段落而印出三個冒號。
+4. **題型設計原則（深度複習、拒絕簡單死背）**：
+   - 刪除過於機械的基礎單選題與純詞彙挖空，針對當堂課重點設計：情境中翻韓造句、委婉對話應答、核心文法語氣辨析（如 `-만` vs `-밖에`）、數量時間發音陷阱（如 `두 시간`、`닷새`、連音）。
+   - 每一大題後附帶 `<details><summary>` 折疊式參考解析。
+5. **口頭發表作業不引導原則**：
+   - 若當堂課有口頭發表作業（`숙제: 발표`），**嚴禁代寫示範講稿或範例短文**，僅提供「自主構思思考維度框架表格」，保留空白讓學生自由創作。
+6. **側邊大綱欄 (TOC) 防重複規範**：
+   - Docusaurus 會自動將頁面中的 `##` 與 `###` 標題抓取為右側文章大綱目錄（On-page TOC）。
+   - 折疊答案區 (`<details>`) 內部**嚴禁使用 `##` 或 `###` 標題語法**，以防答案項目重複被收錄進側邊目錄中；折疊內部的小標題一律使用加粗文字（如 `**【解析 1】...**` 或 `**1. ...**`）。
+7. **詳細規範參考**：[.agents/skills/korean-homework-generator/SKILL.md](file:///c:/Users/Irene/Documents/KoreanNotes/korean-notes/.agents/skills/korean-homework-generator/SKILL.md)。
 
 ## 文法與單字庫統整規範 (Reference Database Rules)
 1. **收錄路徑**：`docs/reference/`
@@ -36,8 +57,8 @@
    - `numbers.mdx`：韓語固有數詞、量詞單位與指示系統
    - `vocabulary.mdx`：依生活與旅遊情境分類的高頻單字庫（搭配 `<VocabTable />` 支援點擊即時發音）
 2. **目前資料庫統整進度**：
-   - **已統整收錄課堂**：**Lesson 01 ~ Lesson 11**
-   - **待更新收錄課堂**：**Lesson 12（累積數堂課後再進行下一批次統整）**
+   - **已統整收錄課堂**：**Lesson 01 ~ Lesson 13**
+   - **待更新收錄課堂**：**暫無（累積數堂課後再進行下一批次統整）**
    - 每隔數堂課進行批次抽精華更新時，必須同步更新 `docs/reference/index.mdx` 與本段進度紀錄。
 3. **詳細規範參考**：[.agents/skills/korean-reference-updater/SKILL.md](file:///c:/Users/Irene/Documents/KoreanNotes/korean-notes/.agents/skills/korean-reference-updater/SKILL.md)。
 
