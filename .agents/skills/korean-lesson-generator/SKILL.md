@@ -134,14 +134,19 @@ description: >-
 
 ## 📄 Docusaurus 筆記頁面 (`docs/lessons/lesson-{NUM}.md`)
 
-同步建立對應 Markdown 檔案，頁面頂部**必須包含「課堂進度範圍」欄位**供記錄每堂課的進度範圍：
+同步建立對應 Markdown 檔案，頁面頂部以俐落的清單格式記錄進度範圍與作業/複習入口（**不加重複的 `:::tip` 橫幅卡片**，保持畫面乾淨）：
 ```markdown
 ---
 title: Lesson #{NUM} ({DATE})
 sidebar_label: Lesson #{NUM} ({DATE})
 ---
 
-- **📚 課堂進度範圍**：{若有提及教材/頁數則填寫，無則留空供後續記錄}
+- **📚 課堂進度範圍**：
+  - {教材進度 1}
+  - {教材進度 2}
+  - 作業與複習：
+    - [ ] **[📝 Lesson {NUM} 課後重點複習作業](../homework/lesson-{NUM}.md)**
+    - [ ] **[👥 Lesson {NUM} 雙人複習手冊 (20分鐘)](../practice/lesson-{NUM}.md)**
 
 import LessonViewer from '@site/src/components/LessonViewer';
 

@@ -21,12 +21,18 @@ description: >-
 
 2. **流暢的雙向跳轉機制 (Bi-directional Navigation)**：
    - **Lesson 筆記頁**（`docs/lessons/lesson-{NUM}.md`）：
-     - 在「作業」清單中加上超連結：`- [ ] **[📝 Lesson {NUM} 課後重點複習作業 (點此前往)](../homework/lesson-{NUM}.md)**`
-     - 在教材清單與 LessonViewer 之間加入橫幅跳轉卡片。
+     - 在「作業與複習」清單中加上超連結：
+       ```markdown
+       - 作業與複習：
+         - [ ] **[📝 Lesson {NUM} 課後重點複習作業](../homework/lesson-{NUM}.md)**
+         - [ ] **[👥 Lesson {NUM} 雙人複習手冊 (20分鐘)](../practice/lesson-{NUM}.md)**
+       ```
+     - 不需加入多餘的 `:::tip` 橫幅卡片，保持頂部排版俐落。
    - **Lesson HTML 頁**（`static/lessons/lesson-{NUM}.html`）：
-     - 在結尾作業或花絮區塊提供跳轉按鈕：`<a href="/korean-notes/docs/homework/lesson-{NUM}" target="_parent">📝 前往本課專屬複習作業</a>`
+     - 在結尾區塊提供跳轉按鈕（包含作業與雙人複習手冊）。
    - **Homework 作業頁**（`docs/homework/lesson-{NUM}.md`）：
-     - 頁面最底部提供返回課堂連結：`🔙 [返回 Lesson {NUM} 課堂筆記頁面](../lessons/lesson-{NUM}.md)`
+     - 頁面最底部提供返回課堂與雙人複習連結：
+       `🔙 **[返回 Lesson {NUM} 課堂筆記頁面](../lessons/lesson-{NUM}.md)** ｜ 👥 **[前往 Lesson {NUM} 雙人複習手冊 (20分鐘)](../practice/lesson-{NUM}.md)**`
 
 3. **Docusaurus Admonition 語法規範 (嚴格中括號)**：
    - 本專案啟用未來標準規範，**所有提示卡片標題必須用中括號 `[...]` 包覆**，否則會被解析為普通文字並直接印出三個冒號 `:::`：

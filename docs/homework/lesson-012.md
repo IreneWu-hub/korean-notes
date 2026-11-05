@@ -165,5 +165,5 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 
 ---
 
-🔙 **[返回 Lesson 12 課堂筆記頁面](../lessons/lesson-012.md)**
+🔙 **[返回 Lesson 12 課堂筆記頁面](../lessons/lesson-012.md)** ｜ 👥 **[前往 Lesson 12 雙人複習手冊 (20分鐘)](../practice/lesson-012.md)**
 

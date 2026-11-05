@@ -25,7 +25,7 @@
    - 遇難句/長句適時提供「初學者拆解專區」（拆解單字、助詞與動詞原形變化）。
 7. **產出雙檔案**：
    - `static/lessons/lesson-{NUM}.html`（三位數編號，如 `lesson-009.html`）
-   - `docs/lessons/lesson-{NUM}.md`（封裝 `<LessonViewer ... />`，並在頂部附帶 `:::info[📚 課堂進度範圍]` 供記錄教材範圍）
+   - `docs/lessons/lesson-{NUM}.md`（封裝 `<LessonViewer ... />`，並在頂部附帶俐落的「課堂進度範圍」清單，列出教材範圍、課後作業與雙人複習連結，不加重複的 `:::tip` 橫幅卡片）
 8. **詳細規範參考**：[.agents/skills/korean-lesson-generator/SKILL.md](file:///c:/Users/Irene/Documents/KoreanNotes/korean-notes/.agents/skills/korean-lesson-generator/SKILL.md)。
 
 ## 課後作業生成規範 (Homework Generation Rules)
@@ -34,9 +34,9 @@
    - 存放於 `docs/homework/lesson-{NUM}.md`（如 `docs/homework/lesson-012.md`）。
    - Frontmatter 必須包含 `displayed_sidebar: null`，確保頁面不放入側邊欄，保持左側課程筆記目錄純粹整潔。
 2. **雙向跳轉機制**：
-   - 在 `docs/lessons/lesson-{NUM}.md` 的作業清單與頂部提示卡片中提供直達連結。
+   - 在 `docs/lessons/lesson-{NUM}.md` 的「作業與複習」清單中提供直達連結。
    - 在 `static/lessons/lesson-{NUM}.html` 底部作業區塊加入跳轉按鈕。
-   - 在 `docs/homework/lesson-{NUM}.md` 底部提供返回 Lesson 筆記連結。
+   - 在 `docs/homework/lesson-{NUM}.md` 底部提供返回 Lesson 筆記與雙人複習手冊連結。
 3. **Admonition 中括號語法規範**：
    - 提示卡片標題**必須以中括號包覆**（如 `:::info[標題]`、`:::tip[標題]`、`:::note[標題]`），嚴禁寫成 `:::tip 標題`，避免 Docusaurus v3/v4 解析器視為普通段落而印出三個冒號。
 4. **題型設計原則（深度複習、拒絕簡單死背）**：
@@ -48,6 +48,26 @@
    - Docusaurus 會自動將頁面中的 `##` 與 `###` 標題抓取為右側文章大綱目錄（On-page TOC）。
    - 折疊答案區 (`<details>`) 內部**嚴禁使用 `##` 或 `###` 標題語法**，以防答案項目重複被收錄進側邊目錄中；折疊內部的小標題一律使用加粗文字（如 `**【解析 1】...**` 或 `**1. ...**`）。
 7. **詳細規範參考**：[.agents/skills/korean-homework-generator/SKILL.md](file:///c:/Users/Irene/Documents/KoreanNotes/korean-notes/.agents/skills/korean-homework-generator/SKILL.md)。
+
+## 雙人複習手冊生成規範 (Practice Playbook Generation Rules)
+當用戶要求針對特定課堂製作雙人互助複習手冊時：
+1. **存放路徑與無側欄規範**：
+   - 存放於 `docs/practice/lesson-{NUM}.md`（如 `docs/practice/lesson-013.md`）。
+   - Frontmatter 必須包含 `displayed_sidebar: null`，保持全寬無側欄介面。
+2. **Docusaurus `<Tabs>` 雙重視角防劇透機制**：
+   - 每一大題均以 `<Tabs>` 分割：
+     - **角色 A（考官 / 答案）**：附題目、標準答案、重點說明與 `<KoreanAudio />` 即時發音按鈕。
+     - **角色 B（挑戰者 / 盲測）**：僅提供情境提示，無韓文答案，逼迫在 3 秒內反射開口。
+   - 每一大題結束後加上乾脆的換邊提示：`🔄 **換邊**：由角色 B 出題`。
+3. **精準 20 分鐘三部曲架構**：
+   - 一級標題統一為：`# Lesson {NUM} 雙人複習手冊 (20分鐘)`
+   - **Part 1：旅遊句型抽測 (7 分鐘)**（當堂實戰核心短句中翻韓）
+   - **Part 2：核心文法攻防 (7 分鐘)**（動詞過去式變形接球、名詞時態、不規則變化）
+   - **Part 3：情境實戰對話 (6 分鐘)**（無劇本情境任務卡全韓語對談，各演一次）
+   - **結算 (1 分鐘)**（音變糾錯與雙向連結）
+4. **用語風格**：
+   - 簡潔有力、直球對決，拔除多餘贅詞說明。
+5. **詳細規範參考**：[.agents/skills/korean-practice-generator/SKILL.md](file:///c:/Users/Irene/Documents/KoreanNotes/korean-notes/.agents/skills/korean-practice-generator/SKILL.md)。
 
 ## 文法與單字庫統整規範 (Reference Database Rules)
 1. **收錄路徑**：`docs/reference/`

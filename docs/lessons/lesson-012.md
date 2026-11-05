@@ -4,21 +4,11 @@ sidebar_label: Lesson 12 (2026.10.29)
 ---
 
 - **📚 課堂進度範圍**：
-- kpop旅遊韓語 Day 1-4 -57
-- 下堂進度: 一堂首爾大/ 一堂旅遊課本
-kpop旅遊韓語 Day 1-4 58-
-新首爾大課本＋1A 3-2  121
-- 考試:
-    - [ ]  kpop旅遊韓語 Day 1-4 53 角色扮演
-    - [ ]  숙제: 여행 일기 -> 발표
-    - [ ]  新首爾大課本＋1A 3-2 單字
-- 作業:
-    - [ ]  숙제: 여행 일기 -> 발표
-    - [ ]  新首爾大課本＋1A 3-2 120
-
-:::tip[複習作業]
-👉 **[Lesson 12 課後重點複習作業 🚀](../homework/lesson-012.md)**  
-:::
+  - kpop旅遊韓語 Day 1-4 (57頁 傳統市場點餐、服飾店購物與指示詞系統)
+  - 旅遊經驗分享 (泰國度假行程、天數與耗時問答、推測語尾)
+  - 作業與複習：
+    - [ ] **[📝 Lesson 12 課後重點複習作業](../homework/lesson-012.md)**
+    - [ ] **[👥 Lesson 12 雙人複習手冊 (20分鐘)](../practice/lesson-012.md)**
 
 import LessonViewer from '@site/src/components/LessonViewer';
 
@@ -26,4 +16,3 @@ import LessonViewer from '@site/src/components/LessonViewer';
   src="/korean-notes/lessons/lesson-012.html"
   title="Lesson 12"
 />
-
