@@ -9,24 +9,29 @@
 2. **標題與頁首規範**：
    - 標題格式統一為：`Lesson #N 旅遊韓語會話馬上開口說`（如 `Lesson #09 旅遊韓語會話馬上開口說`）。
    - 從 `lesson-009` 起，HTML 內部**拔掉列印匯出按鈕**。
-3. **本堂學習重點規範**：
-   - 標題為 `🎯 本堂學習重點`（**不加** `(Lesson Highlights)` 括號內容）。
-   - 內部項目以 `<li class="flex items-start gap-3">` 搭配 `<div class="flex-1 leading-relaxed text-sm sm:text-base">` 包覆，避免 flexbox 跑版。
-4. **字體大小與排版規範**：
-   - 補充說明與次要註釋文字**不要使用過小的 `text-xs`**，應使用 `text-sm`（14px）確保易讀性與版面舒適度。
-5. **靈活動態分類（不強制死板套用固定章節）**：
+3. **本堂學習重點 / 單元目錄規範（精簡窄版原則）**：
+   - 標題為 `🎯 本堂學習重點` 或 `🎯 本堂學習重點與單元導覽`（**不加** `(Lesson Highlights)` 括號內容）。
+   - **【核心要求：精簡、窄版、不佔太大空間】**：嚴禁使用大塊通欄卡片浪費垂直螢幕空間！統一採用**雙欄緊湊網格 (`grid grid-cols-1 sm:grid-cols-2 gap-2`)**，容器使用 `p-3.5 sm:p-4 mb-6~8`。
+   - 每個單元項目單行精簡呈現（左側彩色徽章 + 粗體名稱 + 1 句極簡摘要 + 右側 `➔` 直達箭頭），支援平滑跳轉（配置 `href="#section-N"` 與對應區塊的 `id` 與 `scroll-mt-8`，搭配 `<html class="scroll-smooth">`）。
+4. **篇幅權重與先後順序（難點置前 × 外來語精簡速查）**：
+   - 固有詞構詞拆解家族（如 바지/치마 家族）、文法變化、身體部位公式等較難內容**務必放在最前面，並給予大字體與條理分明的重點篇幅**。
+   - 外來語 (Konglish) 較為簡單直覺，**篇幅務必縮小，僅在單元後方提供精簡對照網格即可**，切忌喧賓奪主佔用大篇幅。
+5. **字體大小與排版規範**：
+   - 韓文單字加粗放大至 `text-lg sm:text-xl font-bold`，中文釋義使用 `text-sm sm:text-base font-semibold`，補充說明與註釋維持 `text-sm`（14px）。
+   - **嚴禁在內文或表格中使用過小的 `text-xs`**（除徽章 badge 外），確保易讀性與版面舒適度。
+6. **靈活動態分類（不強制死板套用固定章節）**：
    - 根據**當堂課的實際筆記內容**，自主規劃 2~5 個最適合學生複習的分類單元。
    - 若當堂側重文法 ➔ 重點放在文法規則、收音變化、句型拆解與造句。
    - 若當堂側重會話 ➔ 重點放在情境對話（`가`/`나` 徽章）、口語縮寫、語氣與發音提醒。
    - 若當堂側重詞彙 ➔ 重點放在情境單字表格、常用搭配詞與例句。
    - 若涉及音變或文化 ➔ 適時補充發音解析（連音、硬音化、代表音等）或台韓文化差異。
-6. **必備互動體驗**：
+7. **必備互動體驗**：
    - Web Speech 發音功能 (`speakKorean(text)`)，所有韓語句子與單字旁皆附發音按鈕。
    - 遇難句/長句適時提供「初學者拆解專區」（拆解單字、助詞與動詞原形變化）。
-7. **產出雙檔案**：
+8. **產出雙檔案**：
    - `static/lessons/lesson-{NUM}.html`（三位數編號，如 `lesson-009.html`）
    - `docs/lessons/lesson-{NUM}.md`（封裝 `<LessonViewer ... />`，並在頂部附帶俐落的「課堂進度範圍」清單，列出教材範圍、課後作業與雙人複習連結，不加重複的 `:::tip` 橫幅卡片）
-8. **詳細規範參考**：[.agents/skills/korean-lesson-generator/SKILL.md](file:///c:/Users/Irene/Documents/_Project/korean-notes/.agents/skills/korean-lesson-generator/SKILL.md)。
+9. **詳細規範參考**：[.agents/skills/korean-lesson-generator/SKILL.md](file:///c:/Users/Irene/Documents/_Project/korean-notes/.agents/skills/korean-lesson-generator/SKILL.md)。
 
 ## 課後作業生成規範 (Homework Generation Rules)
 當用戶要求針對特定課堂製作課後複習作業或測驗時：
