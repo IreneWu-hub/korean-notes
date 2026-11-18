@@ -60,16 +60,14 @@
    - 存放於 `docs/practice/lesson-{NUM}.md`（如 `docs/practice/lesson-013.md`）。
    - Frontmatter 必須包含 `displayed_sidebar: null`，保持全寬無側欄介面。
 2. **Docusaurus `<Tabs>` 雙重視角防劇透機制**：
-   - 每一大題均以 `<Tabs>` 分割：
-     - **角色 A（考官 / 答案）**：附題目、標準答案、重點說明與 `<KoreanAudio />` 即時發音按鈕。
-     - **角色 B（挑戰者 / 盲測）**：僅提供情境提示，無韓文答案，逼迫在 3 秒內反射開口。
-   - 每一大題結束後加上乾脆的換邊提示：`🔄 **換邊**：由角色 B 出題`。
-3. **精準 20 分鐘三部曲架構**：
+   - 每一大題均以 `<Tabs>` 分割，**以角色 A 引導出題為主，角色 B 不可看到韓文答案**：
+     - **角色 A（引導者 / 答案）**：附題庫、引導提示、標準答案、重點說明與 `<KoreanAudio />` 即時發音按鈕（可隨機挑題出題）。
+     - **角色 B（挑戰者 / 盲測）**：題型抽測與文法接球可顯示中文提示或動詞原形（**不顯示韓文答案**）；情境對話僅提供純中文任務卡（嚴禁出現韓文整句答案）。
+   - 每一大題結束後加上乾脆的換邊提示：`🔄 **換邊**：由角色 B 切換當角色 A 出題`。
+3. **彈性 20 分鐘核心 ＋ Optional 延伸架構**：
    - 一級標題統一為：`# Lesson {NUM} 雙人複習手冊 (20分鐘)`
-   - **Part 1：旅遊句型抽測 (7 分鐘)**（當堂實戰核心短句中翻韓）
-   - **Part 2：核心文法攻防 (7 分鐘)**（動詞過去式變形接球、名詞時態、不規則變化）
-   - **Part 3：情境實戰對話 (6 分鐘)**（無劇本情境任務卡全韓語對談，各演一次）
-   - **結算 (1 分鐘)**（音變糾錯與雙向連結）
+   - **依當堂課實際內容決定章節分法**（文法多、單字多或會話多皆可靈活拆分成 2～4 個核心單元，不死板套用固定模板），並於最後附**結算 (1 分鐘)**與雙向連結。
+   - 若當堂內容較豐富，於主線後另設獨立章節 **`## 🌟 Optional 延伸挑戰版`**，涵蓋 20 分鐘版未納入的其他重要文法、詞彙或延伸對話。
 4. **用語風格**：
    - 簡潔有力、直球對決，拔除多餘贅詞說明。
 5. **詳細規範參考**：[.agents/skills/korean-practice-generator/SKILL.md](file:///c:/Users/Irene/Documents/_Project/korean-notes/.agents/skills/korean-practice-generator/SKILL.md)。
@@ -84,6 +82,6 @@
 2. **目前資料庫統整進度**：
    - **已統整收錄課堂**：**Lesson 01 ~ Lesson 13**
    - **待更新收錄課堂**：**暫無（累積數堂課後再進行下一批次統整）**
-   - 每隔數堂課進行批次抽精華更新時，必須同步更新 `docs/reference/index.mdx` 與本段進度紀錄。
+   - 每隔數堂課進行批次抽精華更新時，必須同步更新 `docs/reference/index.mdx` 與本段進度記錄。
 3. **詳細規範參考**：[.agents/skills/korean-reference-updater/SKILL.md](file:///c:/Users/Irene/Documents/_Project/korean-notes/.agents/skills/korean-reference-updater/SKILL.md)。
 

@@ -45,7 +45,7 @@ flowchart TD
 ```
 
 ### 步驟 1：檢視目前統整進度 (Inspect Status)
-1. 讀取 `GEMINI.md` 或 `docs/reference/index.mdx` 中的看板紀錄，找出**「已統整收錄課堂」**（例如：`Lesson 01 ~ Lesson 11`）。
+1. 讀取 `GEMINI.md` 或 `docs/reference/index.mdx` 中的看板記錄，找出**「已統整收錄課堂」**（例如：`Lesson 01 ~ Lesson 11`）。
 2. 列出 `static/lessons/` 下的所有 `lesson-*.html`，比對出**待更新課堂清單**（例如：目前已開課到 `lesson-014.html`，則待補範圍為 `Lesson 12 ~ Lesson 14`）。
 
 ### 步驟 2：課堂精華深度抽取 (Content Extraction)
@@ -75,8 +75,8 @@ flowchart TD
   - 將新單字依情境歸入現有或新增章節。
   - **一律使用 `<VocabTable items={[...]} />` 封裝**，確保包含 `ko`, `zh`, `rom`, `ex` 欄位並自帶發音按鈕。
 
-### 步驟 4：推進統整進度紀錄（雙重同步）
-必須同步更新以下兩處的進度紀錄：
+### 步驟 4：推進統整進度記錄（雙重同步）
+必須同步更新以下兩處的進度記錄：
 1. **`docs/reference/index.mdx`**：
    ```markdown
    :::info[📌 資料庫統整進度追蹤看板 (Status Tracker)]
