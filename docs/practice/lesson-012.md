@@ -1,5 +1,5 @@
 ---
-title: Lesson 12 雙人複習手冊 (20分鐘)
+title: Lesson 12 雙人複習手冊 
 displayed_sidebar: null
 ---
 
@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 
-# Lesson 12 雙人複習手冊 (20分鐘)
+# Lesson 12 雙人複習手冊 
 
 :::info[📌 複習指南]
 * **對應內容**：[Lesson #12 課堂筆記](../lessons/lesson-012.md) ｜ [課後作業](../homework/lesson-012.md)

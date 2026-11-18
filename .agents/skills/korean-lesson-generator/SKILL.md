@@ -154,7 +154,7 @@ sidebar_label: Lesson {NUM} ({DATE})
   - {教材進度 2}
   - 作業與複習：
     - [ ] **[📝 Lesson {NUM} 課後重點複習作業](../homework/lesson-{NUM}.md)**
-    - [ ] **[👥 Lesson {NUM} 雙人複習手冊 (20分鐘)](../practice/lesson-{NUM}.md)**
+    - [ ] **[👥 Lesson {NUM} 雙人複習手冊](../practice/lesson-{NUM}.md)**
 
 import LessonViewer from '@site/src/components/LessonViewer';
 

@@ -25,7 +25,7 @@ description: >-
      - 每一題結束後，加上俐落換邊提示：`🔄 **換邊**：由角色 B 切換當角色 A 出題`。
 
 3. **簡潔有力風格規範 (Concise & Punchy Tone)**：
-   - 頁面一級標題固定為：`# Lesson {NUM} 雙人複習手冊 (20分鐘)`。
+   - 頁面一級標題固定為：`# Lesson {NUM} 雙人複習手冊 `。
    - 拔除冗長的背景前言，只保留必要的出題提示、糾錯雷達與快速切換指引。
    - 頂部導覽一律使用：
      ```markdown
@@ -56,11 +56,11 @@ description: >-
 
 5. **流暢雙向跳轉串接 (Bi-directional Navigation)**：
    - **Lesson 筆記頁**（`docs/lessons/lesson-{NUM}.md`）：
-     - 清單加入：`- [ ] **[👥 Lesson {NUM} 雙人複習手冊 (20分鐘)](../practice/lesson-{NUM}.md)**`
+     - 清單加入：`- [ ] **[👥 Lesson {NUM} 雙人複習手冊 ](../practice/lesson-{NUM}.md)**`
    - **Lesson HTML 頁**（`static/lessons/lesson-{NUM}.html`）：
-     - 底部按鈕區加入綠色按鈕：`👥 雙人複習手冊 (20分鐘)`
+     - 底部按鈕區加入綠色按鈕：`👥 雙人複習手冊 `
    - **Homework 作業頁**（`docs/homework/lesson-{NUM}.md`）：
-     - 底部加入跳轉：`👥 **[前往 Lesson {NUM} 雙人複習手冊 (20分鐘)](../practice/lesson-{NUM}.md)**`
+     - 底部加入跳轉：`👥 **[前往 Lesson {NUM} 雙人複習手冊 ](../practice/lesson-{NUM}.md)**`
    - **Practice 手冊頁**（`docs/practice/lesson-{NUM}.md`）：
      - 底部結算區提供返回課堂筆記與作業連結。
 
@@ -70,7 +70,7 @@ description: >-
 
 ```markdown
 ---
-title: Lesson {NUM} 雙人複習手冊 (20分鐘)
+title: Lesson {NUM} 雙人複習手冊 
 displayed_sidebar: null
 ---
 
@@ -78,7 +78,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 
-# Lesson {NUM} 雙人複習手冊 (20分鐘)
+# Lesson {NUM} 雙人複習手冊 
 
 :::info[📌 複習指南]
 * **對應內容**：[Lesson #{NUM} 課堂筆記](../lessons/lesson-{NUM}.md) ｜ [課後作業](../homework/lesson-{NUM}.md)

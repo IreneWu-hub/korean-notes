@@ -260,4 +260,4 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 
 ---
 
-🔙 **[返回 Lesson 14 課堂筆記頁面](../lessons/lesson-014.md)** ｜ 👥 **[前往 Lesson 14 雙人複習手冊 (20分鐘)](../practice/lesson-014.md)**
+🔙 **[返回 Lesson 14 課堂筆記頁面](../lessons/lesson-014.md)** ｜ 👥 **[前往 Lesson 14 雙人複習手冊 ](../practice/lesson-014.md)**

@@ -25,14 +25,14 @@ description: >-
        ```markdown
        - 作業與複習：
          - [ ] **[📝 Lesson {NUM} 課後重點複習作業](../homework/lesson-{NUM}.md)**
-         - [ ] **[👥 Lesson {NUM} 雙人複習手冊 (20分鐘)](../practice/lesson-{NUM}.md)**
+         - [ ] **[👥 Lesson {NUM} 雙人複習手冊 ](../practice/lesson-{NUM}.md)**
        ```
      - 不需加入多餘的 `:::tip` 橫幅卡片，保持頂部排版俐落。
    - **Lesson HTML 頁**（`static/lessons/lesson-{NUM}.html`）：
      - 在結尾區塊提供跳轉按鈕（包含作業與雙人複習手冊）。
    - **Homework 作業頁**（`docs/homework/lesson-{NUM}.md`）：
      - 頁面最底部提供返回課堂與雙人複習連結：
-       `🔙 **[返回 Lesson {NUM} 課堂筆記頁面](../lessons/lesson-{NUM}.md)** ｜ 👥 **[前往 Lesson {NUM} 雙人複習手冊 (20分鐘)](../practice/lesson-{NUM}.md)**`
+       `🔙 **[返回 Lesson {NUM} 課堂筆記頁面](../lessons/lesson-{NUM}.md)** ｜ 👥 **[前往 Lesson {NUM} 雙人複習手冊 ](../practice/lesson-{NUM}.md)**`
 
 3. **Docusaurus Admonition 語法規範 (嚴格中括號)**：
    - 本專案啟用未來標準規範，**所有提示卡片標題必須用中括號 `[...]` 包覆**，否則會被解析為普通文字並直接印出三個冒號 `:::`：
@@ -150,7 +150,7 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 
 ---
 
-🔙 **[返回 Lesson {NUM} 課堂筆記頁面](../lessons/lesson-{NUM}.md)** ｜ 👥 **[前往 Lesson {NUM} 雙人複習手冊 (20分鐘)](../practice/lesson-{NUM}.md)**
+🔙 **[返回 Lesson {NUM} 課堂筆記頁面](../lessons/lesson-{NUM}.md)** ｜ 👥 **[前往 Lesson {NUM} 雙人複習手冊 ](../practice/lesson-{NUM}.md)**
 ```
 
 ### 步驟 3：在 Lesson 筆記中建立跳轉連結
@@ -158,7 +158,7 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 ```markdown
   - 作業與複習：
     - [ ] **[📝 Lesson {NUM} 課後重點複習作業](../homework/lesson-{NUM}.md)**
-    - [ ] **[👥 Lesson {NUM} 雙人複習手冊 (20分鐘)](../practice/lesson-{NUM}.md)**
+    - [ ] **[👥 Lesson {NUM} 雙人複習手冊 ](../practice/lesson-{NUM}.md)**
 ```
 
 ### 步驟 4：在 Lesson HTML 中加入跳轉按鈕
@@ -172,7 +172,7 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
         </a>
         <a href="/korean-notes/docs/practice/lesson-{NUM}" target="_parent" class="no-print inline-flex items-center gap-2 px-3.5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold rounded-lg shadow-sm transition-all">
-            <span>👥 雙人複習手冊 (20分鐘)</span>
+            <span>👥 雙人複習手冊</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
         </a>
     </div>
