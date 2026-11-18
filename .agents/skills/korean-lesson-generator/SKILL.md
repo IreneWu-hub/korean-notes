@@ -32,6 +32,9 @@ description: >-
        - 標題為 `🎯 本堂學習重點` 或 `🎯 本堂學習重點與單元導覽`（**不加** `(Lesson Highlights)` 括號內容）。
        - **【核心要求：精簡、窄版、不佔太大空間】**：嚴禁使用大塊通欄卡片浪費垂直螢幕空間！統一採用**雙欄緊湊網格 (`grid grid-cols-1 sm:grid-cols-2 gap-2`)**，容器使用 `p-3.5 sm:p-4 mb-6~8`。
        - 每個單元項目單行精簡呈現（左側單元彩色徽章 + 粗體名稱 + 1 句極簡摘要 + 右側 `➔` 直達箭頭），點擊支援平滑跳轉（配置 `href="#section-N"` 與對應區塊的 `id="section-N"` 與 `scroll-mt-8`，搭配 `<html class="scroll-smooth">`）。
+     - **側邊浮動章節導覽（寬螢幕開新分頁專用）**：
+       - 在 `<body>` 內主容器前加入 `<nav aria-label="章節導覽" class="no-print hidden xl:block fixed top-24 right-4 2xl:right-10 w-44 z-30">`，僅在寬螢幕（`xl:` ≥ 1280px）顯示，避免擠壓手機版或 Docusaurus iframe 視窗。
+       - 列出各單元錨點（如 `#section-warmup`、`#section-1`…）與「⬆️ 回到頂部」連結，並於 `</body>` 前搭配 `IntersectionObserver` 腳本，於捲動時自動高亮目前所在單元。
    - **篇幅權重與編排順序（難點置前 × 外來語精簡速查）**：
      - **依教學難度決定篇幅與先後順序**：
        - 固有詞構詞拆解家族（如 바지/치마 家族）、文法變化、身體部位公式、生活食材等較難內容**務必放在最前面，並給予大字體與條理分明的重點篇幅**。
@@ -137,6 +140,66 @@ description: >-
   `bg-white rounded-xl overflow-hidden border border-gray-200`，頂部色塊標題（橘色 `bg-orange-50`、綠色 `bg-teal-50` 等），表格具備 hover 效果與單字發音按鈕。
 - **積木 H：課外發音或文化補充**
   外框為灰底漸層或虛線 `border-2 border-dashed border-gray-300 bg-gradient-to-r from-gray-50 to-gray-100`，包含問題、音變推導步驟（連音、硬音化等）與成果發音按鈕。
+
+### 4. 側邊浮動章節導覽（寬螢幕開新分頁專用）
+放置於 `<body>` 內主容器 `<div class="max-w-4xl ...">` 之前，搭配 `</body>` 前的 `IntersectionObserver` 高亮腳本：
+```html
+<!-- 側邊章節導覽 (僅寬螢幕 / 開新分頁時顯示) -->
+<nav aria-label="章節導覽" class="no-print hidden xl:block fixed top-24 right-4 2xl:right-10 w-44 z-30">
+    <div class="bg-white/90 backdrop-blur-sm rounded-xl border border-indigo-100 shadow-sm p-3">
+        <div class="text-xs font-bold text-indigo-900 mb-2 pb-1.5 border-b border-indigo-100 flex items-center gap-1.5">
+            <span>📑</span>
+            <span>章節導覽</span>
+        </div>
+        <ul id="side-nav-list" class="space-y-1 text-xs">
+            <li>
+                <a href="#section-1" data-target="section-1" class="side-nav-link block px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-indigo-50 hover:text-indigo-700 transition-colors">
+                    <span class="font-bold block">{emoji} 第一單元</span>
+                    <span class="text-[11px] text-slate-400 block truncate">{簡短副標}</span>
+                </a>
+            </li>
+            <!-- 依實際單元數量增減 -->
+        </ul>
+        <div class="mt-2 pt-2 border-t border-indigo-100">
+            <a href="#" class="block px-2.5 py-1 rounded-lg text-xs font-semibold text-indigo-600 hover:bg-indigo-50 transition-colors text-center">
+                ⬆️ 回到頂部
+            </a>
+        </div>
+    </div>
+</nav>
+```
+
+```html
+<!-- 放置於 </body> 前：捲動自動高亮目前章節 -->
+<script>
+    (function () {
+        const links = document.querySelectorAll('.side-nav-link');
+        const sections = Array.from(links)
+            .map(link => document.getElementById(link.dataset.target))
+            .filter(Boolean);
+        if (!sections.length) return;
+
+        function setActive(id) {
+            links.forEach(link => {
+                const isActive = link.dataset.target === id;
+                link.classList.toggle('bg-indigo-50', isActive);
+                link.classList.toggle('text-indigo-700', isActive);
+                link.classList.toggle('text-slate-600', !isActive);
+            });
+        }
+
+        const observer = new IntersectionObserver(
+            entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) setActive(entry.target.id);
+                });
+            },
+            { rootMargin: '-20% 0px -65% 0px' }
+        );
+        sections.forEach(section => observer.observe(section));
+    })();
+</script>
+```
 
 ---
 
