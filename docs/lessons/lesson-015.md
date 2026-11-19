@@ -8,7 +8,6 @@ sidebar_label: Lesson 15 (2026.11.19)
   - 作業與複習：
     - [ ] **[📝 Lesson 15 課後重點複習作業](../homework/lesson-015.md)**
     - [ ] **[👥 Lesson 15 雙人複習手冊](../practice/lesson-015.md)**
-    - [ ] **[👥 Lesson 15 雙人複習手冊](../practice/lesson-015.md)**
 
 import LessonViewer from '@site/src/components/LessonViewer';
 
