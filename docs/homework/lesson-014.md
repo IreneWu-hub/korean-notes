@@ -163,7 +163,7 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 - ① 靑(푸를 청) + 바지(褲子) = **牛仔褲** ➔ ( &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; )
 - ② 半(반) + 바지(褲子) = **短褲** ➔ ( &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; )
 - ③ 앞(前面) + 치마(裙子) = **圍裙** ➔ ( &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; )
-- ④ 귀(耳朵) + 걸이(掛飾) = **耳環** ➔ ( &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; )
+- ④ 귀(耳朵) + 고리(環扣)／걸이(掛飾) = **耳環** ➔ ( &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; )
 - ⑤ 목(脖子) + 도리(環繞) = **圍巾** ➔ ( &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; )
 
 <details>
@@ -183,7 +183,7 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 - ① **청바지** (靑바지)
 - ② **반바지** (半바지)
 - ③ **앞치마** (앞 + 치마)
-- ④ **귀걸이** (귀 + 걸이)
+- ④ **귀고리 / 귀걸이** (귀 + 고리/걸이)
 - ⑤ **목도리** (목 + 도리)
 
 </details>

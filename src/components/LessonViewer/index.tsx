@@ -1,4 +1,7 @@
 import React, { useRef, useState, useEffect, useCallback, type ReactNode } from 'react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import { usePluginData } from '@docusaurus/useGlobalData';
+import type { LessonSearchIndexData } from '@site/src/plugins/lessonSearchIndex';
 import styles from './styles.module.css';
 
 interface LessonViewerProps {
@@ -13,19 +16,36 @@ const IFRAME_SCREEN_STYLE = `
     min-height: 0 !important;
     overflow-y: hidden !important;
   }
+  nav[aria-label="章節導覽"] {
+    display: none !important;
+  }
 }
 `;
 
 export default function LessonViewer({ src, title }: LessonViewerProps): ReactNode {
+  const resolvedSrc = useBaseUrl(src);
+  const pluginData = usePluginData('lesson-search-index') as
+    | LessonSearchIndexData
+    | undefined;
+  const lessonFileName = src.split('/').pop() ?? '';
+  const searchSections = pluginData?.lessons?.[lessonFileName] ?? [];
+
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const lastHeightRef = useRef<number>(0);
-  const lastWidthRef = useRef<number>(0);
   const timersRef = useRef<number[]>([]);
+  const resizeObserverRef = useRef<ResizeObserver | null>(null);
   const [height, setHeight] = useState<string>('85vh');
 
   const clearTimers = useCallback(() => {
     timersRef.current.forEach((id) => window.clearTimeout(id));
     timersRef.current = [];
+  }, []);
+
+  const disconnectObserver = useCallback(() => {
+    if (resizeObserverRef.current) {
+      resizeObserverRef.current.disconnect();
+      resizeObserverRef.current = null;
+    }
   }, []);
 
   const updateHeight = useCallback(() => {
@@ -53,6 +73,7 @@ export default function LessonViewer({ src, title }: LessonViewerProps): ReactNo
 
   const handleLoad = useCallback(() => {
     clearTimers();
+    disconnectObserver();
     lastHeightRef.current = 0;
     updateHeight();
 
@@ -64,21 +85,25 @@ export default function LessonViewer({ src, title }: LessonViewerProps): ReactNo
 
     try {
       const doc = iframeRef.current?.contentWindow?.document;
+      if (doc?.body && typeof ResizeObserver !== 'undefined') {
+        const ro = new ResizeObserver(() => {
+          updateHeight();
+        });
+        ro.observe(doc.body);
+        resizeObserverRef.current = ro;
+      }
       if (doc && 'fonts' in doc && doc.fonts?.ready) {
         doc.fonts.ready.then(() => updateHeight()).catch(() => {});
       }
     } catch {
       // 忽略
     }
-  }, [clearTimers, updateHeight]);
+  }, [clearTimers, disconnectObserver, updateHeight]);
 
   useEffect(() => {
-    lastWidthRef.current = window.innerWidth;
     let resizeTimer: number | undefined;
 
     const handleResize = () => {
-      if (window.innerWidth === lastWidthRef.current) return;
-      lastWidthRef.current = window.innerWidth;
       if (resizeTimer) window.clearTimeout(resizeTimer);
       resizeTimer = window.setTimeout(updateHeight, 120);
     };
@@ -88,15 +113,16 @@ export default function LessonViewer({ src, title }: LessonViewerProps): ReactNo
       window.removeEventListener('resize', handleResize);
       if (resizeTimer) window.clearTimeout(resizeTimer);
       clearTimers();
+      disconnectObserver();
     };
-  }, [clearTimers, updateHeight]);
+  }, [clearTimers, disconnectObserver, updateHeight]);
 
   const handlePrint = () => {
     if (iframeRef.current?.contentWindow) {
       iframeRef.current.contentWindow.focus();
       iframeRef.current.contentWindow.print();
     } else {
-      window.open(src, '_blank')?.print();
+      window.open(resolvedSrc, '_blank')?.print();
     }
   };
 
@@ -104,7 +130,7 @@ export default function LessonViewer({ src, title }: LessonViewerProps): ReactNo
     <div className={styles.container}>
       <div className={styles.toolbar}>
         <a
-          href={src}
+          href={resolvedSrc}
           target="_blank"
           rel="noopener noreferrer"
           className="button button--primary button--sm">
@@ -120,13 +146,23 @@ export default function LessonViewer({ src, title }: LessonViewerProps): ReactNo
       <div className="lesson-iframe-container">
         <iframe
           ref={iframeRef}
-          src={src}
+          src={resolvedSrc}
           className="lesson-iframe"
           title={title}
           style={{ height }}
           onLoad={handleLoad}
         />
       </div>
+      {searchSections.length > 0 && (
+        <div className={styles.searchIndex} aria-hidden="true">
+          {searchSections.map((section, idx) => (
+            <React.Fragment key={idx}>
+              <h2>{section.title}</h2>
+              <p>{section.content}</p>
+            </React.Fragment>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

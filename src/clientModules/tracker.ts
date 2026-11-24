@@ -91,8 +91,13 @@ function trackCurrentPage(pathname: string) {
   } catch {}
 }
 
+if (ExecutionEnvironment.canUseDOM) {
+  window.addEventListener('hashchange', checkAdminHash);
+}
+
 const clientModule: ClientModule = {
   onRouteDidUpdate({location, previousLocation}) {
+    checkAdminHash();
     if (location.pathname !== previousLocation?.pathname) {
       trackCurrentPage(location.pathname);
     }

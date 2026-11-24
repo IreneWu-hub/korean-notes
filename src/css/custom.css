@@ -43,3 +43,14 @@
   background-color: #ffffff;
   display: block;
 }
+
+/* 表格不強制佔滿整個頁面寬度，依內容自然收斂並維持舒適內距 */
+.markdown table {
+  width: auto;
+  max-width: 100%;
+}
+
+.markdown table th,
+.markdown table td {
+  padding: 0.55rem 0.9rem;
+}

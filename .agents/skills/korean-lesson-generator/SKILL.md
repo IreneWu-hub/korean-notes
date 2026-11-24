@@ -170,9 +170,14 @@ description: >-
 ```
 
 ```html
-<!-- 放置於 </body> 前：捲動自動高亮目前章節 -->
+<!-- 放置於 </body> 前：捲動自動高亮目前章節（iframe 內自動隱藏） -->
 <script>
     (function () {
+        const sideNav = document.querySelector('nav[aria-label="章節導覽"]');
+        if (window.self !== window.top) {
+            if (sideNav) sideNav.style.display = 'none';
+            return;
+        }
         const links = document.querySelectorAll('.side-nav-link');
         const sections = Array.from(links)
             .map(link => document.getElementById(link.dataset.target))

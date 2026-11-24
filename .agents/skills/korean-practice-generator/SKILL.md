@@ -18,12 +18,16 @@ description: >-
    - 檔案統一存放於 **`docs/practice/lesson-{NUM}.md`**（例如 `docs/practice/lesson-013.md`）。
    - Frontmatter 必須包含 **`displayed_sidebar: null`**，使頁面維持乾淨的全寬無干擾介面，不打亂左側目錄。
 
-2. **Docusaurus `<Tabs>` 雙重視角防劇透與 1-to-1 對齊機制 (Anti-spoiler & 1-to-1 Alignment)**：
-   - 每一大題皆由 `<Tabs>` 包覆，**嚴格落實「角色 A 引導、角色 B 盲測無答案、雙方步驟嚴格 1-to-1 對齊」**：
+2. **Docusaurus `<Tabs>` 雙重視角防劇透、全域角色同步與 1-to-1 對齊機制 (Anti-spoiler, Global Role Sync & 1-to-1 Alignment)**：
+   - 每一大題皆由 **`<Tabs groupId="practice-role" queryString>`** 包覆，且所有 `<TabItem>` 的 `value` 統一固定為 **`role_a`**（附 `default`）與 **`role_b`**，讓使用者點擊一次即同步切換整頁角色（防滑到下一題時被劇透，也支援 `?practice-role=role_b` 防劇透連結）。**嚴格落實「角色 A 引導、角色 B 盲測無答案、雙方步驟嚴格 1-to-1 對齊」**：
      - **角色 A（引導者 / 答案）**：手握題目、引導提示、標準答案、糾錯重點與 `<KoreanAudio />` 即時發音按鈕，主導提問與節奏。
      - **角色 B（挑戰者 / 盲測）**：**絕對不能看到任何韓文答案（包含括號內的提示或提醒）**；Part 1/2 可列出中文情境提示或動詞原形題目，Part 3 實戰對話僅提供「中文任務卡」（至多附單一個名詞生字，**嚴禁出現韓文整句答案、慣用語或句型提示**；若需提醒敬語差異，一律用純中文描述），逼迫大腦在 3 秒內組織語言開口。
      - **步驟與題號 1-to-1 嚴格對齊**：角色 A 與角色 B 在每一大題及實戰對話中的**題數、步驟數量與編號順序必須完全一致**（例如 A 有 1～6 步，B 就必須有對應的 1～6 步），嚴禁出現 A 有報價或引導步驟但 B 漏掉該回合的情況。
-     - 每一題結束後，加上俐落換邊提示：`🔄 **換邊**：由角色 B 切換當角色 A 出題`。
+     - **雙欄表格與考官暫存標記相容規則 (`PracticeMarker`)**：
+     - 全站 `/docs/practice/` 頁面已透過 `src/theme/Root.tsx` 自動掛載考官單次暫存標記與結算面板（無需在 Markdown 中額外引入元件）。
+     - 角色 A 分頁的 `label` 務必包含 `角色 A`（或 `考官`／`引導者`），角色 B 分頁包含 `角色 B`，以確保自動辨識考官題目與切回角色 B 時自動收合結算面板。
+     - 若使用雙欄並排抽考表（4 欄），第 1 欄與第 3 欄表頭文字須一致（例如皆為 `題目 (中文)`），系統會自動讓左右兩題可各自獨立標記「已考過／待加強」。
+   - 每一題結束後，加上俐落換邊提示：`🔄 **換邊**：由角色 B 切換當角色 A 出題`。
 
 3. **簡潔有力風格與雙欄排版規範 (Concise Style & 2-Column Layout)**：
    - 頁面一級標題固定為：`# Lesson {NUM} 雙人複習手冊`。
@@ -104,8 +108,8 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 
 > **規則**：考官唸中文，挑戰者 3 秒內說出韓語。完成後互換角色。
 
-<Tabs>
-<TabItem value="p1_role_a" label="👤 角色 A（考官 / 答案）" default>
+<Tabs groupId="practice-role" queryString>
+<TabItem value="role_a" label="👤 角色 A（考官 / 答案）" default>
 
 1. **{題目中文}**  
    ➔ <KoreanAudio text="{韓文答案}" /> **{韓文答案}**  
@@ -115,7 +119,7 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 🔄 **換邊**：由角色 B 出題
 
 </TabItem>
-<TabItem value="p1_role_b" label="👤 角色 B（挑戰者 / 盲測）">
+<TabItem value="role_b" label="👤 角色 B（挑戰者 / 盲測）">
 
 > 💡 **任務**：聽夥伴提示，3 秒內說出韓語：
 
@@ -130,8 +134,8 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 
 > **規則**：考官發球出題，挑戰者秒答過去式或口語變化。
 
-<Tabs>
-<TabItem value="p2_role_a" label="👤 角色 A（考官 / 答案）" default>
+<Tabs groupId="practice-role" queryString>
+<TabItem value="role_a" label="👤 角色 A（考官 / 答案）" default>
 
 ### 1. 動詞/形容詞變形接球
 | 考官發球 (原形) | 挑戰者回擊 (活用形) | 糾錯重點 |
@@ -142,7 +146,7 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 🔄 **換邊**：由角色 B 出題
 
 </TabItem>
-<TabItem value="p2_role_b" label="👤 角色 B（挑戰者 / 盲測）">
+<TabItem value="role_b" label="👤 角色 B（挑戰者 / 盲測）">
 
 > 💡 **任務**：聽題目快速回擊正確時態與變形：
 
@@ -157,13 +161,13 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 
 > **規則**：不看劇本、全韓語模擬。第一輪 A/B；第二輪互換。
 
-<Tabs>
-<TabItem value="p3_role_a" label="🏪 角色 1（{身份}）" default>
+<Tabs groupId="practice-role" queryString>
+<TabItem value="role_a" label="🏪 角色 A：{身份}（引導者）" default>
 
 1. **步驟 1**：<KoreanAudio text="{韓語}" /> **{韓語}**
 
 </TabItem>
-<TabItem value="p3_role_b" label="🎒 角色 2（{身份}）">
+<TabItem value="role_b" label="🎒 角色 B：{身份}（盲測任務卡）">
 
 1. **任務 1**：{中文任務與關鍵字提示}
 

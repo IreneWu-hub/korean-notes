@@ -61,10 +61,10 @@
 1. **存放路徑與無側欄規範**：
    - 存放於 `docs/practice/lesson-{NUM}.md`（如 `docs/practice/lesson-013.md`）。
    - Frontmatter 必須包含 `displayed_sidebar: null`，保持全寬無側欄介面。
-2. **Docusaurus `<Tabs>` 雙重視角防劇透與 1-to-1 對齊機制**：
-   - 每一大題均以 `<Tabs>` 分割，**以角色 A 引導出題為主，角色 B 不可看到韓文答案，且雙方步驟須嚴格 1-to-1 對齊**：
-     - **角色 A（引導者 / 答案）**：附題庫、引導提示、標準答案、重點說明與 `<KoreanAudio />` 即時發音按鈕（可隨機挑題出題）。
-     - **角色 B（挑戰者 / 盲測）**：題型抽測與文法接球可顯示中文提示或動詞原形（**不顯示韓文答案**）；情境對話僅提供純中文任務卡（含括號提示在內，**嚴禁出現韓文整句答案或慣用語**，敬語提醒請用純中文）。
+2. **Docusaurus `<Tabs>` 雙重視角防劇透、全域角色同步與 1-to-1 對齊機制**：
+   - 每一大題均以 **`<Tabs groupId="practice-role" queryString>`** 分割，且所有 `<TabItem>` 的 `value` 統一為 **`role_a`**（附 `default`）與 **`role_b`**，點擊一次即同步切換整頁角色（亦支援 `?practice-role=role_b` 防劇透連結）；**以角色 A 引導出題為主，角色 B 不可看到韓文答案，且雙方步驟須嚴格 1-to-1 對齊**：
+     - **角色 A（引導者 / 答案）**：`label` 須包含 `角色 A`（或 `考官`／`引導者`），以自動相容全站掛載的考官單次暫存標記與結算面板（`PracticeMarker`）；附題庫、引導提示、標準答案、重點說明與 `<KoreanAudio />` 即時發音按鈕（可隨機挑題出題）。
+     - **角色 B（挑戰者 / 盲測）**：`label` 須包含 `角色 B`；題型抽測與文法接球可顯示中文提示或動詞原形（**不顯示韓文答案**）；情境對話僅提供純中文任務卡（含括號提示在內，**嚴禁出現韓文整句答案或慣用語**，敬語提醒請用純中文）。
      - **步驟 1-to-1 對齊**：角色 A 與角色 B 在每一大題及實戰對話中的題數、回合步驟數量與編號順序必須完全一致，嚴禁漏掉對應回合。
    - 每一大題結束後加上乾脆的換邊提示：`🔄 **換邊**：由角色 B 切換當角色 A 出題`。
 3. **彈性 20 分鐘核心 ＋ Optional 延伸架構（不超綱與重點篩選）**：
@@ -82,9 +82,9 @@
    - `conjugation.mdx`：動詞、形容詞活用與時態句型
    - `particles.mdx`：格助詞、副詞格助詞、輔助詞
    - `numbers.mdx`：韓語固有數詞、量詞單位與指示系統
-   - `vocabulary.mdx`：依生活與旅遊情境分類的高頻單字庫（搭配 `<VocabTable />` 支援點擊即時發音）
+   - `vocabulary.mdx`：依生活與旅遊情境分類的高頻單字庫（搭配 `<VocabTable />` 支援點擊發音、遮韓文／遮中文自測、隨機洗牌與區塊連播）
 2. **目前資料庫統整進度**：
-   - **已統整收錄課堂**：**Lesson 01 ~ Lesson 13**
+   - **已統整收錄課堂**：**Lesson 01 ~ Lesson 15**
    - **待更新收錄課堂**：**暫無（累積數堂課後再進行下一批次統整）**
    - 每隔數堂課進行批次抽精華更新時，必須同步更新 `docs/reference/index.mdx` 與本段進度記錄。
 3. **詳細規範參考**：[.agents/skills/korean-reference-updater/SKILL.md](file:///c:/Users/Irene/Documents/_Project/korean-notes/.agents/skills/korean-reference-updater/SKILL.md)。

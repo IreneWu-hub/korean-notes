@@ -10,3 +10,8 @@
   margin-bottom: 12px;
   flex-wrap: wrap;
 }
+
+/* 僅供站內搜尋引擎於靜態建置期擷取課堂全文，不影響畫面排版與列印 */
+.searchIndex {
+  display: none;
+}

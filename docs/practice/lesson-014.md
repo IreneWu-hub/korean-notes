@@ -32,8 +32,8 @@ import { KoreanAudio } from '@site/src/components/KoreanAudio';
 
 > **規則**：角色 A 從以下 TOPIK 高頻單字中**隨機抽考 10～12 題**（唸中文），角色 B 在 3 秒內說出韓語。
 
-<Tabs>
-<TabItem value="p1_role_a" label="👤 角色 A（考官 / 答案）" default>
+<Tabs groupId="practice-role" queryString>
+<TabItem value="role_a" label="👤 角色 A（考官 / 答案）" default>
 
 > 💡 **引導提醒**：優先抽考有構詞規律的「褲裙家族」與日常配件，卡住時可提示漢字音義（如「洋襪」、「正裝」）。
 
@@ -53,7 +53,7 @@ import { KoreanAudio } from '@site/src/components/KoreanAudio';
 | 題目 (中文) | 韓語答案 | 題目 (中文) | 韓語答案 |
 | :--- | :--- | :--- | :--- |
 | **16. 鞋子（總稱）** | <KoreanAudio text="신발" /> **신발** | **22. 戒指** | <KoreanAudio text="반지" /> **반지** |
-| **17. 皮鞋 / 高跟鞋** | <KoreanAudio text="구두" /> **구두** | **23. 耳環** | <KoreanAudio text="귀고리" /> **귀고리** *(귀+고리)* |
+| **17. 皮鞋 / 高跟鞋** | <KoreanAudio text="구두" /> **구두** | **23. 耳環** | <KoreanAudio text="귀고리, 귀걸이" /> **귀고리** *(或 `귀걸이`)* |
 | **18. 運動鞋** | <KoreanAudio text="운동화" /> **운동화** *(運動靴)* | **24. 項鍊** | <KoreanAudio text="목걸이" /> **목걸이** *(목+걸다)* |
 | **19. 拖鞋** | <KoreanAudio text="슬리퍼" /> **슬리퍼** *(Slippers)* | **25. 圍巾** | <KoreanAudio text="목도리" /> **목도리** *(목+돌리다)* |
 | **20. 帽子** | <KoreanAudio text="모자" /> **모자** *(帽子)* | **26. 皮帶 / 腰帶** | <KoreanAudio text="벨트" /> **벨트** *(Belt)* |
@@ -63,7 +63,7 @@ import { KoreanAudio } from '@site/src/components/KoreanAudio';
 🔄 **換邊**：由角色 B 切換當角色 A 出題
 
 </TabItem>
-<TabItem value="p1_role_b" label="👤 角色 B（挑戰者 / 盲測）">
+<TabItem value="role_b" label="👤 角色 B（挑戰者 / 盲測）">
 
 > 💡 **任務**：聽角色 A 隨機抽考，3 秒內說出韓語（無韓文答案）：
 
@@ -98,8 +98,8 @@ import { KoreanAudio } from '@site/src/components/KoreanAudio';
 
 > **規則**：角色 A **隨機抽考 10～12 題**（唸中文），角色 B 3 秒內說出韓語。特別注意「紫蘇葉」發音！
 
-<Tabs>
-<TabItem value="p2_role_a" label="👤 角色 A（考官 / 答案）" default>
+<Tabs groupId="practice-role" queryString>
+<TabItem value="role_a" label="👤 角色 A（考官 / 答案）" default>
 
 > 💡 **引導提醒**：本區聚焦 TOPIK 檢定高頻蔬果與常見餐桌海鮮；抽考到「紫蘇葉」時，務必確認對方唸出 **`[깬닙]`**。
 
@@ -129,7 +129,7 @@ import { KoreanAudio } from '@site/src/components/KoreanAudio';
 🔄 **換邊**：由角色 B 切換當角色 A 出題
 
 </TabItem>
-<TabItem value="p2_role_b" label="👤 角色 B（挑戰者 / 盲測）">
+<TabItem value="role_b" label="👤 角色 B（挑戰者 / 盲測）">
 
 > 💡 **任務**：聽角色 A 隨機抽考，3 秒內說出韓語（無韓文答案）：
 
@@ -166,8 +166,8 @@ import { KoreanAudio } from '@site/src/components/KoreanAudio';
 
 ### A. 冠形詞修飾＆「ㄹ 脫落」快答 (3 分鐘)
 
-<Tabs>
-<TabItem value="p3a_role_a" label="👤 角色 A（考官 / 答案）" default>
+<Tabs groupId="practice-role" queryString>
+<TabItem value="role_a" label="👤 角色 A（考官 / 答案）" default>
 
 | # | 考官發球 (原形 / 目標) | 挑戰者回擊 (答案) | 糾錯重點 |
 | :---: | :--- | :--- | :--- |
@@ -186,7 +186,7 @@ import { KoreanAudio } from '@site/src/components/KoreanAudio';
 🔄 **換邊**：由角色 B 切換當角色 A 出題
 
 </TabItem>
-<TabItem value="p3a_role_b" label="👤 角色 B（挑戰者 / 盲測）">
+<TabItem value="role_b" label="👤 角色 B（挑戰者 / 盲測）">
 
 > 💡 **任務**：聽角色 A 發球，快速說出正確修飾形與 `ㄹ` 脫落變形（無韓文答案）：
 
@@ -203,8 +203,8 @@ import { KoreanAudio } from '@site/src/components/KoreanAudio';
 
 ### B. 服飾店實戰對話 (4 分鐘)
 
-<Tabs>
-<TabItem value="p3b_role_a" label="🏪 角色 A：服飾店員（직원｜引導者）" default>
+<Tabs groupId="practice-role" queryString>
+<TabItem value="role_a" label="🏪 角色 A：服飾店員（직원｜引導者）" default>
 
 > 💡 **引導提醒**：依序推進 1～6 步對話，檢查角色 B 是否有使用本課句型應答。
 
@@ -219,7 +219,7 @@ import { KoreanAudio } from '@site/src/components/KoreanAudio';
 🔄 **換邊**：由角色 B 切換當角色 A 出題
 
 </TabItem>
-<TabItem value="p3b_role_b" label="🎒 角色 B：逛街顧客（손님｜盲測任務卡）">
+<TabItem value="role_b" label="🎒 角色 B：逛街顧客（손님｜盲測任務卡）">
 
 > 🎭 **角色任務卡（無答案版）**：聽店員（角色 A）的引導，依序完成 1～6 步對話！
 
@@ -238,7 +238,7 @@ import { KoreanAudio } from '@site/src/components/KoreanAudio';
 ## 結算 (1 分鐘)
 
 * **本課高頻必備確認**：
-  * **TOPIK 單字**：`바지` 家族、`치마` 家族、常考配件（`모자`, `시계`, `반지`, `목걸이`, `귀고리`）與水果蔬菜（`사과`, `배`, `당근`, `무`, `양파`, `깻잎`）是否能 3 秒內反應？
+  * **TOPIK 單字**：`바지` 家族、`치마` 家族、常考配件（`모자`, `시계`, `반지`, `목걸이`, `귀고리/귀걸이`）與水果蔬菜（`사과`, `배`, `당근`, `무`, `양파`, `깻잎`）是否能 3 秒內反應？
   * **`ㄹ` 脫落＆音變**：`긴바지`, `파는 것`, `사세요`, `압니다 / 아니까`，以及 `깻잎 [깬닙]` 是否發對？
 * 📖 **[返回 Lesson 14 課堂筆記](../lessons/lesson-014.md)** ｜ ✍️ **[前往 Lesson 14 課後重點複習作業](../homework/lesson-014.md)**
 
@@ -248,8 +248,8 @@ import { KoreanAudio } from '@site/src/components/KoreanAudio';
 
 > 核心單字與對話已熟練的話，可加碼抽考本課其餘實用單字（花紋、質料、堅果與用餐表達）。
 
-<Tabs>
-<TabItem value="opt_role_a" label="👤 角色 A（考官 / 答案）" default>
+<Tabs groupId="practice-role" queryString>
+<TabItem value="role_a" label="👤 角色 A（考官 / 答案）" default>
 
 ### 1. 服飾延伸、花紋與質料 (1–10)
 | 題目 (中文) | 韓語答案 | 題目 (中文) | 韓語答案 |
@@ -275,7 +275,7 @@ import { KoreanAudio } from '@site/src/components/KoreanAudio';
 🔄 **換邊**：由角色 B 切換當角色 A 出題
 
 </TabItem>
-<TabItem value="opt_role_b" label="👤 角色 B（挑戰者 / 盲測）">
+<TabItem value="role_b" label="👤 角色 B（挑戰者 / 盲測）">
 
 > 💡 **任務**：聽角色 A 抽考，3 秒內說出韓語（無韓文答案）：
 

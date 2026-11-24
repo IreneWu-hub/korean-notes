@@ -768,13 +768,14 @@
                                     <div class="flex items-center justify-between gap-2 pb-1.5 mb-1.5 border-b border-slate-100">
                                         <div class="flex items-center gap-2">
                                             <span class="font-bold text-slate-900 text-lg sm:text-xl">귀고리</span>
-                                            <button onclick="speakKorean('귀고리')" class="no-print p-1 text-rose-700 hover:text-rose-900 rounded-lg hover:bg-rose-50 transition-colors" title="發音">
+                                            <span class="text-sm text-slate-500 font-medium">(귀걸이)</span>
+                                            <button onclick="speakKorean('귀고리, 귀걸이')" class="no-print p-1 text-rose-700 hover:text-rose-900 rounded-lg hover:bg-rose-50 transition-colors" title="發音">
                                                 <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
                                             </button>
                                         </div>
                                         <span class="font-bold text-rose-800 text-base">耳環</span>
                                     </div>
-                                    <p class="text-sm sm:text-base text-slate-600 font-medium">귀(耳朵) + 고리(環扣) ➔ 扣在耳朵上的環</p>
+                                    <p class="text-sm sm:text-base text-slate-600 font-medium">귀(耳朵) + 고리(環扣) ➔ 扣在耳朵上的環（口語亦常說 귀걸이）</p>
                                 </div>
 
                                 <!-- 목걸이 -->
@@ -2288,6 +2289,11 @@
 
     <script>
         (function () {
+            const sideNav = document.querySelector('nav[aria-label="章節導覽"]');
+            if (window.self !== window.top) {
+                if (sideNav) sideNav.style.display = 'none';
+                return;
+            }
             const links = document.querySelectorAll('.side-nav-link');
             const sections = Array.from(links)
                 .map(link => document.getElementById(link.dataset.target))

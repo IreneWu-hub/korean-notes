@@ -1,0 +1,304 @@
+/* 考官題目可點擊標記樣式 */
+.markableItem {
+  cursor: pointer;
+  transition: background-color 0.16s ease, opacity 0.16s ease;
+}
+
+.markableItem:hover {
+  background-color: rgba(46, 133, 85, 0.06);
+}
+
+[data-theme='dark'] .markableItem:hover {
+  background-color: rgba(37, 194, 160, 0.09);
+}
+
+.markableItem[data-pm-status='done'] {
+  background-color: rgba(128, 128, 128, 0.08) !important;
+  opacity: 0.58;
+}
+
+.markableItem[data-pm-status='weak'] {
+  background-color: rgba(234, 88, 12, 0.13) !important;
+  opacity: 1;
+}
+
+[data-theme='dark'] .markableItem[data-pm-status='weak'] {
+  background-color: rgba(251, 146, 60, 0.18) !important;
+}
+
+/* 清單型題目額外微調圓角與留白 */
+li.markableItem {
+  border-radius: 6px;
+  padding: 3px 6px;
+  margin-left: -6px;
+}
+
+/* 題目前的極簡狀態圓點 */
+.statusDot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  height: 17px;
+  margin-right: 7px;
+  border-radius: 50%;
+  border: 1.5px solid var(--ifm-color-emphasis-400);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: -2px;
+  flex-shrink: 0;
+  transition: all 0.16s ease;
+  user-select: none;
+}
+
+.statusDot[data-pm-badge-status='done'] {
+  background-color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+  color: #ffffff;
+}
+
+.statusDot[data-pm-badge-status='weak'] {
+  background-color: #ea580c;
+  border-color: #ea580c;
+  color: #ffffff;
+}
+
+/* 跳轉回原題時的短暫高亮 */
+.jumpHighlight {
+  outline: 2px solid #ea580c;
+  outline-offset: 2px;
+}
+
+/* 右下角懸浮結算小工具 */
+.floatingWrap {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.pillBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-800);
+  background-color: var(--ifm-background-surface-color, #ffffff);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.pillBtn:hover {
+  border-color: var(--ifm-color-primary);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16);
+}
+
+.pillBtnHasWeak {
+  border-color: #ea580c;
+}
+
+.pillStatDone {
+  color: var(--ifm-color-primary);
+}
+
+.pillStatWeak {
+  color: #ea580c;
+}
+
+[data-theme='dark'] .pillStatWeak {
+  color: #fb923c;
+}
+
+.pillStatMuted {
+  color: var(--ifm-color-emphasis-600);
+}
+
+.pillDivider {
+  color: var(--ifm-color-emphasis-400);
+}
+
+/* 展開的結算面板 */
+.drawer {
+  width: min(380px, calc(100vw - 32px));
+  max-height: 62vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--ifm-background-surface-color, #ffffff);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+}
+
+.drawerHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.drawerTitleGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.drawerTitle {
+  font-size: 0.95rem;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.drawerMeta {
+  font-size: 0.78rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.closeBtn {
+  background: transparent;
+  border: none;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.closeBtn:hover {
+  background-color: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-emphasis-900);
+}
+
+.drawerBody {
+  padding: 10px 14px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.emptyText {
+  margin: 6px 0;
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+  line-height: 1.5;
+}
+
+.weakList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.weakItem {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 9px 10px;
+  border-radius: 8px;
+  background-color: rgba(234, 88, 12, 0.08);
+  border: 1px solid rgba(234, 88, 12, 0.25);
+}
+
+[data-theme='dark'] .weakItem {
+  background-color: rgba(251, 146, 60, 0.12);
+  border-color: rgba(251, 146, 60, 0.3);
+}
+
+.weakItemMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.weakLabel {
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: var(--ifm-color-emphasis-900);
+  line-height: 1.4;
+}
+
+.weakItemActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.miniBtn,
+.miniBtnDone {
+  padding: 3px 9px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background-color: var(--ifm-background-surface-color, #ffffff);
+  color: var(--ifm-color-emphasis-800);
+}
+
+.miniBtn:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.miniBtnDone {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.miniBtnDone:hover {
+  background-color: var(--ifm-color-primary);
+  color: #ffffff;
+}
+
+.drawerFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 14px;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.hintText {
+  font-size: 0.75rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.resetBtn {
+  padding: 4px 10px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #dc2626;
+  background-color: transparent;
+  border: 1px solid rgba(220, 38, 38, 0.4);
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.resetBtn:hover {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .floatingWrap {
+    right: 12px;
+    bottom: 14px;
+  }
+}

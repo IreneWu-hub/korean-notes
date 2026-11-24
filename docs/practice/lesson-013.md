@@ -34,8 +34,8 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 
 > **規則**：角色 A 唸中文引導提問（可自由跳題或隨機抽考），角色 B 不看題目、3 秒內說出韓語。完成後互換分頁重來一次。
 
-<Tabs>
-<TabItem value="p1_role_a" label="👤 角色 A（引導者 / 答案）" default>
+<Tabs groupId="practice-role" queryString>
+<TabItem value="role_a" label="👤 角色 A（引導者 / 答案）" default>
 
 > 💡 **引導方式**：依序或隨機挑題唸出中文情境給角色 B 聽，若對方卡住可給一個單字提示，確認發音與敬語後再下一題。
 
@@ -56,7 +56,7 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 🔄 **換邊**：切到「角色 B」分頁，改由對方切進「角色 A」引導出題！
 
 </TabItem>
-<TabItem value="p1_role_b" label="👤 角色 B（挑戰者 / 盲測）">
+<TabItem value="role_b" label="👤 角色 B（挑戰者 / 盲測）">
 
 > 💡 **任務**：聽夥伴提示，3 秒內說出韓語（無韓文答案）：
 
@@ -76,8 +76,8 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 
 > **規則**：角色 A 從題庫中隨機點名發球（唸原形或中文），角色 B 不看題庫秒答過去式或活用形。
 
-<Tabs>
-<TabItem value="p2_role_a" label="👤 角色 A（引導者 / 題庫）" default>
+<Tabs groupId="practice-role" queryString>
+<TabItem value="role_a" label="👤 角色 A（引導者 / 題庫）" default>
 
 > 💡 **引導方式**：從以下各區隨機挑 3～5 題發球，換邊時可挑不同的題目出題。
 
@@ -106,7 +106,7 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 🔄 **換邊**：切到「角色 B」分頁，改由對方當角色 A 發球！
 
 </TabItem>
-<TabItem value="p2_role_b" label="👤 角色 B（挑戰者 / 盲測）">
+<TabItem value="role_b" label="👤 角色 B（挑戰者 / 盲測）">
 
 > 💡 **任務**：聽角色 A 發球，快速回擊正確時態與變形（無韓文答案）：
 
@@ -127,8 +127,8 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 
 > **規則**：全韓語情境模擬，由角色 A（店員）主導對話節奏，角色 B（顧客）依中文任務卡臨場反應，**不能看韓文答案**。第一輪結束後互換分頁演第二次。
 
-<Tabs>
-<TabItem value="p3_role_a" label="🏪 角色 A：店員（알바생｜引導者）" default>
+<Tabs groupId="practice-role" queryString>
+<TabItem value="role_a" label="🏪 角色 A：店員（알바생｜引導者）" default>
 
 > 💡 **引導提醒**：你是超商店員，請用韓語主動推進結帳流程；如果顧客卡住，只給單字提示，不要直接唸出對方的整句韓文。
 
@@ -148,7 +148,7 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 6. **送客道別**：<KoreanAudio text="감사합니다. 안녕히 가세요!" /> **감사합니다. 안녕히 가세요!**
 
 </TabItem>
-<TabItem value="p3_role_b" label="🎒 角色 B：顧客（손님｜盲測任務卡）">
+<TabItem value="role_b" label="🎒 角色 B：顧客（손님｜盲測任務卡）">
 
 > 🎭 **角色任務卡（無答案版）**：請聽店員（角色 A）的引導，依序用韓語完成任務！
 
@@ -177,8 +177,8 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 
 ### Optional 1：作息時間、一日時段與延伸動詞庫 (5 分鐘)
 
-<Tabs>
-<TabItem value="opt1_role_a" label="👤 角色 A（引導者 / 延伸題庫）" default>
+<Tabs groupId="practice-role" queryString>
+<TabItem value="role_a" label="👤 角色 A（引導者 / 延伸題庫）" default>
 
 > 💡 **引導方式**：由角色 A 自由挑選以下題目隨機抽考；換邊時可挑沒考過的題目！
 
@@ -216,7 +216,7 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 🔄 **換邊**：切到「角色 B」分頁，改由對方當角色 A 抽考！
 
 </TabItem>
-<TabItem value="opt1_role_b" label="👤 角色 B（挑戰者 / 盲測）">
+<TabItem value="role_b" label="👤 角色 B（挑戰者 / 盲測）">
 
 > 💡 **任務**：依角色 A 隨機抽考，快速說出韓語（無韓文答案）：
 
@@ -239,8 +239,8 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 
 ### Optional 2：超商詞彙與味覺完整快篩 (3 分鐘)
 
-<Tabs>
-<TabItem value="opt2_role_a" label="👤 角色 A（引導者 / 題庫）" default>
+<Tabs groupId="practice-role" queryString>
+<TabItem value="role_a" label="👤 角色 A（引導者 / 題庫）" default>
 
 > 💡 **引導方式**：隨機挑 5～6 個唸中文，讓角色 B 2 秒內說出韓文（味覺請說「現在式」）。
 
@@ -260,7 +260,7 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 🔄 **換邊**：切到「角色 B」分頁，換對方抽考！
 
 </TabItem>
-<TabItem value="opt2_role_b" label="👤 角色 B（挑戰者 / 盲測）">
+<TabItem value="role_b" label="👤 角色 B（挑戰者 / 盲測）">
 
 > 💡 **任務**：聽角色 A 隨機抽考，2 秒內直覺說出韓文（無韓文答案）：
 
@@ -276,8 +276,8 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
 
 ### Optional 3：情境對話加碼 — 朋友見面關心昨日作息 (5 分鐘)
 
-<Tabs>
-<TabItem value="opt3_role_a" label="🗣️ 角色 A：關心好友（引導者）" default>
+<Tabs groupId="practice-role" queryString>
+<TabItem value="role_a" label="🗣️ 角色 A：關心好友（引導者）" default>
 
 > 💡 **引導方式**：由你主動開口關心角色 B 昨天的作息與飲食，透過問句引導對方使用「過去式、時間、動詞與味覺形容詞」回答！
 
@@ -291,7 +291,7 @@ import { KoreanWord, KoreanAudio } from '@site/src/components/KoreanAudio';
    ➔ <KoreanAudio text="진짜 피곤해요. 오늘은 일찍 자요!" /> **진짜 피곤해요. 오늘은 일찍 자요!**
 
 </TabItem>
-<TabItem value="opt3_role_b" label="😴 角色 B：晚睡好友（盲測任務卡）">
+<TabItem value="role_b" label="😴 角色 B：晚睡好友（盲測任務卡）">
 
 > 🎭 **角色任務卡（無答案版）**：聽朋友（角色 A）的提問，用韓語自由回答昨天的真實或虛構作息！
 

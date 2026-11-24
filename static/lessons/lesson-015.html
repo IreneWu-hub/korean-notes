@@ -1094,6 +1094,11 @@
 
     <script>
         (function () {
+            const sideNav = document.querySelector('nav[aria-label="章節導覽"]');
+            if (window.self !== window.top) {
+                if (sideNav) sideNav.style.display = 'none';
+                return;
+            }
             const links = document.querySelectorAll('.side-nav-link');
             const sections = Array.from(links)
                 .map(link => document.getElementById(link.dataset.target))

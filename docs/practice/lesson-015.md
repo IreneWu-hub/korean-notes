@@ -32,8 +32,8 @@ import { KoreanAudio } from '@site/src/components/KoreanAudio';
 
 > **規則**：角色 A 抽考場所單字（唸中文）並發球動詞原形，角色 B 在 3 秒內說出韓語與正確活用形。完成後互換角色。
 
-<Tabs>
-<TabItem value="p1_role_a" label="👤 角色 A（考官 / 答案）" default>
+<Tabs groupId="practice-role" queryString>
+<TabItem value="role_a" label="👤 角色 A（考官 / 答案）" default>
 
 > 💡 **引導提醒**：留意 `학교 [학꾜]`、`약국 [약꾹]`、`식당 [식땅]`、`백화점 [배콰점]` 的音變，以及 `듣다` 遇到母音語尾時 `ㄷ ➔ ㄹ` 的變化！
 
@@ -63,7 +63,7 @@ import { KoreanAudio } from '@site/src/components/KoreanAudio';
 🔄 **換邊**：由角色 B 切換當角色 A 出題
 
 </TabItem>
-<TabItem value="p1_role_b" label="👤 角色 B（挑戰者 / 盲測）">
+<TabItem value="role_b" label="👤 角色 B（挑戰者 / 盲測）">
 
 > 💡 **任務**：聽角色 A 抽考，3 秒內說出韓語場所名稱與正確動詞活用（無韓文答案）：
 
@@ -94,8 +94,8 @@ import { KoreanAudio } from '@site/src/components/KoreanAudio';
 
 > **規則**：角色 A 唸中文句子（可隨機跳題抽考），角色 B 在 3 秒內完整說出韓語句子。特別檢查場所助詞與連音！
 
-<Tabs>
-<TabItem value="p2_role_a" label="👤 角色 A（考官 / 答案）" default>
+<Tabs groupId="practice-role" queryString>
+<TabItem value="role_a" label="👤 角色 A（考官 / 答案）" default>
 
 > 💡 **引導提醒**：口訣確認——「去／來／在 (`가다/오다/있다`)」用 **`에`**；「在某地做動作」用 **`에서`**！
 
@@ -118,7 +118,7 @@ import { KoreanAudio } from '@site/src/components/KoreanAudio';
 🔄 **換邊**：由角色 B 切換當角色 A 出題
 
 </TabItem>
-<TabItem value="p2_role_b" label="👤 角色 B（挑戰者 / 盲測）">
+<TabItem value="role_b" label="👤 角色 B（挑戰者 / 盲測）">
 
 > 💡 **任務**：聽角色 A 唸中文，3 秒內直覺說出完整韓語（注意場所助詞與動詞變化，無韓文答案）：
 
@@ -140,8 +140,8 @@ import { KoreanAudio } from '@site/src/components/KoreanAudio';
 
 > **規則**：全韓語情境模擬，由角色 A 主導問句推進，角色 B 依中文任務卡臨場反應。第一輪結束後互換角色。
 
-<Tabs>
-<TabItem value="p3_role_a" label="🗣️ 角色 A：揪團好友（引導者）" default>
+<Tabs groupId="practice-role" queryString>
+<TabItem value="role_a" label="🗣️ 角色 A：揪團好友（引導者）" default>
 
 > 💡 **引導提醒**：依序推進 1～6 步對話；若夥伴卡住，只給單一個中文或名詞提示，檢查對方是否正確運用過去式、`하고`、`에서` 與拍照請求句。
 
@@ -156,7 +156,7 @@ import { KoreanAudio } from '@site/src/components/KoreanAudio';
 🔄 **換邊**：由角色 B 切換當角色 A 出題
 
 </TabItem>
-<TabItem value="p3_role_b" label="🎒 角色 B：出遊夥伴（盲測任務卡）">
+<TabItem value="role_b" label="🎒 角色 B：出遊夥伴（盲測任務卡）">
 
 > 🎭 **角色任務卡（無答案版）**：聽好友（角色 A）的提問，依序完成 1～6 步全韓語應答！
 
@@ -186,8 +186,8 @@ import { KoreanAudio } from '@site/src/components/KoreanAudio';
 
 > 核心內容已熟練的話，可加碼抽考本課其餘場所詞彙、時間副詞、外來語名詞與延伸造句。
 
-<Tabs>
-<TabItem value="opt_role_a" label="👤 角色 A（考官 / 答案）" default>
+<Tabs groupId="practice-role" queryString>
+<TabItem value="role_a" label="👤 角色 A（考官 / 答案）" default>
 
 ### 1. 其餘場所、時間副詞與生活名詞 (1–16)
 | 題目 (中文) | 韓語答案 | 題目 (中文) | 韓語答案 |
@@ -215,7 +215,7 @@ import { KoreanAudio } from '@site/src/components/KoreanAudio';
 🔄 **換邊**：由角色 B 切換當角色 A 出題
 
 </TabItem>
-<TabItem value="opt_role_b" label="👤 角色 B（挑戰者 / 盲測）">
+<TabItem value="role_b" label="👤 角色 B（挑戰者 / 盲測）">
 
 > 💡 **任務**：聽角色 A 抽考，3 秒內說出韓語（無韓文答案）：
 
