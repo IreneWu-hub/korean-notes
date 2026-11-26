@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson #16 旅遊韓語會話馬上開口說 (I.S)의 한국어 수업 [2026.11.26]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans KR', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+
+        @media print {
+            @page {
+                size: A4 portrait;
+                margin: 1.2cm;
+            }
+            body {
+                background-color: white;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .page-break-avoid {
+                page-break-inside: avoid;
+            }
+            .print-no-shadow {
+                box-shadow: none !important;
+                border: 1px solid #e2e8f0;
+            }
+        }
+    </style>
+    <script>
+        function speakKorean(text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'ko-KR';
+                utterance.rate = 0.85;
+                window.speechSynthesis.speak(utterance);
+            } else {
+                alert('您的瀏覽器不支援語音發音功能。');
+            }
+        }
+    </script>
+</head>
+<body class="antialiased pb-12">
+
+    <!-- 側邊章節導覽 (僅寬螢幕 / 開新分頁時顯示) -->
+    <nav aria-label="章節導覽" class="no-print hidden xl:block fixed top-24 right-4 2xl:right-10 w-44 z-30">
+        <div class="bg-white/90 backdrop-blur-sm rounded-xl border border-indigo-100 shadow-sm p-3">
+            <div class="text-xs font-bold text-indigo-900 mb-2 pb-1.5 border-b border-indigo-100 flex items-center gap-1.5">
+                <span>📑</span>
+                <span>章節導覽</span>
+            </div>
+            <ul id="side-nav-list" class="space-y-1 text-xs">
+                <li>
+                    <a href="#section-1" data-target="section-1" class="side-nav-link block px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-indigo-50 hover:text-indigo-700 transition-colors">
+                        <span class="font-bold block">🚇 第一站</span>
+                        <span class="text-[11px] text-slate-400 block truncate">出發搭地鐵與共鳴</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section-2" data-target="section-2" class="side-nav-link block px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-indigo-50 hover:text-indigo-700 transition-colors">
+                        <span class="font-bold block">👗 第二站</span>
+                        <span class="text-[11px] text-slate-400 block truncate">服飾試穿全攻略</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section-3" data-target="section-3" class="side-nav-link block px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-indigo-50 hover:text-indigo-700 transition-colors">
+                        <span class="font-bold block">💸 第三站</span>
+                        <span class="text-[11px] text-slate-400 block truncate">殺價拍板與數字</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section-4" data-target="section-4" class="side-nav-link block px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-indigo-50 hover:text-indigo-700 transition-colors">
+                        <span class="font-bold block">🍜 第四站</span>
+                        <span class="text-[11px] text-slate-400 block truncate">排隊點餐與座位</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section-5" data-target="section-5" class="side-nav-link block px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-indigo-50 hover:text-indigo-700 transition-colors">
+                        <span class="font-bold block">🧠 第五區</span>
+                        <span class="text-[11px] text-slate-400 block truncate">橫向語法系統盤</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="mt-2 pt-2 border-t border-indigo-100">
+                <a href="#" class="block px-2.5 py-1 rounded-lg text-xs font-semibold text-indigo-600 hover:bg-indigo-50 transition-colors text-center">
+                    ⬆️ 回到頂部
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+        <!-- 頁首 (無列印按鈕) -->
+        <div class="mb-6 border-b-2 border-indigo-600 pb-4">
+            <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 leading-tight">
+                Lesson #16 <br class="sm:hidden">旅遊韓語會話馬上開口說
+            </h1>
+            <p class="text-lg text-indigo-700 font-semibold mt-2">
+                (I.S)의 한국어 수업 <span class="text-gray-500 font-normal ml-2">2026.11.26</span>
+            </p>
+        </div>
+
+        <!-- 🎯 本堂學習重點與單元導覽 (緊湊窄版目錄) -->
+        <div class="bg-indigo-50/70 rounded-xl p-3.5 sm:p-4 mb-5 print-no-shadow page-break-avoid border-l-4 border-indigo-500 shadow-sm">
+            <div class="flex items-center justify-between mb-2.5 pb-2 border-b border-indigo-100">
+                <div class="flex items-center gap-1.5">
+                    <span class="text-lg">🎯</span>
+                    <h2 class="text-base sm:text-lg font-bold text-indigo-950">本堂學習重點與單元導覽</h2>
+                </div>
+                <span class="text-xs text-indigo-700 font-semibold bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">
+                    Day 1-4 總複習 ⚡
+                </span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
+                <a href="#section-1" class="group flex items-center justify-between p-2.5 bg-white/90 hover:bg-white rounded-lg border border-indigo-100 hover:border-indigo-400 hover:shadow-sm transition-all">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <span class="px-2 py-0.5 rounded text-xs font-bold bg-indigo-100 text-indigo-900 group-hover:bg-indigo-600 group-hover:text-white transition-colors flex-shrink-0">
+                            🚇 第一站
+                        </span>
+                        <div class="min-w-0">
+                            <span class="font-bold text-slate-800 text-sm group-hover:text-indigo-800 transition-colors block truncate">
+                                出發搭地鐵與話題起手式
+                            </span>
+                            <span class="text-sm text-slate-500 block truncate">-잖아요? 共鳴・산 過去定語・아까 vs 방금</span>
+                        </div>
+                    </div>
+                    <span class="text-slate-400 group-hover:text-indigo-600 group-hover:translate-x-0.5 transition-all text-sm font-bold ml-1.5 flex-shrink-0">➔</span>
+                </a>
+
+                <a href="#section-2" class="group flex items-center justify-between p-2.5 bg-white/90 hover:bg-white rounded-lg border border-indigo-100 hover:border-rose-400 hover:shadow-sm transition-all">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <span class="px-2 py-0.5 rounded text-xs font-bold bg-rose-100 text-rose-900 group-hover:bg-rose-600 group-hover:text-white transition-colors flex-shrink-0">
+                            👗 第二站
+                        </span>
+                        <div class="min-w-0">
+                            <span class="font-bold text-slate-800 text-sm group-hover:text-rose-800 transition-colors block truncate">
+                                服飾試穿全攻略（詳解比較）
+                            </span>
+                            <span class="text-sm text-slate-500 block truncate">어울리다 vs 맞다・換尺寸・핏・낫다・돌다</span>
+                        </div>
+                    </div>
+                    <span class="text-slate-400 group-hover:text-rose-600 group-hover:translate-x-0.5 transition-all text-sm font-bold ml-1.5 flex-shrink-0">➔</span>
+                </a>
+
+                <a href="#section-3" class="group flex items-center justify-between p-2.5 bg-white/90 hover:bg-white rounded-lg border border-indigo-100 hover:border-amber-400 hover:shadow-sm transition-all">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <span class="px-2 py-0.5 rounded text-xs font-bold bg-amber-100 text-amber-900 group-hover:bg-amber-600 group-hover:text-white transition-colors flex-shrink-0">
+                            💸 第三站
+                        </span>
+                        <div class="min-w-0">
+                            <span class="font-bold text-slate-800 text-sm group-hover:text-amber-800 transition-colors block truncate">
+                                殺價攻防與價格聽讀挑戰
+                            </span>
+                            <span class="text-sm text-slate-500 block truncate">付現優惠・이걸로 할게요・23800/4900/17500</span>
+                        </div>
+                    </div>
+                    <span class="text-slate-400 group-hover:text-amber-600 group-hover:translate-x-0.5 transition-all text-sm font-bold ml-1.5 flex-shrink-0">➔</span>
+                </a>
+
+                <a href="#section-4" class="group flex items-center justify-between p-2.5 bg-white/90 hover:bg-white rounded-lg border border-indigo-100 hover:border-emerald-400 hover:shadow-sm transition-all">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <span class="px-2 py-0.5 rounded text-xs font-bold bg-emerald-100 text-emerald-900 group-hover:bg-emerald-600 group-hover:text-white transition-colors flex-shrink-0">
+                            🍜 第四站
+                        </span>
+                        <div class="min-w-0">
+                            <span class="font-bold text-slate-800 text-sm group-hover:text-emerald-800 transition-colors block truncate">
+                                排隊、點餐與入店用餐
+                            </span>
+                            <span class="text-sm text-slate-500 block truncate">줄을 서다・N(이)요簡答・가게 안으로 들어오세요</span>
+                        </div>
+                    </div>
+                    <span class="text-slate-400 group-hover:text-emerald-600 group-hover:translate-x-0.5 transition-all text-sm font-bold ml-1.5 flex-shrink-0">➔</span>
+                </a>
+
+                <a href="#section-5" class="sm:col-span-2 group flex items-center justify-between p-2.5 bg-white/90 hover:bg-white rounded-lg border border-indigo-100 hover:border-slate-400 hover:shadow-sm transition-all">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <span class="px-2 py-0.5 rounded text-xs font-bold bg-slate-200 text-slate-900 group-hover:bg-slate-800 group-hover:text-white transition-colors flex-shrink-0">
+                            🧠 第五區
+                        </span>
+                        <div class="min-w-0">
+                            <span class="font-bold text-slate-800 text-sm group-hover:text-slate-950 transition-colors block truncate">
+                                橫向語法系統總整理（考前 1 分鐘速查盤）
+                            </span>
+                            <span class="text-sm text-slate-500 block truncate">一次串起全場的「店員尊稱 -(으)시-」與「問句語氣三級跳」</span>
+                        </div>
+                    </div>
+                    <span class="text-slate-400 group-hover:text-slate-700 group-hover:translate-x-0.5 transition-all text-sm font-bold ml-1.5 flex-shrink-0">➔</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- 🎬 複習進度與影片連結 -->
+        <div class="bg-white rounded-xl p-3.5 sm:p-4 mb-10 border border-slate-200 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="space-y-1">
+                <p class="text-sm font-bold text-slate-900">
+                    🎬 進度：<span class="text-indigo-700">kpop旅遊韓語 Day 1-4 끝</span>（課本複習 × 影片實戰口語）
+                </p>
+                <p class="text-sm text-slate-600">
+                    <span class="px-2 py-0.5 rounded text-xs font-bold bg-blue-100 text-blue-900 mr-1">📘 課本基礎</span>
+                    課堂教過的標準句型 ➔
+                    <span class="px-2 py-0.5 rounded text-xs font-bold bg-purple-100 text-purple-900 mx-1">🎥 課外口語</span>
+                    影片與韓國店員真實對話語氣
+                </p>
+            </div>
+            <a href="https://www.youtube.com/watch?v=Y6bmgm41VlY" target="_blank" rel="noopener noreferrer" class="no-print inline-flex items-center justify-center gap-1.5 px-3.5 py-2 bg-red-600 hover:bg-red-700 text-white text-sm font-bold rounded-lg shadow-sm transition-colors flex-shrink-0">
+                <span>▶ 觀看複習影片</span>
+            </a>
+        </div>
+
+        <!-- ========================================================= -->
+        <!-- 第一站：出發搭地鐵（旅伴同行 × 話題起手式） -->
+        <!-- ========================================================= -->
+        <section id="section-1" class="mb-14 scroll-mt-8">
+            <div class="flex items-center gap-2.5 mb-5 pb-2 border-b-2 border-indigo-200">
+                <span class="px-2.5 py-1 rounded-lg bg-indigo-600 text-white text-xs font-bold">第一站</span>
+                <h2 class="text-xl sm:text-2xl font-bold text-gray-900">🚇 出發搭地鐵：旅伴同行與話題起手式</h2>
+            </div>
+
+            <!-- 1-1: -이에요 vs -이잖아요? -->
+            <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden mb-6 page-break-avoid">
+                <div class="bg-indigo-50/80 px-5 py-3.5 border-b border-indigo-100 flex flex-wrap items-center justify-between gap-2">
+                    <h3 class="text-base sm:text-lg font-bold text-indigo-950">1. 客觀陳述「-이에요」vs 尋求共鳴「-(이)잖아요?」</h3>
+                    <span class="px-2 py-0.5 rounded text-xs font-bold bg-purple-100 text-purple-900">🎥 語氣升級</span>
+                </div>
+                <div class="p-5 space-y-5">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-slate-50 rounded-xl p-4 border-t-4 border-slate-400 border border-slate-200">
+                            <div class="flex items-center justify-between mb-1.5">
+                                <span class="px-2 py-0.5 rounded text-xs font-bold bg-slate-200 text-slate-800">📘 客觀陳述事實</span>
+                                <button onclick="speakKorean('우리 셋이 가는 게 처음이에요.')" class="no-print p-1.5 text-indigo-600 hover:bg-indigo-100 rounded-full" title="點擊發音">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                </button>
+                            </div>
+                            <p class="text-lg sm:text-xl font-bold text-slate-900">우리 셋이 가는 게 처음이에요.</p>
+                            <p class="text-sm sm:text-base font-semibold text-slate-700 mt-1">我們三個人一起去是第一次。</p>
+                            <p class="text-sm text-slate-600 mt-1.5">向還不知道這件事的人平鋪直敘說明事實。</p>
+                        </div>
+
+                        <div class="bg-indigo-50/60 rounded-xl p-4 border-t-4 border-indigo-500 border border-indigo-200">
+                            <div class="flex items-center justify-between mb-1.5">
+                                <span class="px-2 py-0.5 rounded text-xs font-bold bg-indigo-100 text-indigo-900">🎥 喚起共同記憶「不是嘛」</span>
+                                <button onclick="speakKorean('우리 셋이 가는 게 처음이잖아요?')" class="no-print p-1.5 text-indigo-600 hover:bg-indigo-100 rounded-full" title="點擊發音">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                </button>
+                            </div>
+                            <p class="text-lg sm:text-xl font-bold text-indigo-950">우리 셋이 가는 게 처음이잖아요?</p>
+                            <p class="text-sm sm:text-base font-semibold text-slate-800 mt-1">我們三個人一起去，這不是第一次嘛？</p>
+                            <p class="text-sm text-slate-700 mt-1.5">對方也知道的事實，語氣帶點撒嬌或提醒：「對吧！我們仨這不是第一次一起出國嗎！」</p>
+                        </div>
+                    </div>
+
+                    <!-- 初學者逐詞拆解 -->
+                    <div class="bg-slate-50 rounded-xl p-4 border border-slate-200">
+                        <p class="text-sm font-bold text-slate-900 mb-2.5">🔍 初學者逐詞拆解：`우리 셋이 가는 게 처음이잖아요?`</p>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                            <div class="bg-white p-3 rounded-lg border border-slate-200">
+                                <span class="text-lg font-bold text-slate-900 block">우리 셋이</span>
+                                <span class="text-sm font-semibold text-indigo-800 block">我們三個人</span>
+                                <span class="text-sm text-slate-600 block mt-0.5">固有數詞 셋 + 主格 이</span>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg border border-slate-200">
+                                <span class="text-lg font-bold text-slate-900 block">가는 게</span>
+                                <span class="text-sm font-semibold text-indigo-800 block">「去」這件事</span>
+                                <span class="text-sm text-slate-600 block mt-0.5">가다 + -는 것 + 이 ➔ 가는 게</span>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg border border-slate-200">
+                                <span class="text-lg font-bold text-slate-900 block">처음</span>
+                                <span class="text-sm font-semibold text-indigo-800 block">第一次</span>
+                                <span class="text-sm text-slate-600 block mt-0.5">名詞（有收音 ㅁ）</span>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg border border-slate-200">
+                                <span class="text-lg font-bold text-slate-900 block">-이잖아요?</span>
+                                <span class="text-sm font-semibold text-indigo-800 block">不是…嘛？</span>
+                                <span class="text-sm text-slate-600 block mt-0.5">名詞接 -(이)잖아요；動詞/形容詞直接接 -잖아요</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1-2: 話題起手式與時間副詞 아까 vs 방금 -->
+            <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden page-break-avoid">
+                <div class="bg-slate-50 px-5 py-3.5 border-b border-slate-200">
+                    <h3 class="text-base sm:text-lg font-bold text-slate-900">2. 開啟話題「있잖아?」・過去定語「산」・時間副詞「아까 vs 방금」</h3>
+                </div>
+                <div class="p-5 space-y-5">
+                    <div class="bg-amber-50/60 rounded-xl p-4 border border-amber-200">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                            <div>
+                                <p class="text-lg sm:text-xl font-bold text-slate-900">아까 산 교통 카드 있잖아?</p>
+                                <p class="text-sm sm:text-base font-semibold text-slate-800 mt-0.5">對了，剛剛買的那張交通卡不是嗎？（半語開啟話題）</p>
+                            </div>
+                            <button onclick="speakKorean('아까 산 교통 카드 있잖아?')" class="no-print inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-indigo-700 bg-white hover:bg-indigo-50 border border-indigo-200 rounded-full self-start sm:self-center flex-shrink-0" title="點擊朗讀">
+                                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                朗讀
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3 pt-3 border-t border-amber-200 text-sm text-slate-700">
+                            <div>
+                                <strong>① 過去定語 산：</strong>사다（買，無收音）+ <strong>-ㄴ</strong> ➔ <strong>산</strong>（買了的）。對比：<strong>사는</strong>（正在買的）。
+                            </div>
+                            <div>
+                                <strong>② 話題起手 있잖아?：</strong>跟熟人突然想到某件事時使用（敬語對不熟的人用 <strong>있잖아요</strong>）。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-start justify-between gap-2">
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-lg sm:text-xl font-bold text-slate-900">아까</span>
+                                    <span class="px-2 py-0.5 rounded text-xs font-bold bg-amber-100 text-amber-900">幾分鐘～幾小時前</span>
+                                </div>
+                                <p class="text-sm sm:text-base font-semibold text-slate-800 mt-1">剛剛、剛才（已隔一小段時間）</p>
+                                <p class="text-sm text-slate-600 mt-1">情境：在超商買完交通卡，走進地鐵站後才拿出來問。</p>
+                            </div>
+                            <button onclick="speakKorean('아까')" class="no-print p-1.5 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                            </button>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-start justify-between gap-2">
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-lg sm:text-xl font-bold text-slate-900">방금</span>
+                                    <span class="px-2 py-0.5 rounded text-xs font-bold bg-emerald-100 text-emerald-900">就在剛才一瞬間</span>
+                                </div>
+                                <p class="text-sm sm:text-base font-semibold text-slate-800 mt-1">才剛剛（幾秒～一兩分鐘前）</p>
+                                <p class="text-sm text-slate-600 mt-1">情境：話才剛講完、結帳才剛刷完卡那一刻。</p>
+                            </div>
+                            <button onclick="speakKorean('방금')" class="no-print p-1.5 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- 第二站：服飾店試穿全攻略（分步詳解 × 深度對比） -->
+        <!-- ========================================================= -->
+        <section id="section-2" class="mb-14 scroll-mt-8">
+            <div class="flex items-center gap-2.5 mb-5 pb-2 border-b-2 border-rose-200">
+                <span class="px-2.5 py-1 rounded-lg bg-rose-600 text-white text-xs font-bold">第二站</span>
+                <h2 class="text-xl sm:text-2xl font-bold text-gray-900">👗 服飾店試穿全攻略：語氣・尺寸・版型・抉擇</h2>
+            </div>
+
+            <!-- 必分概念導讀：어울리다 vs 맞다 -->
+            <div class="bg-rose-50/70 rounded-xl p-4 sm:p-5 border border-rose-200 mb-6 page-break-avoid">
+                <p class="text-sm sm:text-base font-bold text-rose-950 mb-3">💡 買衣服最容易混用的兩大動詞：先分清楚「人好看」還是「尺寸剛剛好」</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                    <div class="bg-white rounded-xl p-4 border border-rose-200">
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg sm:text-xl font-bold text-slate-900">어울리다</span>
+                            <button onclick="speakKorean('어울리다')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                        </div>
+                        <p class="text-sm sm:text-base font-semibold text-rose-900 mt-1">適合、相配（看風格、顏色、氣質搭不搭）</p>
+                        <p class="text-sm text-slate-600 mt-1">例：這件顏色很襯你的膚色 ➔ 用 <strong>어울리다</strong>。</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-4 border border-rose-200">
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg sm:text-xl font-bold text-slate-900">맞다</span>
+                            <button onclick="speakKorean('맞다')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                        </div>
+                        <p class="text-sm sm:text-base font-semibold text-rose-900 mt-1">合身、剛剛好（看肩寬、腰圍、尺碼對不對）</p>
+                        <p class="text-sm text-slate-600 mt-1">例：穿起來不會太緊或太鬆 ➔ 用 <strong>맞다</strong>。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 1: 詢問「好不好看？」三種對象語氣對照 -->
+            <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden mb-6 page-break-avoid">
+                <div class="bg-slate-50 px-5 py-3.5 border-b border-slate-200 flex flex-wrap items-center justify-between gap-2">
+                    <h3 class="text-base sm:text-lg font-bold text-slate-900">Step 1｜穿起來好看嗎？「어울리다」三種對象語氣對照</h3>
+                    <span class="px-2 py-0.5 rounded text-xs font-bold bg-purple-100 text-purple-900">🎥 語氣分級</span>
+                </div>
+                <div class="p-5 grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-amber-50/60 rounded-xl p-4 border border-amber-200 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-1.5">
+                                <span class="px-2 py-0.5 rounded text-xs font-bold bg-amber-100 text-amber-900">① 問朋友／旅伴（半語）</span>
+                                <button onclick="speakKorean('잘 어울려?')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                            </div>
+                            <p class="text-lg sm:text-xl font-bold text-slate-900">잘 어울려?</p>
+                            <p class="text-sm sm:text-base font-semibold text-slate-800 mt-1">（我穿這樣）好看嗎？</p>
+                        </div>
+                        <p class="text-sm text-slate-600 mt-2 pt-2 border-t border-amber-200/70">從更衣室走出來問同行朋友最自然。</p>
+                    </div>
+
+                    <div class="bg-slate-50 rounded-xl p-4 border border-slate-200 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-1.5">
+                                <span class="px-2 py-0.5 rounded text-xs font-bold bg-blue-100 text-blue-900">② 一般敬語變形</span>
+                                <button onclick="speakKorean('어울리다, 어울려요.')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                            </div>
+                            <p class="text-lg sm:text-xl font-bold text-slate-900">어울리다 ➔ 어울려요.</p>
+                            <p class="text-sm sm:text-base font-semibold text-slate-800 mt-1">很適合／很好看。</p>
+                        </div>
+                        <p class="text-sm text-slate-600 mt-2 pt-2 border-t border-slate-200">變化規則：<strong>리 + 어요</strong> 母音縮寫成 <strong>려요</strong>。</p>
+                    </div>
+
+                    <div class="bg-indigo-50/70 rounded-xl p-4 border border-indigo-200 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-1.5">
+                                <span class="px-2 py-0.5 rounded text-xs font-bold bg-indigo-100 text-indigo-900">③ 店員稱讚客人（尊稱）</span>
+                                <button onclick="speakKorean('잘 어울리세요.')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                            </div>
+                            <p class="text-lg sm:text-xl font-bold text-indigo-950">잘 어울리세요.</p>
+                            <p class="text-sm sm:text-base font-semibold text-slate-800 mt-1">您穿起來非常好看呢！</p>
+                        </div>
+                        <p class="text-sm text-slate-700 mt-2 pt-2 border-t border-indigo-200">店員對客人加尊稱 <strong>-(으)시-</strong>：어울리 + 세요 ➔ 어울리세요。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: 尺寸確認與「大一號 / 小一號」語氣・數詞雙重比較 -->
+            <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden mb-6 page-break-avoid">
+                <div class="bg-slate-50 px-5 py-3.5 border-b border-slate-200 flex flex-wrap items-center justify-between gap-2">
+                    <h3 class="text-base sm:text-lg font-bold text-slate-900">Step 2｜尺寸確認與換尺寸：語氣「-어요? vs -나요?」＆ 數詞「하나 vs 한」</h3>
+                    <span class="px-2 py-0.5 rounded text-xs font-bold bg-blue-100 text-blue-900">📘 課本 ➔ 實戰比較</span>
+                </div>
+
+                <div class="p-5 space-y-5">
+                    <!-- 2A: 基本問法 vs 委婉求問 -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-slate-50 rounded-xl p-4 border border-slate-200 flex items-center justify-between gap-2">
+                            <div>
+                                <span class="px-2 py-0.5 rounded text-xs font-bold bg-blue-100 text-blue-900 inline-block mb-1">📘 課本基礎問尺寸</span>
+                                <p class="text-lg sm:text-xl font-bold text-slate-900">사이즈 어때요?</p>
+                                <p class="text-sm sm:text-base font-semibold text-slate-700 mt-0.5">尺寸怎麼樣？（店員問客人 / 同伴互問）</p>
+                            </div>
+                            <button onclick="speakKorean('사이즈 어때요?')" class="no-print p-1.5 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                        </div>
+
+                        <div class="bg-slate-50 rounded-xl p-4 border border-slate-200 flex items-center justify-between gap-2">
+                            <div>
+                                <span class="px-2 py-0.5 rounded text-xs font-bold bg-blue-100 text-blue-900 inline-block mb-1">📘 直接問有無更大號</span>
+                                <p class="text-lg sm:text-xl font-bold text-slate-900">좀 더 큰 사이즈 없어요?</p>
+                                <p class="text-sm sm:text-base font-semibold text-slate-700 mt-0.5">沒有再大一點的尺寸嗎？（좀 稍微 + 더 更）</p>
+                            </div>
+                            <button onclick="speakKorean('좀 더 큰 사이즈 없어요?')" class="no-print p-1.5 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                        </div>
+                    </div>
+
+                    <!-- 2B: 三種換「大一號 / 小一號」結構對照 -->
+                    <div class="bg-indigo-50/50 rounded-xl p-4 border border-indigo-200 space-y-3.5">
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <p class="text-sm sm:text-base font-bold text-indigo-950">🔍 實戰升級：「大一號 / 小一號」三種問法對比（改用 <span class="text-purple-700">-나요?</span> 更委婉！）</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                            <div class="bg-white p-3.5 rounded-xl border border-indigo-100">
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="px-2 py-0.5 rounded text-xs font-bold bg-slate-100 text-slate-800">單用數詞：하나</span>
+                                    <button onclick="speakKorean('하나 더 큰 사이즈 없나요?')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                                </div>
+                                <p class="text-lg font-bold text-slate-900">하나 더 큰 사이즈 없나요?</p>
+                                <p class="text-sm font-semibold text-slate-700 mt-1">沒有再大一個級距的尺寸嗎？</p>
+                                <p class="text-sm text-slate-600 mt-1">後面沒直接接單位詞，保留 <strong>하나</strong>。</p>
+                            </div>
+
+                            <div class="bg-white p-3.5 rounded-xl border border-indigo-100">
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="px-2 py-0.5 rounded text-xs font-bold bg-indigo-100 text-indigo-900">接單位詞：한 + 사이즈</span>
+                                    <button onclick="speakKorean('한 사이즈 더 큰 거 없나요?')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                                </div>
+                                <p class="text-lg font-bold text-indigo-950">한 사이즈 더 큰 거 없나요?</p>
+                                <p class="text-sm font-semibold text-slate-700 mt-1">沒有大一號的那件嗎？</p>
+                                <p class="text-sm text-slate-600 mt-1"><strong>하나 ➔ 한</strong>；<strong>크다</strong>(無收音) ➔ <strong>큰</strong>。</p>
+                            </div>
+
+                            <div class="bg-white p-3.5 rounded-xl border border-indigo-100">
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="px-2 py-0.5 rounded text-xs font-bold bg-rose-100 text-rose-900">換小一號：작다 ➔ 작은</span>
+                                    <button onclick="speakKorean('한 사이즈 더 작은 거 없나요?')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                                </div>
+                                <p class="text-lg font-bold text-slate-900">한 사이즈 더 작은 거 없나요?</p>
+                                <p class="text-sm font-semibold text-slate-700 mt-1">沒有小一號的那件嗎？</p>
+                                <p class="text-sm text-slate-600 mt-1"><strong>작다</strong>(有收音 ㄱ) ➔ <strong>작은</strong>；<strong>거 = 것</strong>。</p>
+                            </div>
+                        </div>
+
+                        <p class="text-sm text-slate-700 bg-white px-3.5 py-2.5 rounded-lg border border-indigo-100">
+                            💬 <strong>為什麼店員或禮貌客人都用 <span class="text-indigo-800">없나요?</span>？</strong> — <code>없어요?</code> 比較直接（像單純問有沒有貨）；改用 <code>없나요?</code> 語氣瞬間變柔和，有「請問方便幫我找找看有沒有…嗎？」的委婉感！
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: 合身度與「핏 (Fit)」版型詳解 -->
+            <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden mb-6 page-break-avoid">
+                <div class="bg-slate-50 px-5 py-3.5 border-b border-slate-200 flex flex-wrap items-center justify-between gap-2">
+                    <h3 class="text-base sm:text-lg font-bold text-slate-900">Step 3｜合身度回應「맞다」＆ 店員解釋版型「핏（Fit）」</h3>
+                    <span class="px-2 py-0.5 rounded text-xs font-bold bg-purple-100 text-purple-900">🎥 店員實戰話術</span>
+                </div>
+
+                <div class="p-5 space-y-5">
+                    <!-- 客人自述 vs 店員感嘆尊稱 -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-slate-50 rounded-xl p-4 border border-slate-200">
+                            <div class="flex items-center justify-between mb-1">
+                                <span class="px-2 py-0.5 rounded text-xs font-bold bg-blue-100 text-blue-900">客人自己說（一般敬語）</span>
+                                <button onclick="speakKorean('사이즈가 잘 맞아요.')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                            </div>
+                            <p class="text-lg sm:text-xl font-bold text-slate-900">사이즈가 잘 맞아요.</p>
+                            <p class="text-sm sm:text-base font-semibold text-slate-700 mt-1">尺寸很合身！</p>
+                            <p class="text-sm text-slate-600 mt-1">向店員表達「這件大小剛剛好，不用換號了」。</p>
+                        </div>
+
+                        <div class="bg-emerald-50/60 rounded-xl p-4 border border-emerald-200">
+                            <div class="flex items-center justify-between mb-1">
+                                <span class="px-2 py-0.5 rounded text-xs font-bold bg-emerald-100 text-emerald-900">店員看見後讚嘆（尊稱＋感嘆）</span>
+                                <button onclick="speakKorean('사이즈가 잘 맞으시네')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                            </div>
+                            <p class="text-lg sm:text-xl font-bold text-emerald-950">사이즈가 잘 맞으시네~</p>
+                            <p class="text-sm sm:text-base font-semibold text-slate-800 mt-1">哇～您的尺寸非常合身呢！</p>
+                            <p class="text-sm text-slate-700 mt-1">拆解：<strong>맞</strong>(合身) + <strong>으시</strong>(尊稱) + <strong>네</strong>(當下親眼看到的驚嘆語尾)。</p>
+                        </div>
+                    </div>
+
+                    <!-- 핏 版型詳解與逐詞拆解 -->
+                    <div class="bg-purple-50/60 rounded-xl p-4 border border-purple-200 space-y-3.5">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-purple-200">
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-lg sm:text-xl font-bold text-purple-950">핏</span>
+                                    <span class="text-sm sm:text-base font-semibold text-slate-800">（英文 Fit ➔ 衣服的「版型、剪裁輪廓」）</span>
+                                    <button onclick="speakKorean('핏')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                                </div>
+                                <p class="text-sm text-slate-700 mt-1">當你覺得衣服好像偏貼身時，韓國店員常會這樣跟你解釋這款衣服原本的版型設計：</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 bg-white p-3.5 rounded-xl border border-purple-200">
+                            <div>
+                                <p class="text-lg sm:text-xl font-bold text-purple-950">핏이 좀 맞게 입는 거예요.</p>
+                                <p class="text-sm sm:text-base font-semibold text-slate-800 mt-0.5">這件的版型本來就是要穿得比較合身一點的。</p>
+                            </div>
+                            <button onclick="speakKorean('핏이 좀 맞게 입는 거예요.')" class="no-print inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-purple-800 bg-purple-50 hover:bg-purple-100 border border-purple-200 rounded-full self-start sm:self-center flex-shrink-0" title="點擊朗讀">
+                                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                朗讀
+                            </button>
+                        </div>
+
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                            <div class="bg-white p-3 rounded-lg border border-purple-100">
+                                <span class="text-lg font-bold text-slate-900 block">핏이</span>
+                                <span class="text-sm font-semibold text-purple-900 block">版型（主詞）</span>
+                                <span class="text-sm text-slate-600">핏 有收音 ㅅ ➔ 接 이</span>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg border border-purple-100">
+                                <span class="text-lg font-bold text-slate-900 block">좀</span>
+                                <span class="text-sm font-semibold text-purple-900 block">稍微／一點</span>
+                                <span class="text-sm text-slate-600">조금 縮寫，語氣更柔和</span>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg border border-purple-100">
+                                <span class="text-lg font-bold text-slate-900 block">맞게</span>
+                                <span class="text-sm font-semibold text-purple-900 block">合身地</span>
+                                <span class="text-sm text-slate-600">맞다 + 副詞化 -게（修飾穿）</span>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg border border-purple-100">
+                                <span class="text-lg font-bold text-slate-900 block">입는 거예요</span>
+                                <span class="text-sm font-semibold text-purple-900 block">原本就是這樣穿的</span>
+                                <span class="text-sm text-slate-600">입다 + -는 거예요（說明穿法）</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4: 比較抉擇或暫時離店（낫다 ㅅ不規則 × 돌다 移動家族） -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 page-break-avoid">
+                <!-- 抉擇比較：낫다 ㅅ 不規則 -->
+                <div class="bg-white rounded-xl p-5 border-t-4 border-rose-500 border border-slate-200 shadow-sm space-y-3.5">
+                    <div class="flex items-center justify-between gap-2">
+                        <h3 class="text-base sm:text-lg font-bold text-rose-950">Step 4A｜挑兩件比較：낫다（ㅅ 不規則）</h3>
+                        <span class="px-2 py-0.5 rounded text-xs font-bold bg-rose-100 text-rose-900">高頻易錯</span>
+                    </div>
+
+                    <div class="bg-rose-50/70 rounded-xl p-4 border border-rose-200 space-y-2">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-lg sm:text-xl font-bold text-slate-900">낫다 ➔ 나아요.</span>
+                                <span class="text-sm sm:text-base font-semibold text-rose-900 ml-1.5">更好／比較好</span>
+                            </div>
+                            <button onclick="speakKorean('낫다, 나아요.')" class="no-print p-1 text-rose-700 hover:bg-rose-100 rounded-full" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                        </div>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            <strong>變化重點：</strong>詞幹 <strong>낫</strong> 遇母音時 <strong>收音 ㅅ 脫落，且兩個 아 不合併！</strong><br>
+                            <code class="bg-white px-1.5 py-0.5 rounded border border-rose-200 text-rose-900 font-bold">낫 + 아요 ➔ 나 + 아요 ➔ 나아요</code><br>
+                            ⚠️ 陷阱提醒：不能縮寫成「나요」，否則會變成「出來／發生（나다）」的意思！
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-50 rounded-xl p-3.5 border border-slate-200 flex items-center justify-between gap-2">
+                        <div>
+                            <span class="text-lg sm:text-xl font-bold text-slate-900 block">이거 더 나아요.</span>
+                            <span class="text-sm sm:text-base font-semibold text-slate-700">這個更好／這件比較好看！</span>
+                        </div>
+                        <button onclick="speakKorean('이거 더 나아요.')" class="no-print p-1.5 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                    </div>
+                </div>
+
+                <!-- 暫時離開先逛別家：돌다 家族 -->
+                <div class="bg-white rounded-xl p-5 border-t-4 border-teal-500 border border-slate-200 shadow-sm space-y-3.5">
+                    <div class="flex items-center justify-between gap-2">
+                        <h3 class="text-base sm:text-lg font-bold text-teal-950">Step 4B｜想先逛別家：돌다 家族與方向</h3>
+                        <span class="px-2 py-0.5 rounded text-xs font-bold bg-teal-100 text-teal-900">方向動詞</span>
+                    </div>
+
+                    <div class="bg-teal-50/70 rounded-xl p-4 border border-teal-200 space-y-2.5">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-lg sm:text-xl font-bold text-slate-900">돌다 ➔ 돌아요.</span>
+                                <span class="text-sm sm:text-base font-semibold text-teal-900 ml-1.5">轉、繞、逛</span>
+                            </div>
+                            <button onclick="speakKorean('돌다, 돌아요.')" class="no-print p-1 text-teal-700 hover:bg-teal-100 rounded-full" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                        </div>
+                        <p class="text-sm text-slate-700">遇母音 <strong>-아/어요</strong> 時 ㄹ 保留；遇 ㄴ/ㅂ/ㅅ 才脫落（例：도는）。</p>
+                        <div class="grid grid-cols-2 gap-2.5 pt-1">
+                            <div class="bg-white p-2.5 rounded-lg border border-teal-100 flex items-center justify-between gap-1">
+                                <div>
+                                    <span class="text-base font-bold text-slate-900 block">돌아오다</span>
+                                    <span class="text-sm text-slate-600">回來（朝向這兒）</span>
+                                </div>
+                                <button onclick="speakKorean('돌아오다')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="發音"><svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                            </div>
+                            <div class="bg-white p-2.5 rounded-lg border border-teal-100 flex items-center justify-between gap-1">
+                                <div>
+                                    <span class="text-base font-bold text-slate-900 block">돌아가다</span>
+                                    <span class="text-sm text-slate-600">回去（往那邊去）</span>
+                                </div>
+                                <button onclick="speakKorean('돌아가다')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="發音"><svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 rounded-xl p-3.5 border border-slate-200 flex items-center justify-between gap-2">
+                        <div>
+                            <span class="text-lg sm:text-xl font-bold text-teal-950 block">한 번 돌아보고 올게요.</span>
+                            <span class="text-sm sm:text-base font-semibold text-slate-800">我先去逛一圈看看再回來！</span>
+                            <span class="text-sm text-slate-600 block mt-0.5">拆解：한 번(先/一次) + 돌아보고(逛逛看) + 올게요(我會再回來)</span>
+                        </div>
+                        <button onclick="speakKorean('한 번 돌아보고 올게요.')" class="no-print p-1.5 text-teal-700 hover:bg-teal-100 rounded-full flex-shrink-0" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- 第三站：殺價攻防與價格聽讀挑戰 -->
+        <!-- ========================================================= -->
+        <section id="section-3" class="mb-14 scroll-mt-8">
+            <div class="flex items-center gap-2.5 mb-5 pb-2 border-b-2 border-amber-200">
+                <span class="px-2.5 py-1 rounded-lg bg-amber-600 text-white text-xs font-bold">第三站</span>
+                <h2 class="text-xl sm:text-2xl font-bold text-gray-900">💸 殺價攻防與價格數字聽讀挑戰</h2>
+            </div>
+
+            <!-- 殺價對話 -->
+            <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden mb-6 page-break-avoid">
+                <div class="bg-amber-50/80 px-5 py-3.5 border-b border-amber-100 flex flex-wrap items-center justify-between gap-2">
+                    <h3 class="text-base sm:text-lg font-bold text-amber-950">💬 結帳談判對話：委婉殺價 ➔ 付現折扣 ➔ 拍板決定</h3>
+                    <button onclick="speakKorean('좀 싸게 해 주실 수 없나요? 현금하시면 사만 원까지 해 드려요. 이걸로 할게요.')" class="no-print inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold text-amber-900 bg-white hover:bg-amber-100 border border-amber-300 rounded-full" title="全段朗讀">
+                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                        全段朗讀
+                    </button>
+                </div>
+
+                <div class="p-5 space-y-4">
+                    <div class="flex items-start gap-3 pb-4 border-b border-dashed border-slate-200">
+                        <span class="w-8 h-8 rounded-full bg-blue-100 text-blue-800 font-bold flex items-center justify-center flex-shrink-0 mt-1">가</span>
+                        <div class="flex-1 space-y-2.5">
+                            <div class="flex items-center justify-between gap-2">
+                                <div>
+                                    <span class="px-2 py-0.5 rounded text-xs font-bold bg-purple-100 text-purple-900 mr-1.5">🎥 更委婉請求</span>
+                                    <span class="text-lg sm:text-xl font-bold text-slate-900">좀 싸게 해 주실 수 없나요?</span>
+                                    <p class="text-sm sm:text-base font-semibold text-slate-700 mt-0.5">請問不能幫我算便宜一點嗎？（-(으)실 수 없나요? 詢問對方能否破例）</p>
+                                </div>
+                                <button onclick="speakKorean('좀 싸게 해 주실 수 없나요?')" class="no-print p-1.5 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                </button>
+                            </div>
+                            <div class="flex items-center justify-between gap-2 bg-slate-50 px-3.5 py-2.5 rounded-lg border border-slate-200">
+                                <div>
+                                    <span class="px-2 py-0.5 rounded text-xs font-bold bg-blue-100 text-blue-900 mr-1.5">📘 課本直接請求</span>
+                                    <span class="text-lg font-bold text-slate-900">좀 싸게 해 주세요.</span>
+                                    <span class="text-sm sm:text-base font-semibold text-slate-700 ml-2">請算便宜一點！</span>
+                                </div>
+                                <button onclick="speakKorean('좀 싸게 해 주세요.')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 pb-4 border-b border-dashed border-slate-200">
+                        <span class="w-8 h-8 rounded-full bg-green-100 text-green-800 font-bold flex items-center justify-center flex-shrink-0 mt-1">나</span>
+                        <div class="flex-1 flex items-center justify-between gap-2">
+                            <div>
+                                <span class="px-2 py-0.5 rounded text-xs font-bold bg-purple-100 text-purple-900 mr-1.5">🎥 店員付現條件回覆</span>
+                                <span class="text-lg sm:text-xl font-bold text-emerald-950">현금하시면 ___원까지 해 드려요.</span>
+                                <p class="text-sm sm:text-base font-semibold text-slate-800 mt-0.5">如果您付現的話，可以幫您算到 ___ 元。</p>
+                                <p class="text-sm text-slate-600 mt-0.5"><strong>현금하시면</strong>（현금 하다 付現 + 尊稱 -시- + -(으)면 如果）+ <strong>까지</strong>（到…為止）+ <strong>해 드려요</strong>（謙讓語「幫您算到」）。</p>
+                            </div>
+                            <button onclick="speakKorean('현금하시면 원까지 해 드려요.')" class="no-print p-1.5 text-emerald-700 hover:bg-emerald-100 rounded-full flex-shrink-0" title="點擊發音">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <span class="w-8 h-8 rounded-full bg-blue-100 text-blue-800 font-bold flex items-center justify-center flex-shrink-0 mt-1">가</span>
+                        <div class="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 flex items-center justify-between gap-2">
+                                <div>
+                                    <span class="text-lg sm:text-xl font-bold text-indigo-950 block">이걸로 할게요.</span>
+                                    <span class="text-sm sm:text-base font-semibold text-slate-700">我要買這個／就選這個了（이것으로 縮寫）</span>
+                                </div>
+                                <button onclick="speakKorean('이걸로 할게요.')" class="no-print p-1.5 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                </button>
+                            </div>
+                            <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 flex items-center justify-between gap-2">
+                                <div>
+                                    <span class="text-lg sm:text-xl font-bold text-slate-900 block">이거 주세요.</span>
+                                    <span class="text-sm sm:text-base font-semibold text-slate-700">請給我這個（最直接的購買句）</span>
+                                </div>
+                                <button onclick="speakKorean('이거 주세요.')" class="no-print p-1.5 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 價格問答與易混淆數字 -->
+            <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden page-break-avoid">
+                <div class="bg-slate-50 px-5 py-3.5 border-b border-slate-200 flex flex-wrap items-center justify-between gap-2">
+                    <div>
+                        <h3 class="text-base sm:text-lg font-bold text-slate-900">🔢 報價複習：얼마예요? ➔ 易混淆韓幣大數字聽讀</h3>
+                        <p class="text-sm text-slate-600">口訣：韓文跟中文一樣「每四位進一萬」，聽報價時<strong>先抓 만（萬）或 천（千）</strong>就不會錯！</p>
+                    </div>
+                    <button onclick="speakKorean('얼마예요?')" class="no-print inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-indigo-700 bg-white hover:bg-indigo-50 border border-indigo-200 rounded-full" title="點擊發音">
+                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                        얼마예요?
+                    </button>
+                </div>
+                <div class="p-5 grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-slate-50 rounded-xl p-4 border border-slate-200">
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-900">4,900원</span>
+                            <button onclick="speakKorean('사천구백 원')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full" title="點擊發音">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                            </button>
+                        </div>
+                        <p class="text-lg sm:text-xl font-bold text-slate-900">사천구백 원</p>
+                        <p class="text-sm font-semibold text-slate-700 mt-1">4 千 + 9 百 元</p>
+                        <p class="text-sm text-rose-700 mt-1">⚠️ 易混陷阱：別跟 49,000（사만구천 원）搞混！</p>
+                    </div>
+                    <div class="bg-slate-50 rounded-xl p-4 border border-slate-200">
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-rose-100 text-rose-900">17,500원</span>
+                            <button onclick="speakKorean('만 칠천오백 원')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full" title="點擊發音">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                            </button>
+                        </div>
+                        <p class="text-lg sm:text-xl font-bold text-slate-900">만 칠천오백 원</p>
+                        <p class="text-sm font-semibold text-slate-700 mt-1">1萬 + 7千 5百 元</p>
+                        <p class="text-sm text-rose-700 mt-1">⚠️ 規則必記：<strong>1萬不唸 일만</strong>，直接唸 <strong>만</strong>！</p>
+                    </div>
+                    <div class="bg-slate-50 rounded-xl p-4 border border-slate-200">
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-indigo-100 text-indigo-900">23,800원</span>
+                            <button onclick="speakKorean('이만 삼천팔백 원')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full" title="點擊發音">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                            </button>
+                        </div>
+                        <p class="text-lg sm:text-xl font-bold text-slate-900">이만 삼천팔백 원</p>
+                        <p class="text-sm font-semibold text-slate-700 mt-1">2萬 + 3千 8百 元</p>
+                        <p class="text-sm text-slate-600 mt-1">💡 切分口訣：<strong>이만</strong>（20,000）+ <strong>삼천팔백</strong>（3,800）。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- 第四站：排隊、點餐與入店用餐 -->
+        <!-- ========================================================= -->
+        <section id="section-4" class="mb-14 scroll-mt-8">
+            <div class="flex items-center gap-2.5 mb-5 pb-2 border-b-2 border-emerald-200">
+                <span class="px-2.5 py-1 rounded-lg bg-emerald-600 text-white text-xs font-bold">第四站</span>
+                <h2 class="text-xl sm:text-2xl font-bold text-gray-900">🍜 排隊、點餐與入店用餐實戰</h2>
+            </div>
+
+            <div class="space-y-6">
+                <!-- 1. 排隊 -->
+                <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-5 page-break-avoid">
+                    <h3 class="text-base sm:text-lg font-bold text-emerald-950 mb-3">1. 門口排隊三階段（原型 ➔ 直接問 ➔ 推測自語）</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-center justify-between gap-2">
+                            <div>
+                                <span class="text-lg sm:text-xl font-bold text-slate-900 block">줄을 서다</span>
+                                <span class="text-sm sm:text-base font-semibold text-slate-700">排隊（原型動詞）</span>
+                                <span class="text-sm text-slate-600 block mt-0.5">줄(線/隊伍) + 서다(站立)</span>
+                            </div>
+                            <button onclick="speakKorean('줄을 서다')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                            </button>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-center justify-between gap-2">
+                            <div>
+                                <span class="text-lg sm:text-xl font-bold text-slate-900 block">줄을 서요?</span>
+                                <span class="text-sm sm:text-base font-semibold text-slate-700">要排隊嗎？</span>
+                                <span class="text-sm text-slate-600 block mt-0.5">直接向店員或排隊路人確認</span>
+                            </div>
+                            <button onclick="speakKorean('줄을 서요?')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                            </button>
+                        </div>
+                        <div class="bg-purple-50/70 p-4 rounded-xl border border-purple-200 flex items-center justify-between gap-2">
+                            <div>
+                                <span class="text-lg sm:text-xl font-bold text-purple-950 block">줄을 서는 건가?</span>
+                                <span class="text-sm sm:text-base font-semibold text-slate-800">這是在排隊的嗎？</span>
+                                <span class="text-sm text-slate-600 block mt-0.5">-는 건가?（-는 것인가 推測猜想）</span>
+                            </div>
+                            <button onclick="speakKorean('줄을 서는 건가?')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. 點餐攻防與 N(이)요 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 page-break-avoid">
+                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
+                        <h3 class="text-base sm:text-lg font-bold text-slate-900 mb-3">2. 聽懂店員點餐三連問</h3>
+                        <div class="space-y-3">
+                            <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 flex items-center justify-between gap-2">
+                                <div>
+                                    <span class="text-lg font-bold text-slate-900 block">뭐 드릴까요?</span>
+                                    <span class="text-sm font-semibold text-slate-700 block">要給您什麼呢？（請問要點什麼？）</span>
+                                    <span class="text-sm text-slate-600">드리다 = 주다(給) 的謙讓語</span>
+                                </div>
+                                <button onclick="speakKorean('뭐 드릴까요?')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                </button>
+                            </div>
+                            <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 flex items-center justify-between gap-2">
+                                <div>
+                                    <span class="text-lg font-bold text-slate-900 block">주문 도와드릴까요?</span>
+                                    <span class="text-sm font-semibold text-slate-700 block">需要幫您點餐嗎？</span>
+                                    <span class="text-sm text-slate-600">도와드리다（幫您）— 咖啡廳/餐廳高頻</span>
+                                </div>
+                                <button onclick="speakKorean('주문 도와드릴까요?')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                </button>
+                            </div>
+                            <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 flex items-center justify-between gap-2">
+                                <div>
+                                    <span class="text-lg font-bold text-slate-900 block">주문하시겠어요?</span>
+                                    <span class="text-sm font-semibold text-slate-700 block">您現在要點餐了嗎？</span>
+                                    <span class="text-sm text-slate-600">주문하다 + 尊稱 -시겠어요?</span>
+                                </div>
+                                <button onclick="speakKorean('주문하시겠어요?')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
+                        <h3 class="text-base sm:text-lg font-bold text-indigo-950 mb-2">3. 萬用簡答「___ N ___ (이)요.」＆ 只要一份</h3>
+                        <p class="text-sm text-slate-600 mb-3">
+                            <strong>規則：</strong>名詞有收音接 <strong>이요</strong>，無收音接 <strong>요</strong>（例：커피요 咖啡）。直接報人數、金額或品項：
+                        </p>
+                        <div class="space-y-3">
+                            <div class="bg-indigo-50/70 p-3.5 rounded-xl border border-indigo-200 flex items-center justify-between gap-2">
+                                <div>
+                                    <span class="text-lg font-bold text-indigo-950 block">두 명이요.</span>
+                                    <span class="text-sm font-semibold text-slate-800 block">兩位！</span>
+                                    <span class="text-sm text-slate-600">명 有收音 ㅇ ➔ 接 이요</span>
+                                </div>
+                                <button onclick="speakKorean('두 명이요.')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                </button>
+                            </div>
+                            <div class="bg-amber-50/70 p-3.5 rounded-xl border border-amber-200 flex items-center justify-between gap-2">
+                                <div>
+                                    <span class="text-lg font-bold text-slate-900 block">3000원이요. (삼천 원이요)</span>
+                                    <span class="text-sm font-semibold text-slate-800 block">三千韓元！</span>
+                                    <span class="text-sm text-slate-600">원 有收音 ㄴ ➔ 接 이요</span>
+                                </div>
+                                <button onclick="speakKorean('삼천 원이요.')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                </button>
+                            </div>
+                            <div class="bg-emerald-50/70 p-3.5 rounded-xl border border-emerald-200 flex items-center justify-between gap-2">
+                                <div>
+                                    <span class="text-lg font-bold text-emerald-950 block">하나만 주세요.</span>
+                                    <span class="text-sm font-semibold text-slate-800 block">請只要給我一個／一份就好。</span>
+                                    <span class="text-sm text-slate-600">-만（只、僅僅）接在名詞後</span>
+                                </div>
+                                <button onclick="speakKorean('하나만 주세요.')" class="no-print p-1 text-emerald-700 hover:bg-emerald-100 rounded-full flex-shrink-0" title="點擊發音">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. 座位對話 -->
+                <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-5 page-break-avoid">
+                    <h3 class="text-base sm:text-lg font-bold text-teal-950 mb-3">4. 問座位與招呼入店（助詞 <span class="text-indigo-700">에서</span> vs <span class="text-teal-700">-(으)로</span>）</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-center justify-between gap-2">
+                            <div>
+                                <span class="text-lg sm:text-xl font-bold text-slate-900 block">어디에서 먹을 수 있어요?</span>
+                                <span class="text-sm sm:text-base font-semibold text-slate-800 block mt-0.5">可以在哪裡吃呢？</span>
+                                <span class="text-sm text-slate-600 block mt-1"><strong>어디에서</strong>（在某地進行動作）+ <strong>먹을 수 있어요?</strong>（可以吃嗎）</span>
+                            </div>
+                            <button onclick="speakKorean('어디에서 먹을 수 있어요?')" class="no-print p-1.5 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                            </button>
+                        </div>
+                        <div class="bg-teal-50/70 p-4 rounded-xl border border-teal-200 flex items-center justify-between gap-2">
+                            <div>
+                                <span class="text-lg sm:text-xl font-bold text-teal-950 block">가게 안으로 들어오세요.</span>
+                                <span class="text-sm sm:text-base font-semibold text-slate-800 block mt-0.5">請進來店裡面！</span>
+                                <span class="text-sm text-slate-600 block mt-1"><strong>가게 안</strong>(店裡，有收音 ㄴ) + <strong>으로</strong>(往…方向) + <strong>들어오세요</strong>(請進來)</span>
+                            </div>
+                            <button onclick="speakKorean('가게 안으로 들어오세요.')" class="no-print p-1.5 text-teal-700 hover:bg-teal-100 rounded-full flex-shrink-0" title="點擊發音">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- 第五區：橫向語法系統總整理（考前 1 分鐘速查盤） -->
+        <!-- ========================================================= -->
+        <section id="section-5" class="mb-10 scroll-mt-8">
+            <div class="flex items-center gap-2.5 mb-5 pb-2 border-b-2 border-slate-300">
+                <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-white text-xs font-bold">第五區</span>
+                <h2 class="text-xl sm:text-2xl font-bold text-gray-900">🧠 橫向語法系統總整理（考前 1 分鐘速查盤）</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 page-break-avoid">
+                <!-- 系統盤 A：-(으)시- 尊稱升級 -->
+                <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
+                    <div class="bg-indigo-50 px-5 py-3.5 border-b border-indigo-100">
+                        <h3 class="text-base sm:text-lg font-bold text-indigo-950">系統盤 A｜店員尊稱升級「-(으)시-」</h3>
+                        <p class="text-sm text-slate-600 mt-0.5">韓國店員對客人講話，動詞/形容詞幾乎都會多加一個 <strong>-(으)시-</strong>！</p>
+                    </div>
+                    <table class="w-full text-left border-collapse flex-1">
+                        <thead>
+                            <tr class="bg-slate-50 border-b border-slate-200 text-sm text-slate-700">
+                                <th class="p-3.5 font-bold">一般敬語</th>
+                                <th class="p-3.5 font-bold">店員尊稱（實戰）</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 text-sm sm:text-base">
+                            <tr>
+                                <td class="p-3.5 text-slate-700 font-semibold">어울려요</td>
+                                <td class="p-3.5 font-bold text-indigo-950">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span>잘 어울리<span class="text-rose-600">세</span>요.</span>
+                                        <button onclick="speakKorean('잘 어울리세요.')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-3.5 text-slate-700 font-semibold">잘 맞아요</td>
+                                <td class="p-3.5 font-bold text-indigo-950">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span>잘 맞<span class="text-rose-600">으시</span>네~</span>
+                                        <button onclick="speakKorean('잘 맞으시네')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-3.5 text-slate-700 font-semibold">현금하면</td>
+                                <td class="p-3.5 font-bold text-indigo-950">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span>현금하<span class="text-rose-600">시</span>면</span>
+                                        <button onclick="speakKorean('현금하시면')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-3.5 text-slate-700 font-semibold">주문해요?</td>
+                                <td class="p-3.5 font-bold text-indigo-950">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span>주문하<span class="text-rose-600">시</span>겠어요?</span>
+                                        <button onclick="speakKorean('주문하시겠어요?')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-3.5 text-slate-700 font-semibold">해 줄 수 있어요?</td>
+                                <td class="p-3.5 font-bold text-indigo-950">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span>해 주<span class="text-rose-600">실</span> 수 없나요?</span>
+                                        <button onclick="speakKorean('해 주실 수 없나요?')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 系統盤 B：問句語氣三級跳 -->
+                <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
+                    <div class="bg-purple-50 px-5 py-3.5 border-b border-purple-100">
+                        <h3 class="text-base sm:text-lg font-bold text-purple-950">系統盤 B｜問句語氣三級跳</h3>
+                        <p class="text-sm text-slate-600 mt-0.5">同樣在問問題，語尾換一下，禮貌度與語感完全不同！</p>
+                    </div>
+                    <div class="p-4 space-y-3 flex-1 flex flex-col justify-between">
+                        <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+                            <span class="px-2 py-0.5 rounded text-xs font-bold bg-blue-100 text-blue-900">① 直接詢問：-어요?</span>
+                            <div class="flex items-center justify-between gap-2 mt-1">
+                                <p class="text-lg font-bold text-slate-900">없어요? / 줄을 서요?</p>
+                                <button onclick="speakKorean('없어요? 줄을 서요?')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                            </div>
+                            <p class="text-sm text-slate-600 mt-0.5">最基本直白的課本問句。</p>
+                        </div>
+                        <div class="bg-indigo-50/70 p-3.5 rounded-xl border border-indigo-200">
+                            <span class="px-2 py-0.5 rounded text-xs font-bold bg-indigo-100 text-indigo-900">② 客氣求問店員：-나요?</span>
+                            <div class="flex items-center justify-between gap-2 mt-1">
+                                <p class="text-lg font-bold text-indigo-950">없나요? / 해 주실 수 없나요?</p>
+                                <button onclick="speakKorean('없나요? 해 주실 수 없나요?')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                            </div>
+                            <p class="text-sm text-slate-600 mt-0.5">語氣變得柔和委婉，請店員找尺寸或殺價超好用。</p>
+                        </div>
+                        <div class="bg-purple-50/70 p-3.5 rounded-xl border border-purple-200">
+                            <span class="px-2 py-0.5 rounded text-xs font-bold bg-purple-100 text-purple-900">③ 自言自語推測：-는 건가?</span>
+                            <div class="flex items-center justify-between gap-2 mt-1">
+                                <p class="text-lg font-bold text-purple-950">줄을 서는 건가?</p>
+                                <button onclick="speakKorean('줄을 서는 건가?')" class="no-print p-1 text-indigo-600 hover:bg-indigo-100 rounded-full flex-shrink-0" title="點擊發音"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                            </div>
+                            <p class="text-sm text-slate-600 mt-0.5">看到隊伍不確定時，對自己或旅伴小聲猜測「該不會是在排隊吧？」。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 課堂結語卡片 -->
+        <div class="bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 rounded-xl p-5 border border-indigo-200 shadow-sm page-break-avoid">
+            <div class="flex items-center gap-2 mb-2">
+                <span class="text-lg">🌟</span>
+                <h3 class="text-base sm:text-lg font-bold text-indigo-950">Day 1-4 總複習結語</h3>
+            </div>
+            <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+                恭喜完成 <strong>Lesson 16</strong>，正式替 <strong>《kpop旅遊韓語 Day 1-4》</strong> 畫下完美句點！下次去韓國只要依循「<strong>搭地鐵 ➔ 逛服飾店 ➔ 殺價報價 ➔ 排隊點餐</strong>」這四站劇本，再套用第五區的「<strong>-(으)시- 尊稱</strong>」與「<strong>-나요? 委婉問句</strong>」，就能聽懂店員、自然開口！
+            </p>
+
+            <!-- 前往線上作業與雙人複習跳轉按鈕 -->
+            <div class="mt-4 pt-3 border-t border-indigo-100 flex flex-col sm:flex-row items-center justify-between gap-3">
+                <span class="text-sm sm:text-base text-indigo-950 font-semibold">✨ 課後自我測驗與雙人對話練習：</span>
+                <div class="flex items-center gap-2">
+                    <a href="/korean-notes/docs/homework/lesson-016" target="_parent" class="no-print inline-flex items-center gap-2 px-3.5 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-bold rounded-lg shadow-sm transition-all">
+                        <span>📝 課後複習作業</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </a>
+                    <a href="/korean-notes/docs/practice/lesson-016" target="_parent" class="no-print inline-flex items-center gap-2 px-3.5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold rounded-lg shadow-sm transition-all">
+                        <span>👥 雙人複習手冊</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        (function () {
+            const sideNav = document.querySelector('nav[aria-label="章節導覽"]');
+            if (window.self !== window.top) {
+                if (sideNav) sideNav.style.display = 'none';
+                return;
+            }
+            const links = document.querySelectorAll('.side-nav-link');
+            const sections = Array.from(links)
+                .map(link => document.getElementById(link.dataset.target))
+                .filter(Boolean);
+
+            if (!sections.length) return;
+
+            function setActive(id) {
+                links.forEach(link => {
+                    const isActive = link.dataset.target === id;
+                    link.classList.toggle('bg-indigo-50', isActive);
+                    link.classList.toggle('text-indigo-700', isActive);
+                    link.classList.toggle('text-slate-600', !isActive);
+                });
+            }
+
+            const observer = new IntersectionObserver(
+                entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            setActive(entry.target.id);
+                        }
+                    });
+                },
+                { rootMargin: '-20% 0px -65% 0px' }
+            );
+
+            sections.forEach(section => observer.observe(section));
+        })();
+    </script>
+</body>
+</html>
