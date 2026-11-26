@@ -191,24 +191,39 @@ export default function PracticeMarker(): ReactNode {
     setDrawerOpen(false);
   }, [pathname]);
 
-  // 掃描並綁定角色 A 題目（支援非同步 chunk 載入重試）
+  // 掃描並綁定角色 A 題目（支援非同步 chunk 載入與 HMR / 分頁重繪自動重綁）
   useEffect(() => {
     let cleanupFns: Array<() => void> = [];
     let retryTimer: number | null = null;
+    let rebindTimer: number | null = null;
     let boundArticle: HTMLElement | null = null;
     let handleTabClick: ((e: MouseEvent) => void) | null = null;
+    let observer: MutationObserver | null = null;
+    let isBinding = false;
+
+    const clearBindings = () => {
+      cleanupFns.forEach((fn) => fn());
+      cleanupFns = [];
+      if (boundArticle) {
+        boundArticle.querySelectorAll('[data-pm-badge="true"]').forEach((node) => node.remove());
+      }
+    };
 
     const bindQuestions = (attempt = 0) => {
       const article = document.querySelector<HTMLElement>('article');
       if (!article) {
-        if (attempt < 5) {
+        if (attempt < 8) {
           retryTimer = window.setTimeout(() => bindQuestions(attempt + 1), 150);
         }
         return;
       }
 
+      isBinding = true;
+      clearBindings();
+
       const questions = collectRoleAQuestions(article);
-      if (questions.length === 0 && attempt < 5) {
+      if (questions.length === 0 && attempt < 8) {
+        isBinding = false;
         retryTimer = window.setTimeout(() => bindQuestions(attempt + 1), 150);
         return;
       }
@@ -227,7 +242,8 @@ export default function PracticeMarker(): ReactNode {
           badge.className = styles.statusDot;
           q.badgeHost.insertBefore(badge, q.badgeHost.firstChild);
         }
-        updateBadgeElement(badge, marksRef.current[q.id]);
+        const currentStatus = marksRef.current[q.id];
+        updateBadgeElement(badge, currentStatus);
 
         const handleClick = (e: MouseEvent) => {
           const target = e.target as HTMLElement | null;
@@ -251,6 +267,9 @@ export default function PracticeMarker(): ReactNode {
 
         q.elements.forEach((el) => {
           el.setAttribute(MARK_ATTR, q.id);
+          if (currentStatus) {
+            el.setAttribute(STATUS_ATTR, currentStatus);
+          }
           el.classList.add(styles.markableItem);
           el.addEventListener('click', handleClick);
           cleanupFns.push(() => {
@@ -266,13 +285,38 @@ export default function PracticeMarker(): ReactNode {
       setQuestionMap(nextMap);
 
       // 若使用者切換成角色 B 分頁，自動收合結算面板避免劇透
-      handleTabClick = (e: MouseEvent) => {
-        const tab = (e.target as HTMLElement | null)?.closest('[role="tab"]');
-        if (tab && (tab.textContent || '').includes('角色 B')) {
-          setDrawerOpen(false);
-        }
-      };
-      article.addEventListener('click', handleTabClick);
+      if (!handleTabClick) {
+        handleTabClick = (e: MouseEvent) => {
+          const tab = (e.target as HTMLElement | null)?.closest('[role="tab"]');
+          if (tab && (tab.textContent || '').includes('角色 B')) {
+            setDrawerOpen(false);
+          }
+        };
+        article.addEventListener('click', handleTabClick);
+      }
+
+      // 監聽 DOM 變動（例如開發模式 HMR 熱更新或分頁重繪），自動重新綁定標記
+      if (!observer) {
+        observer = new MutationObserver((mutations) => {
+          if (isBinding) return;
+          const hasContentChange = mutations.some((m) => {
+            const nodes = [...Array.from(m.addedNodes), ...Array.from(m.removedNodes)];
+            return nodes.some(
+              (n) => !(n instanceof HTMLElement && n.getAttribute('data-pm-badge') === 'true')
+            );
+          });
+          if (!hasContentChange) return;
+          if (rebindTimer !== null) {
+            window.clearTimeout(rebindTimer);
+          }
+          rebindTimer = window.setTimeout(() => {
+            bindQuestions(0);
+          }, 120);
+        });
+        observer.observe(article, { childList: true, subtree: true });
+      }
+
+      isBinding = false;
     };
 
     bindQuestions();
@@ -281,14 +325,17 @@ export default function PracticeMarker(): ReactNode {
       if (retryTimer !== null) {
         window.clearTimeout(retryTimer);
       }
+      if (rebindTimer !== null) {
+        window.clearTimeout(rebindTimer);
+      }
+      if (observer) {
+        observer.disconnect();
+        observer = null;
+      }
       if (boundArticle && handleTabClick) {
         boundArticle.removeEventListener('click', handleTabClick);
       }
-      cleanupFns.forEach((fn) => fn());
-      cleanupFns = [];
-      if (boundArticle) {
-        boundArticle.querySelectorAll('[data-pm-badge="true"]').forEach((node) => node.remove());
-      }
+      clearBindings();
     };
   }, [pathname]);
 

@@ -84,7 +84,7 @@ export default function Home(): ReactNode {
             旅遊韓語會話馬上開口說
           </Heading>
           <p className={styles.heroSubtitle}>
-            整合課堂互動筆記、中韓英全文搜尋、文法單字速查與課後雙人實戰練習，打開即刻進入複習狀態。
+            整合課堂互動筆記、中韓英全文搜尋、文法單字速查與課後雙人實戰練習
           </p>
 
           <div className={styles.heroActions}>
